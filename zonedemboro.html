@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recherche d'utilisateurs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https:fonts.googleapis.com" />
+  <link rel="preconnect" href="https:fonts.gstatic.com" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap" rel="stylesheet">
+   <meta http-equiv="refresh" content="">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{ margin: 0; padding: 0;  box-sizing: border-box;  font-family: 'Poppins', sans-serif;}
+body{ width: 100%;  height: ;  background: rgb(240, 239, 243); /* margin: auto; display: flex;  flex-direction: column;  align-items: center;  justify-content: center;*/
+}
+a{ text-decoration: none; }
+   .tabs {  display: flex; flex-wrap: wrap;  max-width: 400px;  font-family: sans-serif; font-size: 14px; align-items: center;  justify-content: center;  }
+   .tabs__label { padding: 10px 10px; cursor: pointer;  background-color: ;  }
+   .tabs__radio {  display: none; }
+   .tabs__content { order: 1; width: 100%; border-top: 3px solid #dddddd;
+   /*line-height: 1.5;*/  font-size: 0.9em; display: none; background-color: ; margin: 1%;  }
+   .tabs__radio:checked + .tabs__label { font-weight: bold; color: #009578; border-bottom: 2px solid #009578; }
+   .tabs__radio:checked + .tabs__label + .tabs__content {  display: initial; }
+   /*DEBUT DU MATCHS*/
+   .zone-zone{  width: 100%;  display: block; text-align: center; line-height: 15px;  }
+   .zone-zone .nom-asc{  padding-left: 5px; font-weight: bold;  letter-spacing: 2px;   padding-top: 3px;  padding-bottom: 3px; background-color: orange; text-transform: uppercase; text-align: center; }
+   .asc-asc .logo-asc{  width: 70px; height: 70px;  }
+   /*DEBUT DU MATCHS*/
+   .asc-asc{  width: 100%; display: block; text-align: center;  line-height: 15px; }
+   .asc-asc .nom-asc{  padding-left: 5px; font-weight: bold;  letter-spacing: 2px; text-transform: uppercase; text-align: left;  }
+   .asc-asc .logo-asc{  width: 70px; height: 70px;  }
+   .matchs{   width: 100%; background-color: ;}
+   .container{ display: flex; width: 100%;  height: ;  background: #AED6F1;  border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 5px; overflow-y: scroll;}
+   .container{ display: flex; width: 100%; height: ;  background: #AED6F1; border-radius: 10px;  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);  padding: 5px;  overflow-y: scroll; }
+   .container::-webkit-scrollbar{ display: none; }
+   .container form {  width: 92%;  border: 1px solid rgb(82, 74, 235);  border-radius: 4px; display: flex; flex-direction: row; align-items: center;}
+   .container form { width: 92%; border: 1px solid rgb(82, 74, 235); border-radius: 4px; display: flex;  flex-direction: row; align-items: center;}
+   .match-list { width: 100%; padding: px; }
+   .match {  width: 100%; display: flex; align-items: center; padding-top: px; padding-bottom: px; box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);  margin-top: px; border-radius: px; background: #EBDEF0; height: 35px; overflow: hidden;  }
+  .match .score-finale{  width: 40px; font-weight: bold; margin: 3px; padding-right: 0px;  text-align: center; font-size: 20px; letter-spacing: 2px; word-spacing: 2px; overflow: hidden;}
+   .match img { width: 25px;  height: 25px;  padding-top: 8px;  margin-left: 5px; padding-left: 3px;  object-fit: cover; border-radius: px; }
+   .match .p-details{ width: 175px; border-right: solid 1px black;  padding-left: px;  }
+   .p-details{ }
+   .match .p-details h2 { font-size: 10px; color: #1d1d1d; text-align: left; padding-left: 5px; text-transform: uppercase; letter-spacing: 2px;  word-spacing: 1px; }
+  .left{ line-height: 15px; width: 170px; height: 70px; text-align: center; background-color: #F5B7B1;}
+  .left .date{ padding-top: 10px; color: black; font-size: 11px; font-weight: bold; word-spacing: 2px; }
+  .left span{ font-size: 8px; border-top: solid 1px black;}
+  .left h2{ font-size: 16px; letter-spacing: 1px;}
+   /*FIN DU MATCHS*/
+   /*DEBUT DE CLASSEMENTS*/
+   a{ text-decoration: none;}
+   .container{ display: flex; width: 100%; height: ; background: #AED6F1; border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 3px; overflow-y: scroll; }
+   .container::-webkit-scrollbar{ display: none; }
+   .container form { width: 100%; border: 1px solid rgb(82, 74, 235);  border-radius: 4px; display: flex;  flex-direction: row; align-items: center; }
+   .product-list {width: 100%;  padding: px; }
+   .product {  width: 100%; display: flex; align-items: center;  padding-top: px; padding-bottom: px;  box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: 3px;  border-radius: px;  background: #EBDEF0; height: 35px; overflow: hidden;}
+   .product .rang-rang{ width: 25px; color: #ff5733; font-weight: ; margin: 5px; padding-right: 2px; font-size: 14px; text-align: center;  }
+   .product .asc-nom-asc-nom{ width: 145px; height: 15px; color: #ff5733; font-size: 13px; font-weight: bold; margin-left: 1px; padding-right: 3px; text-align: left; border-right: solid 1px black; }
+   .product .jouer-jouer{  width: 20px; height: 15px; color: #ff5733; font-size: 11px;  font-weight: bold; margin-left: 3px;  padding-right: 3px; text-align: center; border-right: solid 1px black;  }
+   .product .victoire-victoire{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .product .nul-nul{  width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+   .product .defaite-defaite{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;  }
+   .product .buts-buts{ width: 40px;  height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black;}
+   .product .pts-pts{ width: 18px; height: 15px;  color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;}
+   .product .rang{ width: 25px;  height: 15px; font-weight: ;  margin: 5px; padding-right: 2px;  font-size: 10px; text-align: center; border-right: solid 1px black;}
+   .product .score-logo{ width: 20px; height: 15px; font-weight: bold; margin-left: 2px;  padding-right: 3px; }
+   .product .asc-nom{ width: 145px;  height: 15px; font-size: 10px; font-weight: bold;  margin-left: 1px; padding-right: 3px; text-align: left; text-transform: uppercase; border-right: solid 1px black;}
+   .product .jouer{  width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+   .product .victoire{ width: 20px;  height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .product .nul{  width: 20px;  height: 15px; font-size: 11px;  font-weight: bold;  margin-left: 3px;  padding-right: 3px;  text-align: center; border-right: solid 1px black;  }
+   .product .defaite{  width: 20px;  height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px;  text-align: center; border-right: solid 1px black; }
+   .product .buts{  width: 40px;  height: 15px; font-size: 11px; font-weight: bold;  margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+   .product .pts{  width: 18px;  height: 15px;  font-size: 11px;  font-weight: bold;  margin-left: 3px;  padding-right: 3px;  text-align: center;  }
+   .product img {  width: 30px;  height: 30px;  margin-left: 5px;  padding-left: 3px;  object-fit: cover;  border-radius: px; }
+   .product .p-details{  padding-left: px; }
+      .p-details{ }
+   .product .p-details h2 { font-size: 13px; color: #1d1d1d; text-align: center; padding-left: 5px; text-transform: uppercase;  font-family: ;  }
+   /*FIN CLASSEMENT*/
+   /*DEBUT EQUIPES*/
+   .container{ display: flex;  width: 100%;  height: ; background: #AED6F1; border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 3px; overflow-y: scroll; }
+   .container::-webkit-scrollbar{ display: none; }
+   .equipes-list { width: 100%; padding: px; }
+   .equipes { width: 100%;  height: 50px;  display: flex; align-items: center; padding-top: px; padding-bottom: px; box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: 3px;  border-radius: 10px;  background: #EBDEF0; overflow: hidden; } 
+   .equipes .logo-asc{ width: 40px;  height: 40px; margin-left: 5px; text-align: left;}
+   .equipes .nom-asc{  width: 290px; height: 40px; font-size: 13px; font-weight: bold; margin-left: 15px; padding-right: 10px; text-align: left;  background-color: ; text-transform: uppercase; overflow: hidden;  color: #A569BD; }
+   .equipes .nom-asc span{ color: black; font-size: 8px; letter-spacing: 1px;  word-spacing: 3px;  }
+   .equipes .annee-asc{  width: 100px;  height: 20px;  font-size: 11px; font-weight: ;  margin-left: 6px;  padding-left: 10px;  text-align: left; color: #3498DB; overflow: hidden;  background-color: ; border-left: solid 1px black;  }
+  
+   /*FIN EQUIPES*/
+   @media (min-width:400px){
+   .tabs {
+   max-width: 700px;
+   }
+   .match .p-details{
+   width: 320px;
+   }
+ 
+
+   
+   }
+    
+   
+   
+   
+   
+</style>
+ 
+</head>
+<body>
+  <div class="zone-zone">
+  <p class="nom-asc">zone de mboro</p>
+  </div>
+<div class="tabs">
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+  
+  <!--DEBUT DE TABS MATCH-->
+  <label for="tab1" class="tabs__label">MATCHS</label>
+  <div class="tabs__content">
+  Pas disponible
+  <!--Debut a copié
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  04 Août 2023
+  </p>
+  <h2>
+  17:00  <br><span>coupe du maire</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="#" >
+  <img src="https://zupimages.net/up/22/34/3zxj.png" alt=""></a>
+  <div class="p-details">
+  <h2>ASC CAADA GUI</h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  <div class="match">
+  <a href="#" >
+  <img src="https://zupimages.net/up/22/32/tx0v.png" alt=""></a>
+  <div class="p-details">
+  <h2>ASC MAANKO</h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  
+  </div>
+  
+  </section>
+  Fin a copié-->
+  
+  </div>
+  <!-- FIN DE TABS MATCHES-->
+   <!-- DEBUT DE EFFECTIF-->
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+  <label for="tab2" class="tabs__label">CLASSEMENTS</label>
+  <div class="tabs__content">
+    
+    <!-- DÉBUT ZONE DE MATCHE--->
+    
+    <section class="container">
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC A --->
+    Pas disponible
+    <!--
+    <div class="product">
+    <h2 class="rang-rang">#</h2>
+    <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+    <h2 class="jouer-jouer">J</h2>
+    <h2 class="victoire-victoire">V</h2>
+    <h2 class="nul-nul">N</h2>
+    <h2 class="defaite-defaite">D</h2>
+    <h2 class="buts-buts">Buts</h2>
+    <h2 class="pts-pts">Pts</h2>
+    </div>
+    <div class="product">
+    <h2 class="rang"> 0 </h2>
+    <h2 class="asc-nom">ASC EQIUPE</h2>
+    <h2 class="jouer"> 0 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 00:00 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 0 </h2>
+    <h2 class="asc-nom">ASC EQIUPE</h2>
+    <h2 class="jouer"> 0 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 00:00 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 0 </h2>
+    <h2 class="asc-nom">ASC EQIUPE</h2>
+    <h2 class="jouer"> 0 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 00:00 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 0 </h2>
+    <h2 class="asc-nom">ASC EQIUPE</h2>
+    <h2 class="jouer"> 0 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 00:00 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 0 </h2>
+    <h2 class="asc-nom">ASC EQIUPE</h2>
+    <h2 class="jouer"> 0 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 00:00 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 0 </h2>
+    <h2 class="asc-nom">ASC EQIUPE</h2>
+    <h2 class="jouer"> 0 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 00:00 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 0 </h2>
+    <h2 class="asc-nom">ASC EQIUPE</h2>
+    <h2 class="jouer"> 0 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 00:00 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 0 </h2>
+    <h2 class="asc-nom">ASC EQIUPE</h2>
+    <h2 class="jouer"> 0 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 00:00 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    
+    -->
+    <!-- FIN ASC A --->
+    
+    
+    </div>
+    
+    
+    </section>
+  </div>
+  <!-- FIN DE EFFECTIF-->
+  <!---DEBUT STATISTIQUES--->
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+  <label for="tab3" class="tabs__label">EQUIPES</label>
+  <div class="tabs__content">
+  
+  
+ <section class="container">
+ 
+ <div class="equipes-list" id="product-list">
+ <!-- DÉBUT ASC A --->
+ 
+ 
+ 
+ 
+ <a href="go:AJMBRMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/kv7e.png"> </h2>
+ <h2 class="nom-asc">aj de mboro<br><span>Créréé en</span></h2>
+ <h2 class="annee-asc"> 0000  </h2>
+ </div></a>
+ <a href="go:AMITMR" >
+ <div class="equipes">
+ 
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/38/mw6z.png"> </h2>
+ <h2 class="nom-asc"> amitié  <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:ARAFATMR" >
+ <div class="equipes">
+ 
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/di8a.png"> </h2>
+ <h2 class="nom-asc"> arafat <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:BOKDMMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/37/5tow.png"> </h2>
+ <h2 class="nom-asc"> bokk diom <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000 </h2>
+ 
+ </div></a>
+ <a href="go:CITEMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/qtmu.png"> </h2>
+ <h2 class="nom-asc"> cité 2000 <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:DAARJMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/2rdi.png"> </h2>
+ <h2 class="nom-asc"> daara dji <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:DEGGOMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/37/3nd0.png"> </h2>
+ <h2 class="nom-asc"> deggo <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:DIOUBMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/dq16.png"> </h2>
+ <h2 class="nom-asc"> dioubo <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:ETOILMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/6bky.png"> </h2>
+ <h2 class="nom-asc"> étoile<br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:GOREMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/38/5fb4.png"> </h2>
+ <h2 class="nom-asc"> goréé <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:HLMMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/l5hj.png"> </h2>
+ <h2 class="nom-asc"> hlm <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:JANTBMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/7r45.png"> </h2>
+ <h2 class="nom-asc"> jant bi <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:JAPOMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/6ehi.png"> </h2>
+ <h2 class="nom-asc"> jappo <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:MOULYMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/emaq.png"> </h2>
+ <h2 class="nom-asc"> moulaye fall <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:KRPTEMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/69mz.png"> </h2>
+ <h2 class="nom-asc"> keur pathé kane <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:LASRMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/cdxm.png"> </h2>
+ <h2 class="nom-asc"> lasserre <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:MAGDNMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/ih2p.png"> </h2>
+ <h2 class="nom-asc"> maag daan <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:MANKOMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/qe2c.png"> </h2>
+ <h2 class="nom-asc"> maanko <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:MYMYPLMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/39/ruqa.png"> </h2>
+ <h2 class="nom-asc"> mbaye-mbaye peul <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:MDNGNSMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/6ux9.png"> </h2>
+ <h2 class="nom-asc"> medina gounass <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:MSRWMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/2ee9.png"> </h2>
+ <h2 class="nom-asc"> mome sa reew <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:NGYNGYMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/92sv.png"> </h2>
+ <h2 class="nom-asc"> ngaye-ngaye <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:ECSMMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/gt3e.png"> </h2>
+ <h2 class="nom-asc"> espoir cité s mansour<br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="go:EPRABRMR" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/37/dwe9.png"> </h2>
+ <h2 class="nom-asc"> espoir abour <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ 
+ <!-- FIN ASC A --->
+ 
+ 
+ </div>
+ </section>
+  </div>
+  <!--FIN STATISTIQUES--->
+</div>
+</body>
+</html>

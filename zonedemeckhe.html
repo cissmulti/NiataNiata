@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recherche d'utilisateurs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https:fonts.googleapis.com" />
+  <link rel="preconnect" href="https:fonts.gstatic.com" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap" rel="stylesheet">
+   <meta http-equiv="refresh" content="">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+body{ width: 100%; height: ; background: rgb(240, 239, 243);}
+a{ text-decoration: none; }
+   .tabs { display: flex; flex-wrap: wrap; max-width: 400px; font-family: sans-serif; font-size: 14px; align-items: center; justify-content: center;}
+   
+   .tabs__label { padding: 10px 10px; cursor: pointer; background-color: ;}
+   
+   .tabs__radio { display: none;}
+   
+   .tabs__content { order: 1; width: 100%;  border-top: 3px solid #dddddd; /*line-height: 1.5;*/ font-size: 0.9em; display: none; background-color: ; margin: 1%;}
+   
+   .tabs__radio:checked + .tabs__label { font-weight: bold; color: #009578; border-bottom: 2px solid #009578;}
+   
+   .tabs__radio:checked + .tabs__label + .tabs__content { display: initial;}
+   /*DEBUT DU MATCHS*/
+   .zone-zone{ width: 100%; display: block; text-align: center; line-height: 15px;}
+   .zone-zone .nom-asc{ padding-left: 5px; font-weight: bold; letter-spacing: 2px; padding-top: 3px; padding-bottom: 3px; background-color: orange; text-transform: uppercase; text-align: center;}
+   .asc-asc .logo-asc{ width: 70px; height: 70px;}
+   /*DEBUT DU MATCHS*/
+   .asc-asc{ width: 100%; display: block; text-align: center; line-height: 15px;  }
+   .asc-asc .nom-asc{ padding-left: 5px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; text-align: left;}
+   .asc-asc .logo-asc{ width: 70px; height: 70px; }
+   .matchs{ width: 100%; background-color: ;}
+   .container{ display: flex; width: 100%; height: ; background: #AED6F1; border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 5px; overflow-y: scroll;}
+   .container{ display: flex; width: 100%; height: ; background: #AED6F1; border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 5px; overflow-y: scroll;}
+   .container::-webkit-scrollbar{ display: none;}
+   .container form { width: 92%; border: 1px solid rgb(82, 74, 235); border-radius: 4px; display: flex; flex-direction: row; align-items: center;}
+   .container form { width: 92%; border: 1px solid rgb(82, 74, 235); border-radius: 4px; display: flex; flex-direction: row; align-items: center;}
+   
+   .match-list { width: 100%; padding: px;}
+   .match { width: 100%; display: flex; align-items: center; padding-top: px; padding-bottom: px; box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: px; border-radius: px; background: #EBDEF0; height: 35px; overflow: hidden;}
+   .match .score-finale{ width: 50px; font-weight: bold; margin: 3px; padding-right: 0px; text-align: center; font-size: 20px; letter-spacing: 2px; word-spacing: 2px; overflow: hidden; }
+   .match img { width: 25px; height: 25px; margin-top: 8px; margin-left: 5px; padding-left: 3px; object-fit: cover; border-radius: px;}
+   .match .p-details{ width: 175px; border-right: solid 1px black; padding-left: px;}
+   .p-details{
+   }
+   .match .p-details h2 { font-size: 10px; color: #1d1d1d; text-align: left; padding-left: 5px; text-transform: uppercase; letter-spacing: 2px; word-spacing: 1px;}
+   
+   .left{ line-height: 15px; width: 170px; height: 70px; text-align: center; background-color: #F5B7B1;}
+   .left .date{ padding-top: 10px; color: black; font-size: 11px; font-weight: bold; word-spacing: 2px; }
+   .left span{ font-size: 8px; border-top: solid 1px black;}
+   .left h2{ font-size: 16px; letter-spacing: 1px;}
+   /*FIN DU MATCHS*/
+   /*DEBUT DE CLASSEMENTS*/
+   a{ text-decoration: none;}
+   
+   .container{ display: flex; width: 100%; height: ; background: #AED6F1; border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 3px; overflow-y: scroll;}
+   .container::-webkit-scrollbar{ display: none;}
+   .container form { width: 100%; border: 1px solid rgb(82, 74, 235); border-radius: 4px; display: flex; flex-direction: row; align-items: center;}
+   
+   .product-list { width: 100%; padding: px;}
+   .product { width: 100%; display: flex; align-items: center; padding-top: px; padding-bottom: px; box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: 3px; border-radius: px; background: #EBDEF0; height: 35px; overflow: hidden;}
+   
+   .product .rang-rang{ width: 25px; color: #ff5733; font-weight: ;margin: 5px; padding-right: 2px; font-size: 14px; text-align: center;}
+   .product .asc-nom-asc-nom{ width: 145px; height: 15px; color: #ff5733; font-size: 13px; font-weight: bold; margin-left: 1px; padding-right: 3px; text-align: left; border-right: solid 1px black;}
+   .product .jouer-jouer{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;}
+   .product .victoire-victoire{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;}
+   .product .nul-nul{ width: 20px; height: 15px; color: #ff5733;font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .product .defaite-defaite{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;}
+   .product .buts-buts{ width: 40px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .product .pts-pts{ width: 18px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; }
+   
+   
+   .product .rang{ width: 25px; height: 15px; font-weight: ; margin: 5px; padding-right: 2px; font-size: 10px; text-align: center; border-right: solid 1px black;}
+   .product .score-logo{ width: 20px; height: 15px; font-weight: bold; margin-left: 2px; padding-right: 3px; }
+   .product .asc-nom{ width: 145px; height: 15px; font-size: 10px; font-weight: bold; margin-left: 1px; padding-right: 3px; text-align: left; text-transform: uppercase; border-right: solid 1px black;}
+   
+   .product .jouer{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;}
+   .product .victoire{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;}
+   .product .nul{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;}
+   .product .defaite{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;}
+   .product .buts{ width: 40px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .product .pts{ width: 18px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;}
+   .product img { width: 30px; height: 30px; margin-left: 5px; padding-left: 3px; object-fit: cover; border-radius: px; }
+   .product .p-details{ padding-left: px;}
+   .p-details{
+   }
+   .product .p-details h2 { font-size: 13px; color: #1d1d1d; text-align: center; padding-left: 5px; text-transform: uppercase; font-family: ; }
+   /*FIN CLASSEMENT*/
+   /*DEBUT EQUIPES*/
+   .container{ display: flex; width: 100%; height: ; background: #AED6F1; border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 3px; overflow-y: scroll; }
+   .container::-webkit-scrollbar{ display: none;}
+   
+   
+   .equipes-list { width: 100%; padding: px; }
+   .equipes { width: 100%; height: 50px; display: flex; align-items: center; padding-top: px; padding-bottom: px; box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: 3px; border-radius: 10px; background: #EBDEF0; overflow: hidden;}
+   
+   .equipes .logo-asc{ width: 40px; height: 40px; margin-left: 5px; text-align: left;}
+   .equipes .nom-asc{ width: 290px;  height: 40px; font-size: 13px; font-weight: bold; margin-left: 15px; padding-right: 10px; text-align: left; background-color: ; text-transform: uppercase; overflow: hidden; color: #A569BD;}
+   .equipes .nom-asc span{ color: black; font-size: 8px; letter-spacing: 1px; word-spacing: 3px; }
+   
+   .equipes .annee-asc{ width: 100px; height: 20px; font-size: 11px; font-weight: ; margin-left: 6px; padding-left: 10px; text-align: left; color: #3498DB; overflow: hidden; background-color: ;  border-left: solid 1px black; }
+   
+/* style CLASSEMENT*/
+.zone-ab { display: flex;  flex-wrap: wrap; max-width: 400px; font-family: sans-serif; font-size: 14px; align-items: center; justify-content: center; }
+   
+   .zone-ab__label { padding: 10px 50px; cursor: pointer; background-color: ;}
+   
+   .zone-ab__radio { display: none;}
+   
+   .zone-ab__content { order: 1; width: 100%;  border-top: 3px solid #dddddd; /*line-height: 1.5;*/ font-size: 0.9em; display: none; background-color: ; margin: 1%;}
+   
+   .zone-ab__radio:checked + .zone-ab__label { font-weight: bold; color: #009578; border-bottom: 2px solid #009578;}
+   
+   .zone-ab__radio:checked + .zone-ab__label + .zone-ab__content { display: initial;}
+   /*DEBUT STYLE ZONE 2A*/
+   .meckhe-zone{ width: 100%; background: rgb(240, 239, 243); margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+   a{ text-decoration: none;}
+   .poule{
+   text-align: center; font-weight: bold; margin-top: 3px; border-top: solid 1px green;
+   }
+   .parent-zone{ display: block; width: 100%;  margin-top: 5px; border-radius: 10px; border: solid 1px black; }
+   .zone-list { width: 100%; padding: px; }
+    
+   .zone { width: 100%; display: flex; align-items: center; padding-top: px; padding-bottom: px; box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: 3px; border-radius: px; background: #EBDEF0; height: 35px;  overflow: hidden; }
+   .zone .rang-rang{ width: 25px; color: #ff5733; font-weight: ; margin: 5px; padding-right: 2px; font-size: 14px; text-align: center; }
+   .zone .asc-nom-asc-nom{ width: 145px; height: 15px; color: #ff5733; font-size: 13px; font-weight: bold; margin-left: 1px; padding-right: 3px; text-align: left; border-right: solid 1px black; }
+   .zone .jouer-jouer{ width: 20px;  height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px;  padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .zone .victoire-victoire{ width: 20px; height: 15px;  color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .zone .nul-nul{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .zone .defaite-defaite{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .zone .buts-buts{ width: 40px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .zone .pts-pts{ width: 18px; height: 15px;  color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;}
+   .zone .rang{ width: 25px; height: 15px; font-weight: ; margin: 5px; padding-right: 2px; font-size: 10px; text-align: center; border-right: solid 1px black; }
+   .zone .score-logo{ width: 20px; height: 15px; font-weight: bold; margin-left: 2px; padding-right: 3px;}
+   .zone .asc-nom{  width: 145px; height: 15px; font-size: 10px; font-weight: bold;  margin-left: 1px; padding-right: 3px; text-align: left; text-transform: uppercase; border-right: solid 1px black;}
+   .zone .jouer{ width: 20px; height: 15px; font-size: 11px; font-weight: bold;  margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;}
+   .zone .victoire{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .zone .nul{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px;  padding-right: 3px;  text-align: center; border-right: solid 1px black;}
+   .zone .defaite{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .zone .buts{ width: 40px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .zone .pts{ width: 30px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;}
+   
+   
+   
+    /*FIN STYLE ZONE 2A*/
+
+   
+/* FIN STYLE CLASSEMENT*/
+   /*FIN EQUIPES*/
+   @media (min-width:400px){
+   .tabs {
+   max-width: 700px;
+   }
+   .match .p-details{
+   width: 320px;
+   }
+ .zone-ab {
+ max-width: 700px;
+ }
+ .match .p-details{
+ width: 320px;
+ }
+ .container{ width: 100%; }
+ .zone { width: ; height: 40px; overflow: hidden; }
+ .zone img{ width: 30px;  height: 30px; }
+ .zone .p-details h2 { font-size: 20px; color: #1d1d1d; text-align: center; }
+ .zone .rang-rang{ width: 35px; font-size: 18px; }
+ .zone .asc-nom-asc-nom{ width: 300px; font-size: 18px; }
+ .zone .jouer-jouer{ width: 30px; font-size: 18px;}
+ .zone .victoire-victoire{ width: 30px; font-size: 18px;}
+ .zone .nul-nul{ width: 30px; font-size: 18px; }
+ .zone .defaite-defaite{ width: 30px; font-size: 18px;}
+ .zone .buts-buts{ width: 60px; font-size: 18px; }
+ .zone .pts-pts{ width: 28px; color: #ff5733; font-size: 18px; }
+ .zone .rang{ width: 35px; font-size: 18px;}
+ .zone .asc-nom{ width: 300px; font-size: 18px; }
+ .zone .jouer{ width: 30px; font-size: 18px;}
+ .zone .victoire{ width: 30px; font-size: 18px;}
+ .zone .nul{ width: 30px; font-size: 18px;}
+ .zone .defaite{ width: 30px; font-size: 18px; }
+ .zone .buts{ width: 60px; font-size: 18px; }
+ .zone .pts{ width: 28px; font-size: 18px; }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   }
+    
+   
+   
+   
+   
+</style>
+ 
+</head>
+<body>
+  <div class="zone-zone">
+  <p class="nom-asc">zone de méckhé</p>
+  </div>
+<div class="tabs">
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+  
+  <!--DEBUT DE TABS MATCH-->
+  <label for="tab1" class="tabs__label">MATCHS</label>
+  <div class="tabs__content">
+  
+  
+  
+  
+  
+
+
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  16 Août 2023
+  </p>
+  <h2>
+  15:00 <br><span>coupe du maire</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="go:MONACOMH" >
+  <img src="https://zupimages.net/up/22/34/csaa.png" alt=""></a>
+  <div class="p-details">
+  <h2> MONACO </h2>
+  </div>
+  <h2 class="score-finale">  </h2>
+  </div>
+  <div class="match">
+  <a href="go:SMPGMH" >
+  <img src="https://zupimages.net/up/22/32/m9u1.png" alt=""></a>
+  <div class="p-details">
+  <h2> SOUMP GUI </h2>
+  </div>
+  <h2 class="score-finale">  </h2>
+  </div>
+  </div>
+  </section>
+  <!-- Fin a copié-->
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  16 Août 2023
+  </p>
+  <h2>
+  17:00 <br><span>coupe du maire</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="go:CAADAGUIMH" >
+  <img src="https://zupimages.net/up/22/34/3zxj.png" alt=""></a>
+  <div class="p-details">
+  <h2>  CAADA GUI</h2>
+  </div>
+  <h2 class="score-finale">  </h2>
+  </div>
+  <div class="match">
+  <a href="go:MAANKOMH" >
+  <img src="https://zupimages.net/up/22/32/tx0v.png" alt=""></a>
+  <div class="p-details">
+  <h2> MAANKO </h2>
+  </div>
+  <h2 class="score-finale">  </h2>
+  </div>
+  </div>
+  </section>
+  <!-- Fin a copié-->
+  
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  15 Août 2023
+  </p>
+  <h2>
+  Terminé <br><span>coupe du maire</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="go:MBOLLMH" >
+  <img src="https://zupimages.net/up/22/32/5fl0.png" alt=""></a>
+  <div class="p-details">
+  <h2> MBOLLO </h2>
+  </div>
+  <h2 class="score-finale"> 1 </h2>
+  </div>
+  <div class="match">
+  <a href="go:ESPOIRMH" >
+  <img src="https://zupimages.net/up/22/35/c55z.png" alt=""></a>
+  <div class="p-details">
+  <h2> ESPOIRS </h2>
+  </div>
+  <h2 class="score-finale"> 3 </h2>
+  </div>
+  </div>
+  </section>
+  <!-- Fin a copié-->
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  15 Août 2023
+  </p>
+  <h2>
+  Terminé <br><span>coupe du maire</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="go:DIAMONOMH" >
+  <img src="https://zupimages.net/up/22/35/d6dj.png" alt=""></a>
+  <div class="p-details">
+  <h2> DIAMONO </h2>
+  </div>
+  <h2 class="score-finale">0<span style="font-size: 11px;">(4)</span></h2>
+  </div>
+  <div class="match">
+  <a href="go:JAPPOMH" >
+  <img src=" https://zupimages.net/up/23/33/fc21.png " alt=""></a>
+  <div class="p-details">
+  <h2> JAPPO </h2>
+  </div>
+  <h2 class="score-finale">0<span style="font-size: 11px;">(5)</span></h2>
+  </div>
+  </div>
+  </section>
+  <!-- Fin a copié-->
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  14 Août 2023
+  </p>
+  <h2>
+  Terminé  <br><span>coupe du maire</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="go:LEBGUIMH" >
+  <img src="https://zupimages.net/up/22/32/lgua.png" alt=""></a>
+  <div class="p-details">
+  <h2> LÉBOI GUI  </h2>
+  </div>
+  <h2 class="score-finale"> 1 </h2>
+  </div>
+  <div class="match">
+  <a href="go:YNWIMH" >
+  <img src="https://zupimages.net/up/22/34/7c19.png" alt=""></a>
+  <div class="p-details">
+  <h2> YOON WI </h2>
+  </div>
+  <h2 class="score-finale"> 0 </h2>
+  </div>
+  </div>
+  </section>
+  <!-- Fin a copié-->
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  14 Août 2023
+  </p>
+  <h2>
+  Terminé<br><span>coupe du maire</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="go:RNSCEMH" >
+  <img src="https://zupimages.net/up/22/32/jb0e.png" alt=""></a>
+  <div class="p-details">
+  <h2> RENAISSANCE </h2>
+  </div>
+  <h2 class="score-finale"> 1 <span style="font-size: 11px;">(3)</span></h2>
+  </div>
+  <div class="match">
+  <a href="go:RISSOMH" >
+  <img src="https://zupimages.net/up/22/32/yz8x.png" alt=""></a>
+  <div class="p-details">
+  <h2> RISSO </h2>
+  </div>
+  <h2 class="score-finale"> 1 <span style="font-size: 11px;">(2)</span></h2>
+  </div>
+  </div>
+  </section>
+  <!-- Fin a copié-->
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  13 Août 2023
+  </p>
+  <h2>
+  Terminé <br><span>coupe du maire</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="go:JAMBRMH" >
+  <img src="https://zupimages.net/up/22/33/4eax.png" alt=""></a>
+  <div class="p-details">
+  <h2> JAMBAAR </h2>
+  </div>
+  <h2 class="score-finale"> 0 <span style="font-size: 8px;">(4)</span> </h2>
+  </div>
+  <div class="match">
+  <a href="go:GOUYTMH" >
+  <img src="https://zupimages.net/up/22/33/yth7.png" alt=""></a>
+  <div class="p-details">
+  <h2> GOUY YATT </h2>
+  </div>
+  <h2 class="score-finale">0 <span style="font-size: 8px;">(2)</span> </h2>
+  </div>
+  </div>
+  </section>
+  <!-- Fin a copié-->
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  13 Août 2023
+  </p>
+  <h2>
+  Terminé <br><span>coupe du maire</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="go:RAILBMH" >
+  <img src="https://zupimages.net/up/22/35/sqr0.png" alt=""></a>
+  <div class="p-details">
+  <h2> RAIL BI </h2>
+  </div>
+  <h2 class="score-finale">1 <span style="font-size: 8px;">(3)</span> </h2>
+  </div>
+  <div class="match">
+  <a href="go:TNGHRMH" >
+  <img src="https://zupimages.net/up/22/33/xseb.png" alt=""></a>
+  <div class="p-details">
+  <h2> TONGHOOR </h2>
+  </div>
+  <h2 class="score-finale">1 <span style="font-size: 8px;">(4)</span></h2>
+  </div>
+  </div>
+  </section>
+  <!-- Fin a copié-->
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  06 Août 2023
+  </p>
+  <h2>
+  Terminé <br><span>Tournoi 4 Grands</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="go:CAADAGUIMH" >
+  <img src="https://zupimages.net/up/22/34/3zxj.png" alt=""></a>
+  <div class="p-details">
+  <h2>ASC CAADA GUI</h2>
+  </div>
+  <h2 class="score-finale"> 0 </h2>
+  </div>
+  <div class="match">
+  <a href="go:MBOLLMH" >
+  <img src="https://zupimages.net/up/22/32/5fl0.png" alt=""></a>
+  <div class="p-details">
+  <h2>ASC MBOLLO</h2>
+  </div>
+  <h2 class="score-finale"> 1 </h2>
+  </div>
+  
+  </div>
+  
+  </section>
+  <!-- Fin a copié-->
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  04 Août 2023
+  </p>
+  <h2>
+  Terminé <span>Tournoi 4 Grands</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <a href="go:CAADAGUIMH" >
+  <img src="https://zupimages.net/up/22/34/3zxj.png" alt=""></a>
+  <div class="p-details">
+  <h2>ASC CAADA GUI</h2>
+  </div>
+  <h2 class="score-finale"> 1</h2>
+  </div>
+  <div class="match">
+  <a href="go:MAANKOMH" >
+  <img src="https://zupimages.net/up/22/32/tx0v.png" alt=""></a>
+  <div class="p-details">
+  <h2>ASC MAANKO</h2>
+  </div>
+  <h2 class="score-finale"> 1</h2>
+  </div>
+  
+  </div>
+  
+  </section>
+ <!-- Fin a copié-->
+  
+    <!--Debut a copié-->
+    <section class="container">
+    <div class="left">
+    <p class="date">
+    04 Août 2023
+    </p>
+    <h2>
+    Terminé <span>Tournoi 4 Grands</span>
+    </h2>
+    </div>
+    <div class="match-list" id="match-list">
+    <div class="match">
+    <a href="go:MBOLLMH" >
+    <img src="https://zupimages.net/up/22/32/5fl0.png" alt=""></a>
+    <div class="p-details">
+    <h2>ASC MBOLLO</h2>
+    </div>
+    <h2 class="score-finale">2 </h2>
+    </div>
+    <div class="match">
+    <a href="go:JAPPOMH" >
+    <img src="https://zupimages.net/up/22/34/yyx3.png" alt=""></a>
+    <div class="p-details">
+    <h2>ASC JAPPO</h2>
+    </div>
+    <h2 class="score-finale">0 </h2>
+    </div>
+    
+    </div>
+    
+    </section>
+    <!--Fin a copié-->
+    
+  </div>
+  <!-- FIN DE TABS MATCHES-->
+   <!-- DEBUT DE EFFECTIF-->
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+  <label for="tab2" class="tabs__label">CLASSEMENTS</label>
+  <div class="tabs__content">
+    
+    <!-- DÉBUT ZONE DE MATCHE--->
+    
+    <section class="container">
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC A --->
+   <div class="zone-ab">
+   <input type="radio" class="zone-ab__radio" name="zone-example" id="zone-ab-a" checked>
+   
+   <!--DEBUT DE TABS MATCH-->
+   <label for="zone-ab-a" class="zone-ab__label">ZONE 2A</label>
+   <div class="zone-ab__content">
+   <!-- DÉBUT ZONE 2A--->
+   <body>
+   <div class="meckhe-zone">
+   <!-- DÉBUT POULE--->
+   <div class=".parent-zone">
+   <!--POULE A-->
+   <div class="poule">Poule A</div>
+   <div class="zone-list" id="zone-list">
+   <div class="zone">
+   <h2 class="rang-rang">#</h2>
+   <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+   <h2 class="jouer-jouer">J</h2>
+   <h2 class="victoire-victoire">V</h2>
+   <h2 class="nul-nul">N</h2>
+   <h2 class="defaite-defaite">D</h2>
+   <h2 class="buts-buts">Buts</h2>
+   <h2 class="pts-pts">Pts</h2>
+   </div>
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   </div>
+   <!--POULE B-->
+   <div class="poule">Poule B</div>
+   <div class="zone-list" id="zone-list">
+   <div class="zone">
+   <h2 class="rang-rang">#</h2>
+   <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+   <h2 class="jouer-jouer">J</h2>
+   <h2 class="victoire-victoire">V</h2>
+   <h2 class="nul-nul">N</h2>
+   <h2 class="defaite-defaite">D</h2>
+   <h2 class="buts-buts">Buts</h2>
+   <h2 class="pts-pts">Pts</h2>
+   </div>
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   </div>
+   <!--FIN POULE B-->
+   </div>
+   
+   </div>
+   <!--FIN POULE A - B-->
+   
+   
+   
+   </div>
+   <!-- FIN ZONE 2A-->
+   
+   <input type="radio" class="zone-ab__radio" name="zone-example" id="zone-ab-b">
+   <label for="zone-ab-b" class="zone-ab__label">ZONE 2B</label>
+   <div class="zone-ab__content">
+   
+   <!-- DÉBUT ZONE 2B--->
+   <body>
+   <div class="meckhe-zone">
+   <!-- DÉBUT POULE--->
+   <div class=".parent-zone">
+   <!--POULE A-->
+   <div class="poule">Poule A</div>
+   <div class="zone-list" id="zone-list">
+   <div class="zone">
+   <h2 class="rang-rang">#</h2>
+   <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+   <h2 class="jouer-jouer">J</h2>
+   <h2 class="victoire-victoire">V</h2>
+   <h2 class="nul-nul">N</h2>
+   <h2 class="defaite-defaite">D</h2>
+   <h2 class="buts-buts">Buts</h2>
+   <h2 class="pts-pts">Pts</h2>
+   </div>
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   
+   </div>
+   <!--POULE B-->
+   <div class="poule">Poule B</div>
+   <div class="zone-list" id="zone-list">
+   <div class="zone">
+   <h2 class="rang-rang">#</h2>
+   <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+   <h2 class="jouer-jouer">J</h2>
+   <h2 class="victoire-victoire">V</h2>
+   <h2 class="nul-nul">N</h2>
+   <h2 class="defaite-defaite">D</h2>
+   <h2 class="buts-buts">Buts</h2>
+   <h2 class="pts-pts">Pts</h2>
+   </div>
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   <div class="zone">
+   <h2 class="rang"> 0 </h2>
+   <h2 class="asc-nom">ASC EQIUPE</h2>
+   <h2 class="jouer"> 0 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 0 </h2>
+   <h2 class="defaite"> 0 </h2>
+   <h2 class="buts"> 00:00 </h2>
+   <h2 class="pts"> 0 </h2>
+   </div>
+   
+   
+   
+   </div>
+   <!--FIN POULE B-->
+   </div>
+   
+   </div>
+   <!--FIN POULE A - B-->
+   
+   
+   </div>
+   <!-- FIN ZONE 2B-->
+   
+   
+   
+   </div>
+    <!-- FIN ASC A --->
+    
+    
+    </div>
+    
+    
+    </section>
+  </div>
+  <!-- FIN DE EFFECTIF-->
+  <!---DEBUT STATISTIQUES--->
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+  <label for="tab3" class="tabs__label">EQUIPES</label>
+  <div class="tabs__content">
+  
+  
+ <section class="container">
+ 
+ <div class="equipes-list" id="product-list">
+ <!-- DÉBUT ASC A --->
+ 
+ 
+ 
+ 
+
+      <a href="go:AAFMMH" >
+      <div class="equipes">
+      
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/42/38ai.png"> </h2>
+      <h2 class="nom-asc">aafm<br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 2011  </h2>
+     
+      </div></a>
+      <a href="go:CAADAGUIMH" >
+      <div class="equipes">
+     
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/34/3zxj.png"> </h2>
+      <h2 class="nom-asc">caada gui  <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1987  </h2>
+      
+      </div></a>
+      <a href="go:DIAMONOMH" >
+      <div class="equipes">
+      
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/35/d6dj.png"> </h2>
+      <h2 class="nom-asc"> diamono <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 2011  </h2>
+      
+      </div></a>
+      <a href="go:DISSOMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/u47u.png"> </h2>
+      <h2 class="nom-asc"> disso <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1996 </h2>
+      
+      </div></a>
+      <a href="go:RISSOMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/32/yz8x.png"> </h2>
+      <h2 class="nom-asc"> goney risso <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1976  </h2>
+      
+      </div></a>
+      <a href="go:GOUYGMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/33/zogu.png"> </h2>
+      <h2 class="nom-asc"> gouy gui <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 0000  </h2>
+      
+      </div></a>
+      <a href="go:GOUYTMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/33/yth7.png"> </h2>
+      <h2 class="nom-asc"> gouy yatt <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 2015  </h2>
+      
+      </div></a>
+      <a href="go:JAMBRMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/33/4eax.png"> </h2>
+      <h2 class="nom-asc"> jambaar <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1980 </h2>
+      
+      </div></a>
+      <a href="go:JAPPOMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/33/fc21.png"> </h2>
+      <h2 class="nom-asc"> jappo <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1986 </h2>
+      
+      </div></a>
+      <a href="go:LEBGUIMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/32/lgua.png"> </h2>
+      <h2 class="nom-asc"> lébou gui <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1987  </h2>
+      
+      </div></a>
+      <a href="go:MAANKOMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/32/tx0v.png"> </h2>
+      <h2 class="nom-asc"> maanko <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1987  </h2>
+      
+      </div></a>
+      <a href="go:MBOLLMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/32/5fl0.png"> </h2>
+      <h2 class="nom-asc"> mbollo <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 2003 </h2>
+      
+      </div></a>
+      <a href="go:MONACOMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/34/csaa.png"> </h2>
+      <h2 class="nom-asc"> monaco <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1982 </h2>
+      
+      </div></a>
+      <a href="go:NGWELMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/32/gm95.png"> </h2>
+      <h2 class="nom-asc"> nguéweul <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1989  </h2>
+      
+      </div></a>
+      <a href="go:RAILBMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/35/sqr0.png"> </h2>
+      <h2 class="nom-asc"> rail bi <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 0000  </h2>
+      
+      </div></a>
+      <a href="go:RNSCEMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/32/jb0e.png"> </h2>
+      <h2 class="nom-asc"> renaissance <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 2007  </h2>
+      
+      </div></a>
+      <a href="go:SMPGMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/32/m9u1.png"> </h2>
+      <h2 class="nom-asc"> soump gui <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1993  </h2>
+      
+      </div></a>
+      <a href="go:ESPOIRMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/35/c55z.png"> </h2>
+      <h2 class="nom-asc"> espoirs <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1987  </h2>
+      
+      </div></a>
+      <a href="go:THINEMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/33/vizn.png"> </h2>
+      <h2 class="nom-asc"> thine <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 2012  </h2>
+      
+      </div></a>
+      <a href="go:TNGHRMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/33/xseb.png"> </h2>
+      <h2 class="nom-asc"> tonghoor <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 1986 </h2>
+      
+      </div></a>
+      <a href="go:YNWIMH" >
+      <div class="equipes">
+      <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/34/7c19.png"> </h2>
+      <h2 class="nom-asc"> yoon wi <br><span>Créé en</span></h2>
+      
+      <h2 class="annee-asc"> 2003  </h2>
+      
+      </div></a>
+      
+      
+ 
+ <!-- FIN ASC A --->
+ 
+ 
+ </div>
+ </section>
+  </div> 
+</div>
+</body>
+</html>
+
