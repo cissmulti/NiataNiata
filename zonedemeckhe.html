@@ -36,10 +36,10 @@ a{ text-decoration: none; }
    
    .tabs__radio:checked + .tabs__label + .tabs__content { display: initial;}
    /*DEBUT DU MATCHS*/
-   .zone-zone{ width: 100%; display: block; text-align: center; line-height: 15px;}
-   .zone-zone .nom-asc{ padding-left: 5px; font-weight: bold; letter-spacing: 2px; padding-top: 3px; padding-bottom: 3px; background-color: orange; text-transform: uppercase; text-align: center;}
-   .asc-asc .logo-asc{ width: 70px; height: 70px;}
-   /*DEBUT DU MATCHS*/
+    .zone-zone{border-bottom: solid 1px black; width: 100%;  display: flex;align-items: center;  justify-content: left; line-height: 15px;background-color: #FCF3CF; }
+    .zone-zone img{margin-left: 4px; padding-left: px; width: 40px:; height: 30px;  }
+    .zone-zone p{ margin-left: 4px; padding-left: 5px; font-weight: ; font-size: 18px; letter-spacing: 1px;   padding-top: 2px;  padding-bottom: 2px; text-transform: uppercase; text-align: left; }
+    /*DEBUT DU MATCHS*/
    .asc-asc{ width: 100%; display: block; text-align: center; line-height: 15px;  }
    .asc-asc .nom-asc{ padding-left: 5px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; text-align: left;}
    .asc-asc .logo-asc{ width: 70px; height: 70px; }
@@ -66,7 +66,7 @@ a{ text-decoration: none; }
    /*FIN DU MATCHS*/
    /*DEBUT DE CLASSEMENTS*/
    a{ text-decoration: none;}
-   
+   .meckhe-zone{display: flex; }
    .container{ display: flex; width: 100%; height: ; background: #AED6F1; border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 3px; overflow-y: scroll;}
    .container::-webkit-scrollbar{ display: none;}
    .container form { width: 100%; border: 1px solid rgb(82, 74, 235); border-radius: 4px; display: flex; flex-direction: row; align-items: center;}
@@ -126,19 +126,28 @@ a{ text-decoration: none; }
    .zone-ab__radio:checked + .zone-ab__label { font-weight: bold; color: #009578; border-bottom: 2px solid #009578;}
    
    .zone-ab__radio:checked + .zone-ab__label + .zone-ab__content { display: initial;}
+   
    /*DEBUT STYLE ZONE 2A*/
    .meckhe-zone{ width: 100%; background: rgb(240, 239, 243); margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center;}
    a{ text-decoration: none;}
    .poule{
    text-align: center; font-weight: bold; margin-top: 10px; border-top: solid 2px green; border-radius: 20px;
    }
-   .parent-zone{ display: block; width: 100%;  margin-top: 5px; border-radius: 10px; border: solid 1px black; }
-   .zone-list { width: 100%; padding: px; }
+   
+    .zone .jouer{ width: 20px;  height: 15px; font-size: 11px; font-weight: bold;  margin-left: 3px;  padding-right: 3px;  text-align: center; border-right: solid 1px black; }
+    .zone .victoire{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+    .zone .nul{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+    .zone .defaite{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;  }
+    .zone .buts{  width: 40px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+    .zone .pts{ width: 18px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; }
+    .zone img {width: 30px; height: 30px; margin-left: 5px; padding-left: 3px; object-fit: cover; border-radius: px; }
+    .zone .p-details{  padding-left: px; }
+    .p-details{ }
+    .zone .p-details h2 { font-size: 13px; color: #1d1d1d; text-align: center; padding-left: 5px; text-transform: uppercase; font-family: ;}
     
-     .zone-zone{border-bottom: solid 1px black; width: 100%;  display: flex;align-items: center;  justify-content: left; line-height: 15px;background-color: #FCF3CF; }
-     .zone-zone img{margin-left: 4px; padding-left: px; width: 40px:; height: 30px;  }
-     .zone-zone p{ margin-left: 4px; padding-left: 5px; font-weight: ; font-size: 18px; letter-spacing: 1px;   padding-top: 2px;  padding-bottom: 2px; text-transform: uppercase; text-align: left; }
-     .zone .jouer-jouer{ width: 20px;  height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px;  padding-right: 3px; text-align: center; border-right: solid 1px black; }
+    .zone{display: flex;width: 100%;  display: flex; align-items: center; padding-top: px; padding-bottom: px; box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: 3px; border-radius: px; background: #EBDEF0; height: 35px;   overflow: hidden;  }
+   .zone .nomdelasc{color: #ff5733;}
+   .zone .jouer-jouer{ width: 20px;  height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px;  padding-right: 3px; text-align: center; border-right: solid 1px black; }
    .zone .victoire-victoire{ width: 20px; height: 15px;  color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
    .zone .nul-nul{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
    .zone .defaite-defaite{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
@@ -153,8 +162,8 @@ a{ text-decoration: none; }
    .zone .defaite{ width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
    .zone .buts{ width: 40px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
    .zone .pts{ width: 30px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;}
-   
-   
+   .asc-nom-asc-nom{color: red;}
+   .zone-ab{display: flex;}
    
     /*FIN STYLE ZONE 2A*/
 
@@ -179,7 +188,7 @@ a{ text-decoration: none; }
  .zone img{ width: 30px;  height: 30px; }
  .zone .p-details h2 { font-size: 20px; color: #1d1d1d; text-align: center; }
  .zone .rang-rang{ width: 35px; font-size: 18px; }
- .zone .asc-nom-asc-nom{ width: 300px; font-size: 18px; }
+ .zone .asc-nom-asc-nom{ width: 300px; font-size: 18px; color: red; }
  .zone .jouer-jouer{ width: 30px; font-size: 18px;}
  .zone .victoire-victoire{ width: 30px; font-size: 18px;}
  .zone .nul-nul{ width: 30px; font-size: 18px; }
@@ -742,7 +751,7 @@ a{ text-decoration: none; }
    <label for="zone-ab-a" class="zone-ab__label">ZONE 2A</label>
    <div class="zone-ab__content">
    <!-- DÉBUT ZONE 2A--->
-   <body>
+   
    <div class="meckhe-zone">
    <!-- DÉBUT POULE--->
    <div class=".parent-zone">
@@ -750,8 +759,8 @@ a{ text-decoration: none; }
    <div class="poule">Poule A</div>
    <div class="zone-list" id="zone-list">
    <div class="zone">
-   <h2 class="rang-rang">#</h2>
-   <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+   <h2 style="color: red;" class="rang">#</h2>
+   <h2 style="color: red;" class="asc-nom">Nom de l'asc</h2>
    <h2 class="jouer-jouer">J</h2>
    <h2 class="victoire-victoire">V</h2>
    <h2 class="nul-nul">N</h2>
@@ -852,8 +861,8 @@ a{ text-decoration: none; }
    <div class="poule">Poule B</div>
    <div class="zone-list" id="zone-list">
    <div class="zone">
-   <h2 class="rang-rang">#</h2>
-   <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+   <h2 style="color: red;" class="rang">#</h2>
+   <h2 style="color: red;" class="asc-nom">Nom de l'asc</h2>
    <h2 class="jouer-jouer">J</h2>
    <h2 class="victoire-victoire">V</h2>
    <h2 class="nul-nul">N</h2>
@@ -966,7 +975,7 @@ a{ text-decoration: none; }
    <div class="zone-ab__content">
    
    <!-- DÉBUT ZONE 2B--->
-   <body>
+   
    <div class="meckhe-zone">
    <!-- DÉBUT POULE--->
    <div class=".parent-zone">
@@ -974,8 +983,8 @@ a{ text-decoration: none; }
    <div class="poule">Poule A</div>
    <div class="zone-list" id="zone-list">
    <div class="zone">
-   <h2 class="rang-rang">#</h2>
-   <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+   <h2 style="color: red;" class="rang">#</h2>
+   <h2 style="color: red;" class="asc-nom">Nom de l'asc</h2>
    <h2 class="jouer-jouer">J</h2>
    <h2 class="victoire-victoire">V</h2>
    <h2 class="nul-nul">N</h2>
@@ -1044,8 +1053,8 @@ a{ text-decoration: none; }
    <div class="poule">Poule B</div>
    <div class="zone-list" id="zone-list">
    <div class="zone">
-   <h2 class="rang-rang">#</h2>
-   <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+   <h2 style="color: red;" class="rang">#</h2>
+   <h2 style="color: red;" class="asc-nom">Nom de l'asc</h2>
    <h2 class="jouer-jouer">J</h2>
    <h2 class="victoire-victoire">V</h2>
    <h2 class="nul-nul">N</h2>
