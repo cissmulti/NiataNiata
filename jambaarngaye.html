@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recherche d'utilisateurs</title>
+  <title>jambaar Ngaye Méckhé</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https:fonts.googleapis.com" />
   <link rel="preconnect" href="https:fonts.gstatic.com" />
@@ -22,44 +22,15 @@
 *{ margin: 0;  padding: 0;  box-sizing: border-box;  font-family: 'Poppins', sans-serif;}
 body{  width: 100%;  height: ;  background: rgb(240, 239, 243); /* margin: auto; display: flex;  flex-direction: column; align-items: center; justify-content: center;*/}
 a{  text-decoration: none;  }
-   .tabs {
-   display: flex;
-   flex-wrap: wrap;
-   max-width: 400px;
-   font-family: sans-serif;
-   align-items: center;
-   justify-content: center;
-   }
+   .tabs {   display: flex;   flex-wrap: wrap;   max-width: 400px;   font-family: sans-serif;   align-items: center;   justify-content: center;   }
    
-   .tabs__label {
-   padding: 10px 10px;
-   cursor: pointer;
-   background-color: ;
-   }
+   .tabs__label {   padding: 10px 10px;   cursor: pointer;   background-color: ;   }
+   .tabs__radio {   display: none;   }
    
-   .tabs__radio {
-   display: none;
-   }
+   .tabs__content {   order: 1;   width: 100%;   border-bottom: 3px solid #dddddd;   line-height: 1.5;   font-size: 0.9em;   display: none;   background-color: ;   margin: 1%;   }
    
-   .tabs__content {
-   order: 1;
-   width: 100%;
-   border-bottom: 3px solid #dddddd;
-   line-height: 1.5;
-   font-size: 0.9em;
-   display: none;
-   background-color: ;
-   margin: 1%;
-   }
-   
-   .tabs__radio:checked + .tabs__label {
-   font-weight: bold;
-   color: #009578;
-   border-bottom: 2px solid #009578;
-   }
-   .tabs__radio:checked + .tabs__label + .tabs__content {
-   display: initial;
-   }/*DEBUT DU MATCHS*/
+   .tabs__radio:checked + .tabs__label {   font-weight: bold;   color: #009578;   border-bottom: 2px solid #009578;   }
+   .tabs__radio:checked + .tabs__label + .tabs__content {   display: initial;  }/*DEBUT DU MATCHS*/
    .asc-asc{  width: 100%;   display: block;   text-align: center;  line-height: 15px;  }
    .asc-asc .nom-asc{  padding-left: 5px; font-weight: bold;  letter-spacing: 2px; text-transform: uppercase; text-align: left;  }
    .asc-asc .logo-asc{  width: 70px;  height: 70px;  }
@@ -98,6 +69,7 @@ a{  text-decoration: none;  }
   .statistique .action{  width: 80%;   height: px;   font-size: 12px;  font-weight: bold; margin-left: 15px; padding-right: px; text-align: left;  background-color: ; text-transform: uppercase;  overflow: hidden;  color: #A569BD; }
    .statistique .nombre{  width: 20%px;  height: px;  font-size: 18px;  font-weight: ;   margin-left: 1px;  padding-left: 10px;  text-align: center;  color: #3498DB;  overflow: hidden;  background-color: ;  border-left: solid 1px black;   }
   /*FIN STATISTIQUES*/
+   b{background-color: red; color: white; padding: 0px 10px 0px 10px; font-size: 15px;}
    
    
    @media (min-width:400px){
@@ -107,21 +79,9 @@ a{  text-decoration: none;  }
    .match .p-details{
    width: 320px;
    }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
    
    }
     
-   
-   
    
    
 </style>
@@ -147,35 +107,7 @@ a{  text-decoration: none;  }
      
      
      
-     <!--Debut a copié-->
-     <a style="text-decoration: none; "href="#">
-     <section class="container">
-     <div class="left">
-     <p class="date">
-     09 Sept 2023
-     </p>
-     <h2>
-     17:00 <br><span>Finale Campionnat 2022</span>
-     </h2>
-     </div>
-     <div class="match-list" id="match-list">
-     <div class="match">
-     <img src="https://zupimages.net/up/22/35/d6dj.png" alt="">
-     <div class="p-details">
-     <h2> diamono </h2>
-     </div>
-     <h2 class="score-finale"> <!--<span style="font-size: 11px;">()</span>--> </h2>
-     </div>
-     <div class="match">
-     <img src="https://zupimages.net/up/22/33/4eax.png" alt="">
-     <div class="p-details">
-     <h2> jambaar</h2>
-     </div>
-     <h2 class="score-finale"> <!--<span style="font-size: 11px;">()</span>--> </h2>
-     </div>
-     </div>
-     </section></a>
-     <!-- Fin a copié-->
+ 
      
      <!--Debut a copié-->
      <a style="text-decoration: none; "href="#">
@@ -322,6 +254,38 @@ a{  text-decoration: none;  }
      </section></a>
      <!-- Fin a copié-->
      
+     
+     
+     <!--MATCHS PASSÉE-->
+     <!--Debut a copié-->
+     <a style="text-decoration: none; "href="#">
+     <section class="container">
+     <div class="left">
+     <p class="date">
+     09 Sept 2023
+     </p>
+     <h2>
+     <b>Arrêté</b> <br><span>Finale Campionnat 2022</span>
+     </h2>
+     </div>
+     <div class="match-list" id="match-list">
+     <div class="match">
+     <img src="https://zupimages.net/up/22/35/d6dj.png" alt="">
+     <div class="p-details">
+     <h2> diamono </h2>
+     </div>
+     <h2 class="score-finale">1<span style="font-size: 11px;">()</span></h2>
+     </div>
+     <div class="match">
+     <img src="https://zupimages.net/up/22/33/4eax.png" alt="">
+     <div class="p-details">
+     <h2> jambaar</h2>
+     </div>
+     <h2 class="score-finale">1<span style="font-size: 11px;">()</span></h2>
+     </div>
+     </div>
+     </section></a>
+     <!-- Fin a copié-->
      <!--Debut a copié-->
      <a style="text-decoration: none; "href="TONGHOOR vs JAMBAAR.html">
      <section class="container">
@@ -495,7 +459,7 @@ a{  text-decoration: none;  }
   <div class="statistique">
   <h2 class="action">Matchs joués </h2>
   
-  <h2 class="nombre"> 2 </h2>
+  <h2 class="nombre"> 3 </h2>
   
   </div>
   <div class="statistique">
@@ -513,13 +477,13 @@ a{  text-decoration: none;  }
   <div class="statistique">
   <h2 class="action">Buts Marqués </h2>
   
-  <h2 class="nombre"> 1 </h2>
+  <h2 class="nombre"> 2 </h2>
   
   </div>
   <div class="statistique">
   <h2 class="action">Buts Encaissés  </h2>
   
-  <h2 class="nombre"> 3  </h2>
+  <h2 class="nombre"> 4  </h2>
   
   </div>
   
