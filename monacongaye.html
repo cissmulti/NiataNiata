@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recherche d'utilisateurs</title>
+  <title>Monaco Ngaye</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https:fonts.googleapis.com" />
   <link rel="preconnect" href="https:fonts.gstatic.com" />
@@ -19,184 +19,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+*{  margin: 0;  padding: 0;  box-sizing: border-box; font-family: 'Poppins', sans-serif;
   
 }
-body{
-  width: 100%;
-  height: ;
-  background: rgb(240, 239, 243);
- /* margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;*/
-}
+body{  width: 100%;  height: ;  background: rgb(240, 239, 243); /* margin: auto;  display: flex;  flex-direction: column;  align-items: center;  justify-content: center;*/}
 a{
    text-decoration: none;
    }
-   .tabs {
-   display: flex;
-   flex-wrap: wrap;
-   max-width: 400px;
-   font-family: sans-serif;
-   align-items: center;
-   justify-content: center;
-   }
+   .tabs {   display: flex;   flex-wrap: wrap;  max-width: 400px;   font-family: sans-serif;   align-items: center;   justify-content: center;   }
    
-   .tabs__label {
-   padding: 10px 10px;
-   cursor: pointer;
-   background-color: ;
-   }
+   .tabs__label {   padding: 10px 10px;  cursor: pointer;   background-color: ;   }
    
-   .tabs__radio {
-   display: none;
-   }
+   .tabs__radio {   display: none;  }
    
-   .tabs__content {
-   order: 1;
-   width: 100%;
-   border-bottom: 3px solid #dddddd;
-   line-height: 1.5;
-   font-size: 0.9em;
-   display: none;
-   background-color: ;
-   margin: 1%;
-   }
+   .tabs__content {   order: 1;   width: 100%;   border-bottom: 3px solid #dddddd;   line-height: 1.5;   font-size: 0.9em;   display: none;   background-color: ;   margin: 1%;   }
    
-   .tabs__radio:checked + .tabs__label {
-   font-weight: bold;
-   color: #009578;
-   border-bottom: 2px solid #009578;
-   }
+   .tabs__radio:checked + .tabs__label {   font-weight: bold;   color: #009578;  border-bottom: 2px solid #009578;   }
    
-   .tabs__radio:checked + .tabs__label + .tabs__content {
-   display: initial;
-   }
+   .tabs__radio:checked + .tabs__label + .tabs__content {  display: initial;  }
    /*DEBUT DU MATCHS*/
-   .asc-asc{
-   width: 100%;
-   display: block;
-   text-align: center;
-   line-height: 15px;
-  
-   }
-   .asc-asc .nom-asc{
-   padding-left: 5px;
-   font-weight: bold;
-   letter-spacing: 2px;
-   text-transform: uppercase;
-   text-align: left;
-   }
-   .asc-asc .logo-asc{
-   width: 70px;
-   height: 70px;
-   }
-   .matchs{
-   width: 100%;
-   background-color: ;
-   }
-   .container{
-   display: flex;
-   width: 100%;
-   height: ;
-   background: #AED6F1;
-   border-radius: 10px;
-   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-   padding: 5px;
-   overflow-y: scroll;
+   .asc-asc{   width: 100%;   display: block;   text-align: center;   line-height: 15px;   }
+   .asc-asc .nom-asc{   padding-left: 5px;   font-weight: bold;   letter-spacing: 2px;   text-transform: uppercase;   text-align: left;   }
+   .asc-asc .logo-asc{   width: 70px;   height: 70px;   }
+   .matchs{   width: 100%;   background-color: ;   }
+   .container{   display: flex;   width: 100%;   height: ;   background: #AED6F1;   border-radius: 10px;   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);   padding: 5px;   overflow-y: scroll;   }
+   .container{   display: flex;   width: 100%;   height: ;   background: #AED6F1;   border-radius: 10px;   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);   padding: 5px;   overflow-y: scroll;   }
+   .container::-webkit-scrollbar{   display: none;   }
+   .container form {   width: 92%;   border: 1px solid rgb(82, 74, 235);   border-radius: 4px;   display: flex;   flex-direction: row;   align-items: center;   }
+   .container form {   width: 92%;   border: 1px solid rgb(82, 74, 235);   border-radius: 4px;   display: flex;   flex-direction: row;   align-items: center;   }
    
-   }
-   .container{
-   display: flex;
-   width: 100%;
-   height: ;
-   background: #AED6F1;
-   border-radius: 10px;
-   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-   padding: 5px;
-   overflow-y: scroll;
-   
-   }
-   .container::-webkit-scrollbar{
-   display: none;
-   }
-   .container form {
-   width: 92%;
-   border: 1px solid rgb(82, 74, 235);
-   border-radius: 4px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   }
-   .container form {
-   width: 92%;
-   border: 1px solid rgb(82, 74, 235);
-   border-radius: 4px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   }
-   
-   .match-list {
-   width: 100%;
-   padding: px;
-   }
-   .match {
-   width: 100%;
-   display: flex;
-   align-items: center;
-   padding-top: px;
-   padding-bottom: px;
-   box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);
-   margin-top: px;
-   border-radius: px;
-   background: #EBDEF0;
-   height: 35px;
-   overflow: hidden;
-   }
-   .match .score-finale{
-   width: 55px;
-   font-weight: bold;
-   margin: 3px;
-   padding-right: 0px;
-   text-align: center;
-   font-size: 20px;
-   letter-spacing: 2px;
-   word-spacing: 2px;
-   overflow: hidden; color: black;
-   }
-   .match img {
-   width: 25px;
-   height: 25px;
-   margin-left: 5px;
-   padding-left: 3px;
-   object-fit: cover;
-   border-radius: px;
-   }
-   .match .p-details{
-   width: 160px;
-   border-right: solid 1px black;
-   padding-left: px;
-   
-   }
+   .match-list {   width: 100%;   padding: px;   }
+   .match {   width: 100%;   display: flex;   align-items: center;   padding-top: px;   padding-bottom: px;   box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);   margin-top: px;   border-radius: px;   background: #EBDEF0;   height: 35px;   overflow: hidden;   }
+   .match .score-finale{   width: 55px;   font-weight: bold;  margin: 3px;   padding-right: 0px;   text-align: center;   font-size: 20px;   letter-spacing: 2px;   word-spacing: 2px;   overflow: hidden; color: black;   }
+   .match img {   width: 25px;   height: 25px;   margin-left: 5px;   padding-left: 3px;   object-fit: cover;   border-radius: px;   }
+   .match .p-details{   width: 160px;   border-right: solid 1px black;   padding-left: px;   }
    .p-details{
    }
-   .match .p-details h2 {
-   font-size: 10px;
-   color: #1d1d1d;
-   text-align: left;
-   padding-left: 5px;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   word-spacing: 1px;
-   
-   }
+   .match .p-details h2 {   font-size: 10px;   color: #1d1d1d;   text-align: left;   padding-left: 5px;  text-transform: uppercase;   letter-spacing: 2px;   word-spacing: 1px;   }
    
    .left{ line-height: 15px; width: 170px; height: 70px; text-align: center; background-color: #F5B7B1;}
    .left .date{ padding-top: 10px; color: black; font-size: 11px; font-weight: bold; word-spacing: 2px; }
@@ -205,125 +64,29 @@ a{
    
     /*FIN DU MATCHS*/
     /*DEBU DU EFFECTIF*/
-    .effectif-list {
-    width: 100%;
-    padding: px;
-    }
-    .effectif {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding-top: px;
-    padding-bottom: px;
-    box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);
-    margin-top: 3px;
-    border-radius: 10px;
-    background: #EBDEF0;
-    overflow: hidden;
-    }
+    .effectif-list {    width: 100%;    padding: px;    }
+    .effectif {    width: 100%;    height: 50px;    display: flex;    align-items: center;    padding-top: px;    padding-bottom: px;    box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);    margin-top: 3px;    border-radius: 10px;    background: #EBDEF0;    overflow: hidden;    }
     
-    .effectif .photo{
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-    text-align: left;
-    border-radius: 50%;
-    }
-    .effectif .joueur-nom{
-    width: 280px;
-    height: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 25px;
-    text-align: left;
-    background-color: ;
-    text-transform: uppercase;
-    overflow: hidden;
-    color: #A569BD;
-    line-height: 22px;
-    }
-    .effectif .joueur-nom span{
-    color: black;
-    font-size: 11px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    padding-left: 10px;
-    
-    }
+    .effectif .photo{    width: 40px;    height: 40px;    margin-left: 10px;    text-align: left;    border-radius: 50%;    }
+    .effectif .joueur-nom{    width: 280px;    height: 50px;    font-size: 14px;    font-weight: bold;    margin-left: 25px;    text-align: left;    background-color: ;    text-transform: uppercase;    overflow: hidden;    color: #A569BD;    line-height: 22px;    }
+    .effectif .joueur-nom span{    color: black;    font-size: 11px;    letter-spacing: 1px;    word-spacing: 3px;    padding-left: 10px;    }
     /*FIN DU EFFECTIF*/
    
    /*DEBUT STATISTIQUES*/
-   .statistique-list {
-   width: 100%;
-   padding: px;
-   }
-   .statistique {
-   width: 100%;
-   height: 50px;
-   display: flex;
-   align-items: center;
-   padding-top: px;
-   padding-bottom: px;
-   box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);
-   margin-top: 3px;
-   border-radius: 10px;
-   background: #EBDEF0;
-   overflow: hidden;
-   }
-   .statistique .action{
-   width: 80%;
-   height: px;
-   font-size: 12px;
-   font-weight: bold;
-   margin-left: 15px;
-   padding-right: px;
-   text-align: left;
-   background-color: ;
-   text-transform: uppercase;
-   overflow: hidden;
-   color: #A569BD;
-   }
-   .statistique .nombre{
-   width: 20%px;
-   height: px;
-   font-size: 18px;
-   font-weight: ;
-   margin-left: 1px;
-   padding-left: 10px;
-   text-align: center;
-   color: #3498DB;
-   overflow: hidden;
-   background-color: ;
-   border-left: solid 1px black;
-   }
+   .statistique-list {   width: 100%;   padding: px;   }
+   .statistique {   width: 100%;   height: 50px;   display: flex;   align-items: center;   padding-top: px;   padding-bottom: px;   box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);   margin-top: 3px;   border-radius: 10px;   background: #EBDEF0;   overflow: hidden;   }
+   .statistique .action{  width: 80%;   height: px;   font-size: 12px;   font-weight: bold;   margin-left: 15px;   padding-right: px;   text-align: left;   background-color: ;   text-transform: uppercase;   overflow: hidden;   color: #A569BD;   }
+   .statistique .nombre{   width: 20%px;   height: px;   font-size: 18px;   font-weight: ;   margin-left: 1px;   padding-left: 10px;   text-align: center;   color: #3498DB;   overflow: hidden;   background-color: ;   border-left: solid 1px black;   }
    /*FIN STATISTIQUES*/
    
+   b{background-color: red; color: white; padding: 0px 10px 0px 10px; font-size: 15px;}
    
    @media (min-width:400px){
-   .tabs {
-   max-width: 700px;
-   }
-   .match .p-details{
-   width: 320px;
-   }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+   .tabs {   max-width: 700px;   }
+   .match .p-details{   width: 320px;   }
    
    }
-    
-   
-   
-   
-   
+      
 </style>
  
 </head>
@@ -344,64 +107,7 @@ a{
 
 
 
-<!--Debut a copié-->
-<a style="text-decoration: none; "href="#">
-  <section class="container">
-  <div class="left">
-  <p class="date">
-   13 Sept Sept 2023
-  </p>
-  <h2>
-  17:00 <br><span>Campionnat</span>
-  </h2>
-  </div>
-  <div class="match-list" id="match-list">
-  <div class="match">
-  <img src="https://zupimages.net/up/22/34/csaa.png" alt="">
-  <div class="p-details">
-  <h2> monaco </h2>
-  </div>
-  <h2 class="score-finale"> <!--<span style="font-size: 11px;">()</span>--> </h2>
-  </div>
-  <div class="match">
-  <img src="https://zupimages.net/up/22/35/c55z.png" alt="">
-  <div class="p-details">
-  <h2> espoirs</h2>
-  </div>
-  <h2 class="score-finale"> <!--<span style="font-size: 11px;">()</span>--> </h2>
-  </div>
-  </div>
-  </section></a>
-  <!-- Fin a copié-->
-<!--Debut a copié-->
-  <a style="text-decoration: none; "href="#">
-  <section class="container">
-  <div class="left">
-  <p class="date">
-  Sept 2023
-  </p>
-  <h2>
-  15:00 <br><span>Campionnat</span>
-  </h2>
-  </div>
-  <div class="match-list" id="match-list">
-  <div class="match">
-  <img src="https://zupimages.net/up/22/34/csaa.png" alt="">
-  <div class="p-details">
-  <h2> monaco </h2>
-  </div>
-  <h2 class="score-finale"> <!--<span style="font-size: 11px;">()</span>--> </h2>
-  </div>
-  <div class="match">
-  <img src="https://zupimages.net/up/22/35/d6dj.png" alt="">
-  <div class="p-details">
-  <h2> diamono</h2>
-  </div>
-  <h2 class="score-finale"> <!--<span style="font-size: 11px;">()</span>--> </h2>
-  </div>
-  </div>
-  </section></a>
-  <!-- Fin a copié-->
+
   <!--Debut a copié-->
   <a style="text-decoration: none; "href="#">
   <section class="container">
@@ -492,6 +198,67 @@ a{
   
   
   
+  
+  
+  
+  <!--Debut a copié-->
+  <a style="text-decoration: none; "href="23MONACODIAMONO.html">
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  23 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>Campionnat</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/34/csaa.png" alt="">
+  <div class="p-details">
+  <h2> monaco </h2>
+  </div>
+  <h2 class="score-finale">1 <!--<span style="font-size: 11px;">()</span>--> </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/35/d6dj.png" alt="">
+  <div class="p-details">
+  <h2> diamono</h2>
+  </div>
+  <h2 class="score-finale">0 <!--<span style="font-size: 11px;">()</span>--> </h2>
+  </div>
+  </div>
+  </section></a>
+  <!-- Fin a copié-->
+  <!--Debut a copié-->
+  <a style="text-decoration: none; "href="#">
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  13 Sept Sept 2023
+  </p>
+  <h2>
+  17:00 <br><span>Campionnat</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/34/csaa.png" alt="">
+  <div class="p-details">
+  <h2> monaco </h2>
+  </div>
+  <h2 class="score-finale"> <!--<span style="font-size: 11px;">()</span>--> </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/35/c55z.png" alt="">
+  <div class="p-details">
+  <h2> espoirs</h2>
+  </div>
+  <h2 class="score-finale"> <!--<span style="font-size: 11px;">()</span>--> </h2>
+  </div>
+  </div>
+  </section></a>
+  <!-- Fin a copié-->
      <!--Debut a copié-->
      <a style="text-decoration: none; "href="MONACOSOUMPGUI.html">
      <section class="container">
@@ -663,12 +430,12 @@ a{
   <div class="statistique">
   <h2 class="action">Matchs joués </h2>
   
-  <h2 class="nombre"> 0 </h2>
+  <h2 class="nombre"> 1 </h2>
   
   </div>
   <div class="statistique">
   <h2 class="action">Victoire </h2>
-  <h2 class="nombre"> 0 </h2>
+  <h2 class="nombre"> 1 </h2>
   </div>
   <div class="statistique">
   <h2 class="action">Nul </h2>
@@ -681,7 +448,7 @@ a{
   <div class="statistique">
   <h2 class="action">Buts Marqués </h2>
   
-  <h2 class="nombre"> 0 </h2>
+  <h2 class="nombre"> 1 </h2>
   
   </div>
   <div class="statistique">
@@ -694,7 +461,7 @@ a{
   <div class="statistique">
   <h2 class="action"> Cartons Jaune </h2>
   
-  <h2 class="nombre"> 0  </h2>
+  <h2 class="nombre"> 1  </h2>
   
   </div>
   
@@ -714,7 +481,7 @@ a{
   <div class="statistique">
   <h2 class="action">Buts sur Penalty  </h2>
   
-  <h2 class="nombre"> 0  </h2>
+  <h2 class="nombre"> 1 </h2>
   
   </div>
   
@@ -724,12 +491,7 @@ a{
   <h2 class="nombre"> 0  </h2>
   
   </div>
-<div class="statistique">
-  <h2 class="action"> Classement </h2>
-  
-  <h2 class="nombre"> 0  </h2>
-  
-  </div>
+
   
   <!-- FIN STATISTIQUES--->
   
