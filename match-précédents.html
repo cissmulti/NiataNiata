@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+		<html lang="en">
+		<head>
+		  <meta charset="UTF-8" />
+		  <meta http-equiv="X-UA-compatible" content="IE=edge" />
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		  <title>Page d'accueil</title>
+		  
+		  <link rel="stylesheet" href="style.css" />
+		  <link rel="preconnect" href="https:fonts.googleapis.com" />
+		  <link rel="preconnect" href="https:fonts.gstatic.com" />
+		  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+		  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap" rel="stylesheet">
+		  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap" rel="stylesheet">
+		   <meta http-equiv="refresh" content="">
+		   <link
+		   rel="stylesheet"
+		   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		   crossorigin="anonymous"
+		   referrerpolicy="no-referrer"
+		   />
+		  <link rel="stylesheet" href="style.css" />
+		  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+		<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
+	
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+	*{
+	  margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+	body{ width: 90%; height: ; background: rgb(240, 239, 243); margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+	a{ text-decoration: none; }
+	   .en-tete{ display: flex; align-items: center; justify-content: left; border-bottom: solid 1px green; }
+	   .en-tete img{ width: 35px;  padding: 5px; }
+	   .en-tete h2{ font-size: 8px; color: blue; padding-left: 5px; letter-spacing: 1px; padding: 5px; border-radius: 10px; background-color: #F5EEF8; }
+	   
+	   /*DEBUT MAIN*/
+	   .match{  display: flex;  width: 100%;   height: 100px;  align-items: center;   justify-content: center;  background-color: yellow;  }
+	   .match .port-logo{  width: 150px;;  height: 100px;  display: ;  text-align: center;  background-color: cyan;  justify-content: center;  }
+	   .port-logo .logo-asc{  width: 100px;  height: 100px; border-radius: 50%;  background-color: blue;   } 
+	   .logo-asc img{  width: 50px;  height: 50px;  margin: auto;   display: block;  }
+	   
+	   .port-logo h2{   font-size: 12px;   }
+	   /*FIN MAIN*/
+	   blink {-webkit-animation: 1s linear infinite condemed_blink_effect; // pour Safari 4.0-8.0 animation: 1s linear infinite condemed_blink_effect; }
+	   @-webkit-keyframes condemed_blink_effect { // pour Safari 4.0-8.0 0% { visibility: hidden;} 50% { visibility: hidden; } 100% { visibility: visible; }} @keyframes condemed_blink_effect { 0% { visibility: hidden; } 50% { visibility: hidden; } 100% { visibility: visible; } }
+	   .zonede{display: flex; align-items: center; justify-content: left; border-top: solid 1px green; margin-top: 5px; border-radius: 10px; }
+	   .zonede img{width: 15px; margin-left: 5px; border-radius: 50%;}
+	   .zonede p{font-size: 8px; font-weight: bold; text-transform: uppercase; margin-left: 3px; }
+	   .radio{ display: flex; width: 98%; margin-left: 3px;  align-items: center;   justify-content: center;  height: 70px;  background-color: #A9DFBF; border-radius: 10px; border-bottom: solid 1px green; }
+	   .logo-radio{display: block; width: 130px; padding: px; line-height: 12px; : 4px;}
+	 
+	   .logo-radio img{ width: 45px;  padding:0px; }
+	   .logo-radio p{ text-transform: capitalize; font-size: 10px; font-weight: bold;}
+	   .detail-radio h1{font-size: 20px; padding-top: px; color: #196F3D;}
+	   .detail-radio{ width: 85px; background-color: #A9CCE3; margin:4px; text-decoration: none;  border-radius: 10px; line-height: px; text-align: center; height: 25px; }
+	    .detail-heur h1{ font-size: 4px; background-color: #D0ECE7;}
+	    
+	    .detail-date h2{width: 100%; font-size: 9px; background-color: #D0ECE7;}
+	    .centre{display: block; align-items: center; justfy-content: center;}
+	  .comentateur{ display: block;  }
+	   .comentateur p{ font-size: 10px; border-radius: 20px; text-align: center;  padding-left: px; font-weight: bold;  margin-top: 5px; }
+	    button{border: none;}
+	   .date-rencontre{width: 100%; margin-top: 18px; border-top: solid 3px black; letter-spacing: 2px; background-color: #FCF3CF; color: ; font-size: 5px; border-radius: 10px; padding: 2px 15px; }
+	   
+	   
+	   .publicite{ position:fixed; z-index:1;  width: 100%; left:0; height: 60px; bottom: 50px; text-align: center; border-top: solid 1px black;  background-color: #212F3C; }
+	   .publicite img{  width: 100%;  height: 55px; left: 0px; padding-top: 3px; }
+	   /*DEBUT NAVIGATION MOBIL */
+	   .navigation-mobile{z-index: 1; background: #FAD7A0; position: fixed; bottom: 0;  left: 0; right: 0; display: flex; height: 50px; width: 100%;  justify-content: space-around; }
+	   .navigation-mobile p{padding-bottom: 5px; color: black; font-size: 11px; font-weight: bold;}
+	   .bloc-icon{ display: flex; width: 100px; flex-direction: column; justify-content: center; align-items: center; padding-top: 5px; }
+	   .bloc-icon img{ width: 20px; }
+	  /*.navigation-mobile:hover{ background: orange;  height: px; border: 1px solid black; }
+	   .bloc-icon:hover{ color: white;  background-color: #9B59B6;  }*
+	   .bloc-icon img:hover{  color: white; }
+	   .navigation-mobile p:hover{  font-size: 12px; color: white; }*/
+	   .bloc-icon i{font-size: 25px; color: black; }
+	   
+	   /* FIN NAVIGATION MOBIL*/
+	   blink{color: white; font-weight: bold; letter-spacing: 2px; background-color: red; padding: 0px 20px;}
+	   b{color: black;}
+	   
+	   /*Style de Accordion*/
+	   
+	   .container{  margin-top: 35px; display: flex;  flex-direction: column;  justify-content: center;   align-items: center;  height: ;  background-color: #eaeaea;  }
+	   
+	   
+	   /*Style de Accordion FIN */
+	  .info{background-color: white; display: flex; width: 100%; border: solid 1px black;}
+	   .info .article{display: flex; padding: 4px; line-height: 18px;}
+	   .info .article img{width: 100px; height: 100px; padding-top: 20px;}
+	   .info .article h2{padding-left: 4px; text-align: justify; font-size: 15px;}
+	   .info .article h6{padding-left: 50px; border-top: solid 1px black;}
+	   .info .article button{margin-left: 70px; border: solid 1px green; border-radius: 15px; paddong: 5px; width: 100px; background-color: red; color: white; font-weight: bold;}
+	   
+	   .radiom{ display: flex; width: 98%; margin-left: 3px;  align-items: center;   justify-content: center;  height: 70px;  background-color: #A9DFBF; border-radius: 10px 10px 0px 0px; }
+	   .logo-radiom{display: block; width: 130px; padding: px; line-height: 12px; : 4px;}
+	   
+	   .logo-radiom img{ width: 45px;  padding:0px; }
+	   .logo-radiom p{ text-transform: capitalize; font-size: 10px; font-weight: bold;}
+	   .detail-radiom h1{font-size: 20px; padding-top: px; color: #196F3D;}
+	   .detail-radiom{ width: 85px; background-color: #A9CCE3; margin:4px; text-decoration: none;  border-radius: 10px; line-height: px; text-align: center; height: 25px; }
+	   .detail-heur h1{width: 100%; font-size: 12px; background-color: #D0ECE7;}
+	   
+	   .detail-date h2{width: 100%; font-size: 9px; background-color: #D0ECE7;}
+	   .centre{display: block; align-items: center; justfy-content: center;}
+	   
+	  .partenaire-mboro{ line-height: 10px;
+	  display: flex; width: 98%; margin-left: 3px;
+	  justify-content: left; align-items: center; padding-left: 5px;
+	  border-radius: 0px 0px 10px 10px; border-bottom: solid 1px green; border-top: solid 1px green; background-color: #FCF3CF;
+	  } 
+	  .partenaire-mboro img{
+	  widht: 20px; height: 20px; padding-right: 3px;
+	  } 
+	  .detail{ display: block; border-left: solid 1px green;}
+	  .detail p{font-size: 10px; text-transform: uppercase; letter-spacing: 4px;
+	   text-aling: lfet; padding-left: 4px; 
+	   } 
+	   .detail h6{
+	   text-align: lfet; padding-left: 4px; letter-spacing: 2px;
+	   } 
+	   .head{ z-index: 1; position: fixed; border-bottom: solid 1px green; top: 0; left: 0; right: 0; display: flex; justify-content: center; place-items: center; background-color: #A9CCE3; height: 50px; width: 100%;  justify-content: space-around;}
+	   .head .bloc-icon i{font-size: 20px; color: #A9CCE3;}
+	   .head .bloc-icon p{font-size: 10px; font-weight: bold; color: black;}
+	   
+	   .bloc-icon:hover{background-color: red; color: white; font-weight: bold;}
+	   .bloc-icon:hover p{color: white; font-size: 11px;}
+	   .bloc-icon:hover i{color: white; font-size: 30px;}
+	   
+		
+		</style>
+		</head>
+		<body>
+		
+		
+		<div class="head">
+		<a href="match-précédents.html" ><div style="width: 120px; border: solid 1px green; background-color: #FAD7A0;" class="bloc-icon">
+		<i class="fa-solid fa-futbol"></i>
+		<p>Matchs précédents</p>
+		</div></a>
+		
+		<a href="index.html" ><div style="width: 120px; border: solid 1px green; background-color: #FAD7A0;" class="bloc-icon">
+		<i class="fa-solid fa-futbol"></i>
+		<p>Aujourd'hui</p>
+		</div></a>
+		
+		<a href="match-suivants.html" ><div style="width: 120px; border: solid 1px green; background-color: #FAD7A0;" class="bloc-icon">
+		<i class="fa-solid fa-futbol"></i>
+		<p>Matchs Suivants</p>
+		</div></a>
+		</div>
+		
+<div class="container">
+		
+		
+		
+		
+		
+		
+		<div class="date-rencontre"><h1> Lundi 25 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="25AMITIERCOSSAN.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N. P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/w0ru.png">
+		<p> amitier </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>25/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>2</h1></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/yhm6.png">
+		<p> cossan </p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Dimanche 24 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="24RISSOCAADAGUI.html">
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img style="width: 10px; height: 12px; position: relative; border: ; box-shadow: 3px 3px 3px black;" src="https://zupimages.net/up/23/36/8v73.png">
+		<img src="https://zupimages.net/up/22/32/yz8x.png">
+		<p> risso</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>24/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>2</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Suspendu</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/34/3zxj.png">
+		<p> caada gui</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="24RENAISSANCEGOUYYATT.html">
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/jb0e.png">
+		<p> renaissance</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>24/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/yth7.png">
+		<p> gouy yatt</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="24DIAMONODAFF.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE TAIBA NDIAYE 1 : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/u090.png">
+		<p> diamono</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>24/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/fs7z.png">
+		<p>daff </p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="24GOUNEYNGAYETOILEDENDONG.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N. P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/t5jj.png">
+		<p> gouney ngaye </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>24/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/969d.png">
+		<p> etoile de ndong</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="24JAMBARPENCMI.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/kpbb.png">
+		<p> jambar </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>24/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>1-1</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/nww9.png">
+		<p> penč mi</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="24JAPPOGORÉ.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radiom">
+		<div class="logo-radiom">
+		<img src="https://zupimages.net/up/22/36/6ehi.png">
+		<p> jappo</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>24/09/2023</h2>
+		</div>
+		<div class="detail-radiom">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radiom">
+		<img src="https://zupimages.net/up/22/38/5fb4.png">
+		<p> goréé</p>
+		</div>
+		</div>
+		<div class="partenaire-mboro"><img src="https://zupimages.net/up/23/38/3w7w.png"><div class="detail"><p class="detail-p">Supermarché Chez Aida</p> <h6>Partenaire officiel de la zone de mboro</h6></div></div>
+		</button></a>
+		<a href="24MOULAYFALLARAFAT.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radiom">
+		<div class="logo-radiom">
+		<img src="https://zupimages.net/up/22/36/emaq.png">
+		<p> moulay fall</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>24/09/2023</h2>
+		</div>
+		<div class="detail-radiom">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radiom">
+		<img src="https://zupimages.net/up/23/34/uodk.png">
+		<p> arafat</p>
+		</div>
+		</div>
+		<div class="partenaire-mboro"><img src="https://zupimages.net/up/23/38/3w7w.png"><div class="detail"><p class="detail-p">Supermarché Chez Aida</p> <h6>Partenaire officiel de la zone de mboro</h6></div></div>
+		</button></a>
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Samedi 23 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="23JAMBAARYOONWI.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/4eax.png">
+		<p> Jambaar</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>23/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>VS</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Annulé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/34/7c19.png">
+		<p> yoon wi</p>
+		</div>
+		</div>
+		</button></a>
+		
+		
+		<a href="23MONACODIAMONO.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/34/csaa.png">
+		<p> monaco</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>23/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/35/d6dj.png">
+		<img style="width: 10px; height: 12px; position: relative; border: ; box-shadow: 3px 3px 3px black;" src="https://zupimages.net/up/23/36/8v73.png">
+		
+		<p> diamono</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="23MAAGDAANSANIAXOOR.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/30/kh3k.png">
+		<p> maag daan </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>23/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>2</b>-1</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/a1nx.png">
+		<p> Saniaxoor</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="23RENAISSANVENGAYENGAYE.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radiom">
+		<div class="logo-radiom">
+		<img src="https://zupimages.net/up/23/34/fo8r.png">
+		<p> renaissance</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>23/09/2023</h2>
+		</div>
+		<div class="detail-radiom">
+		<h1>0-<b>2</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radiom">
+		<img src="https://zupimages.net/up/22/36/92sv.png">
+		<p> ngaye ngaye</p>
+		</div>
+		</div>
+		<div class="partenaire-mboro"><img src="https://zupimages.net/up/23/38/3w7w.png"><div class="detail"><p class="detail-p">Supermarché Chez Aida</p> <h6>Partenaire officiel de la zone de mboro</h6></div></div>
+		</button></a>
+		<a href="23DIOUBOMANKO.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radiom">
+		<div class="logo-radiom">
+		<img src="https://zupimages.net/up/22/36/dq16.png">
+		<p>  dioubo</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>23/09/2023</h2>
+		</div>
+		<div class="detail-radiom">
+		<h1>1-<b>2</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radiom">
+		<img src="https://zupimages.net/up/23/34/c387.png">
+		<p> manko </p>
+		</div>
+		</div>
+		<div class="partenaire-mboro"><img src="https://zupimages.net/up/23/38/3w7w.png"><div class="detail"><p class="detail-p">Supermarché Chez Aida</p> <h6>Partenaire officiel de la zone de mboro</h6></div></div>
+		</button></a>
+		
+		<a href="23MAKKAGBEYETAIBASANTHIE.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE TAIBA NDIAYE 1 : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/cry7.png">
+		<p> Makka gaye béye</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>23/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/himf.png">
+		<p>taiba santhie </p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="23SAORENAISSANCE.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N. P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/8nx4.png">
+		<p> sao </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>23/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>VS</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Annulé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/1xmx.png">
+		<p> renaissance</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Vendredi 22 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="22HLMLASSERRE.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radiom">
+		<div class="logo-radiom">
+		<img src="https://zupimages.net/up/22/36/l5hj.png">
+		<p>  Hlm</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>22/09/2023</h2>
+		</div>
+		<div class="detail-radiom">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radiom">
+		<img src="https://zupimages.net/up/23/34/t56i.png">
+		<p> lasserre </p>
+		</div>
+		</div>
+		<div class="partenaire-mboro"><img src="https://zupimages.net/up/23/38/3w7w.png"><div class="detail"><p class="detail-p">Supermarché Chez Aida</p> <h6>Partenaire officiel de la zone de mboro</h6></div></div>
+		</button></a>
+		
+		<a href="22SOUMPGUILEBOUGUI.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/m9u1.png">
+		<p> soump gui</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>22/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/lgua.png">
+		<p> lébou gui</p>
+		</div>
+		</div>
+		</button></a>
+		
+		
+		<a href="22BOKKJOMRAKADIOU.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/35/6z5t.png">
+		<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N.P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/rg61.png">
+		<p> bokk jom</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>22/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>1-1</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/szvm.png">
+		<p>rakadiou </p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="22MERINASALLNDJIEGUEDJI.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/32/q26s.png">
+		<p> mérina sall </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>22/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>1</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/32/3tvi.png">
+		<p> ndjiéguedji</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Jeudi 21 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="MEDINAGOUNASSMBYMBYPEUL21.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/36/6ux9.png">
+		<p>  médina gounass</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>21/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>2</h1></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/37/m8eg.png">
+		<p> mbaye mbaye peul</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="THIOSSANEBOKKJOM21.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/7toa.png">
+		<p> thiossane 2 </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>21/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>1</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/phb9.png">
+		<p>bokk jom </p>
+		</div>
+		</div>
+		</button></a>
+		<a href="XALEYTEYTAIBAMBAYE21.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE TAIBA NDIAYE 1 : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/idz1.png">
+		<p> xaléy téy</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>21/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/g018.png">
+		<p>taiba mbaye </p>
+		</div>
+		</div>
+		</button></a>
+		
+		
+		
+		<a href="ETOILEKEURPATHEKANE21.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/34/ptep.png">
+		<p>  étoile</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>21/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>1</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/36/69mz.png">
+		<p> keur pathé kane</p>
+		</div>
+		</div>
+		</button></a>
+		
+		
+		<a href="TONGHOORESPPIRS21.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/xseb.png">
+		<p> tonghoor</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>21/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>VS</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Reporté</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/35/c55z.png">
+		<p> espoirs</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="DEGGODESARABAMAGUITEY21.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/35/6z5t.png">
+		<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N.P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/a1dv.png">
+		<p> déggo de saraba </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>21/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>3</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Forfait</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/y3ce.png">
+		<p>magyi téy </p>
+		</div>
+		</div>
+		</button></a>
+		<!--FIN--->
+		
+		
+		<div class="date-rencontre"><h1> Mercredi 20 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="CAADAGUIRENAISSANCE20.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img style="width: 10px; height: 12px; position: relative; border: ; box-shadow: 3px 3px 3px black;" src="https://zupimages.net/up/23/36/8v73.png">
+		<img src="https://zupimages.net/up/22/34/3zxj.png">
+		<p>  caada gui</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>20/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>1-1</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/jb0e.png">
+		<p> renaissance</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="MAAGDAANJAPPO20.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/36/ih2p.png">
+		<p>  maag daan</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>20/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/36/6ehi.png">
+		<p> jappo</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="MANKOYAKAR20.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/hx4u.png">
+		<p> manko </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>20/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>1</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/30/wh4e.png">
+		<p>yakar </p>
+		</div>
+		</div>
+		</button></a>
+		
+		
+		<a href="DJINGUEMAKKAFC20.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE TAIBA NDIAYE 1 : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/7j6o.png">
+		<p> Djingué </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>20/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/u7fd.png">
+		<p>makka fc </p>
+		</div>
+		</div>
+		</button></a>
+		<a href="DEKALTHIOSSANEDALLAS20.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/35/6z5t.png">
+		<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N.P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/z1by.png">
+		<p> dékal thiossane </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>20/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>TERMINÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/cqe8.png">
+		<p>dallas </p>
+		</div>
+		</div>
+		</button></a>
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Mardi 19 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="ARAFATDAARADJI.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/34/uodk.png">
+		<p>  Arafat</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>19/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/36/2rdi.png">
+		<p> daara dji</p>
+		</div>
+		</div>
+		</button></a>
+		
+		
+		
+		<a href="YAKARNASS.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N.P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/dnyq.png">
+		<p>  yakar</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>19/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>1</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/pcqa.png">
+		<img style="width: 10px; height: 12px; position: relative; border: ; box-shadow: 3px 3px 3px black;" src="https://zupimages.net/up/23/37/b1bu.png">
+		
+		<p> nass</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="DAARADJIENTENTE.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE TAIBA NDIAYE 1 : CHAMPIONNAT N. P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/ucg9.png">
+		<p> daara dji</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>19/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>3</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/9j43.png">
+		<p> Entente</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="MOMESAREWRENAISSANCE.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/36/2ee9.png">
+		<p>  mome sa rëw</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>19/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>VS</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>REPORTÉ</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/34/fo8r.png">
+		<p> renaissance</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Lundi 18 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="COSSANAVENIR.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/35/6z5t.png">
+		<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N.P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/yhm6.png">
+		<p>  cossan</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>18/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/nd6l.png">
+		<p> avenir</p>
+		</div>
+		</div>
+		</button></a>
+		
+		
+		<a href="BOKKJOMJANTBI.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/37/5tow.png">
+		<p>  bokk jom</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>18/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>3</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Forfait</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/37/3ff8.png">
+		<p> jant bi</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="SAMBAKHARIFALLAJMBORO.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/34/20r0.png">
+		<p>  Samba Khary Fall</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>18/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>1</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/36/kv7e.png">
+		<p> aj mboro</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="MBOLLOSOUMPGUI1.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/m9u1.png">
+		<p> soump gui </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>18/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/5fl0.png">
+		<p> mbollo</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="LEBOUGUIRAILBI.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/lgua.png">
+		<p> lébou gui </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>18/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>1</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/35/sqr0.png">
+		<p>rail bi </p>
+		</div>
+		</div>
+		</button></a>
+		<a href="#" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/38/phb9.png">
+		<p> bokk jom </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>18/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>VS</h1>
+		</div>
+		<div class="detail-heur">
+		<h1><b>ANNULÉ</b></h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/37/kaiz.png">
+		<p> keur galo kébé</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Dimanche 17 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="ETOILEDENDONGDAROUSALAM.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/35/6z5t.png">
+		<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/969d.png">
+		<p> étoile de ndong </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>17/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/vio0.png">
+		<p> darou salam</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="NGAYENGAYEESPOIRABOUR.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/36/92sv.png">
+		<p> ngaye ngaye</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>17/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/37/dwe9.png">
+		<p> espoir abour</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="TONGHOORYOONWI1.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/xseb.png">
+		<p>  Tonghoor</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>17/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0:0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/34/7c19.png">
+		<p> Yoon wi</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="YAKARMAAGDAAN.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/30/wh4e.png">
+		<p> yakar </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>17/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/30/kh3k.png">
+		<p> maag daan</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="MANKOOAMITIER.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/34/c387.png">
+		<p> mankoo</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>17/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>1-1</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/38/mw6z.png">
+		<p> amitié</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Samedi 16 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="DIAMONOROUGEBLANC1.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/35/6z5t.png">
+		<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N P</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/o8rc.png">
+		<p> diamono </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>16/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>2</b>-1</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/2wmd.png">
+		<p>rouge blanc</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href=".html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/7toa.png">
+		<p> thiossane 2 </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>16/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/nww9.png">
+		<p> pénč mi</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="GOUYYATCAADAGUI1.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/yth7.png">
+		<p> gouy yat </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>16/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>2</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Forfait</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/34/3zxj.png">
+		<p> caada gui</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="JAPPORISSO1.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/33/fc21.png">
+		<p> jappo </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>16/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/yz8x.png">
+		<p>risso </p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		
+		<div class="date-rencontre"><h1> Vendredi 15 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="MANKONDJIEGUEDJI1.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/hx4u.png">
+		<p> manko </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>15/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>1-1</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/32/3tvi.png">
+		<p>ndjiéguedji</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Jeudi 14 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="MBOLLOMAANKO1.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/5fl0.png">
+		<p> mbollo</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>14/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/tx0v.png">
+		<p>maanko</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="SANIAXOORMERINASALL1.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/32/bynm.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img style="width: 10px; height: 12px; position: relative; border: ; box-shadow: 3px 3px 3px black;" src="https://zupimages.net/up/23/36/8v73.png">
+		<img src="https://zupimages.net/up/22/32/a1nx.png">
+		<p> Saniaxoor</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>14/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/32/q26s.png">
+		<p>mérina sall</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Mardi 12 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="JAPPOGOUYYAT1.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/33/fc21.png">
+		<p>  jappo</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>12/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>2</b>-1</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/yth7.png">
+		<img style="width: 10px; height: 12px; position: relative; border: ; box-shadow: 3px 3px 3px black;" src="https://zupimages.net/up/23/37/b1bu.png">
+		<p>gouy yat</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="YAKARNDJEGUEDJI.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/30/wh4e.png">
+		<p> YAKAR </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>12/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/32/3tvi.png">
+		<p>ndjiéguedji</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="RISSORENAISSANCE1.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/22/40/v3yi.png">
+		<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img style="width: 10px; height: 12px; position: relative; border: ; box-shadow: 3px 3px 3px black;" src="https://zupimages.net/up/23/36/8v73.png">
+		
+		<img src="https://zupimages.net/up/22/32/yz8x.png">
+		<p> risso</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>12/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>2</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/jb0e.png">
+		<p>renaissance</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Lundi 11 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="MAAGDAANMERINASALL.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/30/kh3k.png">
+		<p> Maag daan </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>11/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b>1</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/32/q26s.png">
+		<p>mérina sall</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Dimanche 10 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="ESPOIRABOURCITE200.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE MBORO : FINALE 4 GRANDS</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/37/dwe9.png">
+		<p> espoir abour </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>10/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>1-<b>1</b></h1> 
+		</div> 
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div> 
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/jsbn.png">
+		<p>cité 2000 </p>
+		</div>
+		</div>
+		</button></a>
+		<a href="JAMBARBOKKJOM.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src=" https://zupimages.net/up/22/32/kpbb.png">
+		<p> Jambar </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>10/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>1-<b>2</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/34/jt0y.png">
+		<p>bokk jom </p>
+		</div>
+		</div>
+		</button></a>
+		
+		<!--FIN--->
+		
+		
+		<div class="date-rencontre"><h1> Samedi 09 Septembre 2023</h1></div>
+		<!--DEBUT--->
+		<a href="DIAMONOJAMBAAR.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE MÉCKHÉ: FINALE CHAMPIONNAT SAISON 2022</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/35/d6dj.png">
+		<p> Diamono</p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>interrompu </h2>
+		</div>
+		<div class="detail-radio">
+		<h1>1-1</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>09/09/23</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/4eax.png">
+		<p> jambaar</p>
+		</div>
+		</div>
+		</button></a>
+		<a href="AJMBOROCITE2000.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE MBORO : DEMI-FINALE 4 GRANDS</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img style="width: 10px; height: 12px; position: relative; border: ; box-shadow: 3px 3px 3px black;" src="https://zupimages.net/up/23/36/8v73.png">
+		
+		<img src="https://zupimages.net/up/22/36/kv7e.png">
+		<p> Aj mboro </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>09/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>0</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/35/jsbn.png">
+		<p> Cité 2000</p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="ETOILEESPOIRABOUR.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE MBORO : DEMI-FINALE 4 GRANDS</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/34/ptep.png">
+		<p> Etoile </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>09/09/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>4</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/37/dwe9.png">
+		<img style="width: 10px; height: 12px; position: relative; border: ; box-shadow: 3px 3px 3px black;" src="https://zupimages.net/up/23/36/8v73.png">
+		
+		<p>Espoor abour </p>
+		</div>
+		</div>
+		</button></a>
+		
+		<a href="#" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/a1nx.png ">
+		<p> Saniaxoor </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>Reporté</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>VS</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>17:00</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/hx4u.png ">
+		<p>Manko </p>
+		</div>
+		</div>
+		</button></a>
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Samedi 26 Août 2023</h1></div>
+		<!--DEBUT--->
+		<a href="MAANKOTONGHOOR.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE MÉCKHÉ : 1/2 FINALE COUPE DU MAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/xseb.png">
+		<p> Tonghoor </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>26/08/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>0</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/tx0v.png">
+		<p> Maanko</p>
+		</div>
+		</div>
+		</button></a> 
+		<!--FIN MATCH-->
+		<!--FIN MATCH-->
+		<a href="ESPOIRABOURKEURPATHEKANE.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE MBORO : FINALE COUPE DU MAIRE Edition 2022</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/37/dwe9.png ">
+		<p> Espoir Abour </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>26/08/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>1</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src=" https://zupimages.net/up/22/36/69mz.png">
+		<p> Keur pathé kane</p>
+		</div>
+		</div>
+		</button></a> 
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Mardi 22 Août 2023</h1></div>
+		<!--DEBUT--->
+		<a href="SOUMPGUI-ESPOIRS.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE MÉCKHÉ : 1/4 DE FINALE COUPE DU MAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/m9u1.png">
+		<p> Soump gui </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2> 22/08/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>1</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/35/c55z.png">
+		<p>Espoirs </p>
+		</div>
+		</div>
+		</button></a> 
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Lundi 21 Août 2023</h1></div>
+		<!--DEBUT--->
+		<a href="JAPPO-MAANKO.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>ZONE DE MÉCKHÉ: 1/4 DE FINALE COUPE DU MAIRE</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/23/33/fc21.png">
+		<p>Jappo </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>21/08/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>0</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/tx0v.png">
+		<p> Maanko</p>
+		</div>
+		</div>
+		</button></a>
+		<!--FIN--->
+		
+		<div class="date-rencontre"><h1> Dimanche 20 Août 2023</h1></div>
+		<!--DEBUT--->
+		<a href="RENAISSANCE-LEBOU-GUI.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>zone de Méckhé: 1/4 de Finale Coupe du maire</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/jb0e.png">
+		<p> Renaissance </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2> 20/08/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1>0-<b>1</b></h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/lgua.png">
+		<p>Lébou gui</p>
+		</div>
+		</div>
+		</button></a> 
+		<!--FIN--->
+		
+		
+		<div class="date-rencontre"><h1> Samedi 19 Août 2023</h1></div>
+		<!--DEBUT--->
+		<a href="SANIAXOOR vs JAMBAR.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>zone de pire: Finale Championnat NP 2022</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/a1nx.png">
+		<p> Saniaxoor </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>19/08/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b style="color: black;">0</b>-0</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/32/kpbb.png">
+		<img style="width: 10px; height: 12px; position: relative; border: ; box-shadow: 3px 3px 3px black;" src="https://zupimages.net/up/23/36/8v73.png">
+		
+		<p>Jambar</p>
+		</div>
+		</div>
+		</button></a> 
+		<!--FIN MATCH--> 
+		<!--DEBUT MATCH-->
+		<a href="TONGHOOR vs JAMBAAR.html" >
+		<button>
+		<div class="zonede">
+		<img src="https://zupimages.net/up/23/33/y1ou.png">
+		<p>zone de Méckhé: 1/4 de Finale Coupe du maire</p>
+		</div>
+		<div class="radio">
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/xseb.png">
+		<p> Tonghoor </p>
+		</div>
+		<div class="centre">
+		<div class="detail-date">
+		<h2>19/08/2023</h2>
+		</div>
+		<div class="detail-radio">
+		<h1><b style="color: black;">3</b>-1</h1>
+		</div>
+		<div class="detail-heur">
+		<h1>Terminé</h1>
+		</div>
+		</div>
+		<div class="logo-radio">
+		<img src="https://zupimages.net/up/22/33/4eax.png">
+		<p>Jambaar</p>
+		</div>
+		</div>
+		</button></a> 
+		<!--FIN--->
+		
+		
+		
+		
+		
+		</div>
+		</body>
+		</html>
