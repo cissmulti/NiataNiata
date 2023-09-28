@@ -88,7 +88,7 @@
 		   
 	
 		   /*Style de Accordion FIN */
-		  .info{background-color: white; display: flex; width: 100%; border: solid 1px black;}
+		  .info{margin-top: 40px; background-color: white; display: flex; width: 100%; border: solid 1px black;}
 		   .info .article{display: flex; padding: 4px; line-height: 18px;}
 		   .info .article img{width: 100px; height: 100px; padding-top: 20px;}
 		   .info .article h2{padding-left: 4px; text-align: justify; font-size: 15px;}
@@ -135,53 +135,7 @@
 		   
 		   
 		   
-		   
-		   .gallery{
-		   margin-top: 70px;
-		   position: relative;
-		   width: 70px;
-		   height: 80px;
-		   transform-style: preserve-3d;
-		   animation: animate 20s linear  infinite;
-		   animation-play-state: running;
-		   }
-		   
-		   @keyframes animate {
-		   0%{
-		   transform: perspective(1000px) rotateY(0deg);
-		   }
-		   100%{
-		   transform: perspective(1000px) rotateY(360deg);
-		   }
-		   }
-		   
-		   .gallery:hover{
-		   animation-play-state: paused;
-		   }
-		   
-		   span{
-		   position: absolute;
-		   top: 0;
-		   left: 0;
-		   width: 100%;
-		   height: 100%;
-		   transform-origin: center;
-		   transform-style: preserve-3d;
-		   transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
-		   -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
-		   }
-		   
-		   span img{
-		   position: absolute;
-		   top: 0;
-		   left: 0;
-		   width: 200%;
-		   height: 200%;
-		   border-radius: 10px;
-		   object-fit: scale-down;
-		   cursor: pointer;
-		   border: solid 2px green;
-		   }
+		 
 		   
 		   @media (min-width:400px){
 		  
@@ -215,19 +169,19 @@
 		    
 		    
 		    
-		    
-		  <!--<div class="info">
+		   <!-- 
+		  <div class="info">
 		   <div class="article">
 		   <img src="https://zupimages.net/up/23/37/kaiz.png">
 		   <h2>Nous avons des problèmes de représentant au niveau de la zone de pire, nous recherchons un volontaire qui peut nous aider à nous représenter à pire, Contactez-nous par Whatsapp <b><h6>&nbsp;&nbsp;En cliquant sur ce bouton</h6> <a href="whatsapp://send?text=&phone=221778402203" ><button>77 840 22 03</button></a></b></h2>
 		   </div>
-		  </div>-->
-	<!--
+		  </div> -->
+	
 		  <div style="width:100%;">
 		  <img style="opacity: 0.5; width: 300px; height: 400px; padding-top: 50px; object-position: 50% 50%;" src="https://zupimages.net/up/23/39/tr41.jpg">
 		  <h2 style="text-align: center;">Pas de rencontre<br>Aujourd'hui</h2>
 		  </div>
-		  -->
+		  
 		  
 		  
 		  <!--MATCH PRÉSENT-->
@@ -236,25 +190,7 @@
 		
 
 		
-		<!-- partial:index.partial.html -->
-		<div class="gallery">
-		<span style="--i: 1"><img src="https://zupimages.net/up/23/39/603x.jpg" alt=""></span>
-		<span style="--i: 2"><img src="https://zupimages.net/up/23/39/a89p.jpg" alt=""></span>
-		<span style="--i: 3"><img src="https://zupimages.net/up/23/39/aqmm.jpg" alt=""></span>
-		<span style="--i: 4"><img src="https://zupimages.net/up/23/39/f8qt.jpg" alt=""></span>
-		<span style="--i: 5"><img src="https://zupimages.net/up/23/39/gsl8.jpg" alt=""></span>
-		<span style="--i: 6"><img src="https://zupimages.net/up/23/39/wfab.jpg" alt=""></span>
-		<span style="--i: 7"><img src="https://zupimages.net/up/23/39/sydv.jpg" alt=""></span>
-		<span style="--i: 8"><img src="https://zupimages.net/up/23/39/qsxy.jpg" alt=""></span>
-		<span style="--i: 6"><img src="https://zupimages.net/up/23/39/ou3u.jpg" alt=""></span>
-		</div>
-		<!-- partial -->
-		
-		<div style="margin-top: 150px; text-align: center;">
-		<p>Équipe <b>Niata Niata</b></p>
-		<p>vous souhaite</p>
-		<h1>Bon Gamou</h1>
-		</div>
+	
 		   
 		
 		
