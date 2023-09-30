@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page d'accueil</title>
-  
+  <title>dekal thiossane</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https:fonts.googleapis.com" />
   <link rel="preconnect" href="https:fonts.gstatic.com" />
@@ -13,13 +12,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap" rel="stylesheet">
    <meta http-equiv="refresh" content="">
-   <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-   crossorigin="anonymous"
-   referrerpolicy="no-referrer"
-   />
   <link rel="stylesheet" href="style.css" />
   <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
 <style type="text/css">
@@ -27,440 +19,411 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*{
-  margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-body{ width: 90%; height: ; background: rgb(240, 239, 243); margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-a{ text-decoration: none; }
-   .en-tete{ display: flex; align-items: center; justify-content: left; border-bottom: solid 1px green; }
-   .en-tete img{ width: 35px;  padding: 5px; }
-   .en-tete h2{ font-size: 8px; color: blue; padding-left: 5px; letter-spacing: 1px; padding: 5px; border-radius: 10px; background-color: #F5EEF8; }
+*{  margin: 0;  padding: 0;  box-sizing: border-box;  font-family: 'Poppins', sans-serif;}
+body{  width: 100%;  height: ;  background: rgb(240, 239, 243); /* margin: auto;  display: flex;  flex-direction: column;  align-items: center;  justify-content: center;*/}
+a{   text-decoration: none;   }
+   .tabs {   display: flex;   flex-wrap: wrap;   max-width: 400px;   font-family: sans-serif;   align-items: center;   justify-content: center;   }
    
-   /*DEBUT MAIN*/
-   .match{  display: flex;  width: 100%;   height: 100px;  align-items: center;   justify-content: center;  background-color: yellow;  }
-   .match .port-logo{  width: 150px;;  height: 100px;  display: ;  text-align: center;  background-color: cyan;  justify-content: center;  }
-   .port-logo .logo-asc{  width: 100px;  height: 100px; border-radius: 50%;  background-color: blue;   } 
-   .logo-asc img{  width: 50px;  height: 50px;  margin: auto;   display: block;  }
+   .tabs__label {   padding: 10px 10px;   cursor: pointer;   background-color: ;   }
    
-   .port-logo h2{   font-size: 12px;   }
-   /*FIN MAIN*/
-   blink {-webkit-animation: 1s linear infinite condemed_blink_effect; // pour Safari 4.0-8.0 animation: 1s linear infinite condemed_blink_effect; }
-   @-webkit-keyframes condemed_blink_effect { // pour Safari 4.0-8.0 0% { visibility: hidden;} 50% { visibility: hidden; } 100% { visibility: visible; }} @keyframes condemed_blink_effect { 0% { visibility: hidden; } 50% { visibility: hidden; } 100% { visibility: visible; } }
-   .zonede{display: flex; align-items: center; justify-content: left; border-top: solid 1px green; margin-top: 5px; border-radius: 10px; }
-   .zonede img{width: 30px; margin-left: 5px;}
-   .zonede p{font-size: 10px; font-weight: bold; text-transform: uppercase; margin-left: 3px; }
-   .radio{ display: flex; width: 98%; margin-left: 3px;  align-items: center;   justify-content: center;  height: 135px;  background-color: #A9DFBF; border-radius: 10px; border-bottom: solid 1px green; }
-   .logo-radio{display: block; width: 130px; padding: px; line-height: 12px; : 4px;}
- 
-   .logo-radio img{ width: 85px;  padding:0px; }
-   .logo-radio p{ text-transform: capitalize; font-size: 12px; font-weight: bold;}
-   .detail-radio h1{font-size: 40px; padding-top: px; color: #196F3D;}
-   .detail-radio{ width: 85px; background-color: #A9CCE3; margin:4px; text-decoration: none;  border-radius: 10px; line-height: px; text-align: center; height: 60px; }
-    .detail-heur h1{width: 100%; font-size: 18px; background-color: #D0ECE7;}
+   .tabs__radio {   display: none;   }
+   
+   .tabs__content {   order: 1;   width: 100%;   border-bottom: 3px solid #dddddd;   line-height: 1.5;   font-size: 0.9em;   display: none;  background-color: ;   margin: 1%;   }
+   
+   .tabs__radio:checked + .tabs__label {   font-weight: bold;   color: #009578;   border-bottom: 2px solid #009578;   }
+   
+   .tabs__radio:checked + .tabs__label + .tabs__content {  display: initial;   }
+   /*DEBUT DU MATCHS*/
+   .asc-asc{   width: 100%;   display: block;   text-align: center;   line-height: 15px;   }
+   .asc-asc .nom-asc{   padding-left: 5px;   font-weight: bold;   letter-spacing: 2px;   text-transform: uppercase;   text-align: left;   }
+   .asc-asc .logo-asc{   width: 70px;   height: 70px;   }
+   .matchs{   width: 100%;   background-color: ;   }
+   .container{   display: flex;   width: 100%;   height: ;  background: #AED6F1;   border-radius: 10px;   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);   padding: 5px;  overflow-y: scroll;   }
+   .container{  display: flex; width: 100%;  height: ;   background: #AED6F1;  border-radius: 10px;  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);   padding: 5px;   overflow-y: scroll;   }
+   .container::-webkit-scrollbar{   display: none;   }
+   .container form {   width: 92%;   border: 1px solid rgb(82, 74, 235);   border-radius: 4px;   display: flex;   flex-direction: row;   align-items: center;   }
+   .container form {   width: 92%;   border: 1px solid rgb(82, 74, 235);   border-radius: 4px;   display: flex;  flex-direction: row;  align-items: center;   }
+   
+   .match-list {   width: 100%;   padding: px;   }
+   .match {   width: 100%;  display: flex;   align-items: center;  padding-top: px;   padding-bottom: px;   box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: px;   border-radius: px;   background: #EBDEF0;  height: 35px;  overflow: hidden;  }
+   .match .score-finale{ color: black; width: 55px;   font-weight: bold;   margin: 3px;  padding-right: 0px;   text-align: center;  font-size: 20px;  letter-spacing: 2px;  word-spacing: 2px;  overflow: hidden;   }
+   .match img {  width: 25px;   height: 25px;   margin-left: 5px;  padding-left: 3px;   object-fit: cover;   border-radius: px;   }
+   .match .p-details{   width: 160px;  border-right: solid 1px black;  padding-left: px;   }
+   .p-details{   }
+   .match .p-details h2 {  font-size: 10px;  color: #1d1d1d;  text-align: left;  padding-left: 5px;  text-transform: uppercase;  letter-spacing: 2px;  word-spacing: 1px;  }
+   
+   .left{ line-height: 15px; width: 170px; height: 70px; text-align: center; background-color: #F5B7B1;}
+   .left .date{ padding-top: 10px; color: black; font-size: 11px; font-weight: bold; word-spacing: 2px; }
+   .left span{ font-size: 8px; border-top: solid 1px black;}
+   .left h2{ color: black; font-size: 16px; letter-spacing: 1px;}
+   
+    /*FIN DU MATCHS*/
+    /*DEBU DU EFFECTIF*/
+    .effectif-list {  width: 100%;  padding: px;  }
+    .effectif {  width: 100%; height: 50px; display: flex;  align-items: center;  padding-top: px;  padding-bottom: px;   box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: 3px; border-radius: 10px;  background: #EBDEF0;   overflow: hidden;   }
     
-    .detail-date h2{width: 100%; font-size: 11px; background-color: #D0ECE7;}
-    .centre{display: block; align-items: center; justfy-content: center;}
-  .comentateur{ display: block;  }
-   .comentateur p{ font-size: 10px; border-radius: 20px; text-align: center;  padding-left: px; font-weight: bold;  margin-top: 5px; }
-    button{border: none;}
-   .date-rencontre{width: 100%; margin-top: 15px; border-top: solid 1px black; letter-spacing: 2px; background-color: #FCF3CF; color: ; font-size: 6px; border-radius: 10px; padding: 2px 15px; }
+    .effectif .photo{  width: 40px;  height: 40px;  margin-left: 10px;  text-align: left;  border-radius: 50%;  }
+   .effectif .joueur-nom{ width: 280px;  height: 50px;  font-size: 14px; font-weight: bold;   margin-left: 25px;  text-align: left;   background-color: ;  text-transform: uppercase;  overflow: hidden;  color: #A569BD;  line-height: 22px;   }
+    .effectif .joueur-nom span{  color: black;  font-size: 11px;  letter-spacing: 1px;  word-spacing: 3px;   padding-left: 10px;   }
+    /*FIN DU EFFECTIF*/
    
+   /*DEBUT STATISTIQUES*/
+   .statistique-list {  width: 100%;  padding: px;   }
+   .statistique {  width: 100%;  height: 50px;   display: flex;  align-items: center;  padding-top: px;  padding-bottom: px;  box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);  margin-top: 3px;  border-radius: 10px;  background: #EBDEF0;  overflow: hidden;  }
+   .statistique .action{   width: 80%;  height: px;  font-size: 12px;  font-weight: bold;  margin-left: 15px;  padding-right: px;  text-align: left; background-color: ;  text-transform: uppercase;  overflow: hidden;  color: #A569BD;  }
+   .statistique .nombre{  width: 20%px;   height: px; font-size: 18px;  font-weight: ;  margin-left: 1px;  padding-left: 10px;  text-align: center; color: #3498DB;  overflow: hidden;  background-color: ;  border-left: solid 1px black; }
+   /*FIN STATISTIQUES*/
+   b{background-color: red; color: white; padding: 0px 10px 0px 10px; font-size: 15px;}
    
-   .publicite{ position:fixed; z-index:1;  width: 100%; left:0; height: 60px; bottom: 50px; text-align: center; border-top: solid 1px black;  background-color: #212F3C; }
-   .publicite img{  width: 100%;  height: 55px; left: 0px; padding-top: 3px; }
-   /*DEBUT NAVIGATION MOBIL */
-   .navigation-mobile{z-index: 1; background: #FAD7A0; position: fixed; bottom: 0;  left: 0; right: 0; display: flex; height: 50px; width: 100%;  justify-content: space-around; }
-   .navigation-mobile p{padding-bottom: 5px; color: black; font-size: 11px; font-weight: bold;}
-   .bloc-icon{ display: flex; width: 100px; flex-direction: column; justify-content: center; align-items: center; padding-top: 5px; }
-   .bloc-icon img{ width: 20px; }
-  /*.navigation-mobile:hover{ background: orange;  height: px; border: 1px solid black; }
-   .bloc-icon:hover{ color: white;  background-color: #9B59B6;  }*
-   .bloc-icon img:hover{  color: white; }
-   .navigation-mobile p:hover{  font-size: 12px; color: white; }*/
-   .bloc-icon i{font-size: 25px; color: black; }
-   
-   /* FIN NAVIGATION MOBIL*/
-   blink{color: white; font-weight: bold; letter-spacing: 2px; background-color: red; padding: 0px 20px;}
-   b{color: black;}
-   
-   /*Style de Accordion*/
-   
-   .container{  margin-top: 40px; display: flex;  flex-direction: column;  justify-content: center;   align-items: center;  height: ;  background-color: #eaeaea;  }
-   
-
-   /*Style de Accordion FIN */
-  .info{margin-top: 40px; background-color: white; display: flex; width: 100%; border: solid 1px black;}
-   .info .article{display: flex; padding: 4px; line-height: 18px;}
-   .info .article img{width: 100px; height: 100px; padding-top: 20px;}
-   .info .article h2{padding-left: 4px; text-align: justify; font-size: 15px;}
-   .info .article h6{padding-left: 50px; border-top: solid 1px black;}
-   .info .article button{margin-left: 70px; border: solid 1px green; border-radius: 15px; paddong: 5px; width: 100px; background-color: red; color: white; font-weight: bold;}
-   
-   .radiom{ display: flex; width: 98%; margin-left: 3px;  align-items: center;   justify-content: center;  height: 135px;  background-color: #A9DFBF; border-radius: 10px 10px 0px 0px; }
-   .logo-radiom{display: block; width: 130px; padding: px; line-height: 12px; : 4px;}
-   
-   .logo-radiom img{ width: 85px;  padding:0px; }
-   .logo-radiom p{ text-transform: capitalize; font-size: 12px; font-weight: bold;}
-   .detail-radiom h1{font-size: 40px; padding-top: px; color: #196F3D;}
-   .detail-radiom{ width: 85px; background-color: #A9CCE3; margin:4px; text-decoration: none;  border-radius: 10px; line-height: px; text-align: center; height: 60px; }
-   .detail-heur h1{width: 100%; font-size: 18px; background-color: #D0ECE7;}
-   
-   .detail-date h2{width: 100%; font-size: 11px; background-color: #D0ECE7;}
-   .centre{display: block; align-items: center; justfy-content: center;}
-   
-  .partenaire-mboro{ line-height: 13px;
-  display: flex; width: 98%; margin-left: 3px;
-  justify-content: left; align-items: center; padding-left: 5px;
-  border-radius: 0px 0px 10px 10px; border-bottom: solid 1px green; border-top: solid 1px green; background-color: #FCF3CF;
-  } 
-  .partenaire-mboro img{
-  widht: 30px; height: 30px; padding-right: 3px;
-  } 
-  .detail{ display: block; border-left: solid 1px green;}
-  .detail p{ text-transform: uppercase; letter-spacing: 4px;
-   text-aling: lfet; padding-left: 4px; 
-   } 
-   .detail h6{
-   text-align: lfet; padding-left: 4px; letter-spacing: 2px;
-   } 
-   
-   
- .head{ position: fixed; border-bottom: solid 1px green; top: 0; left: 0; right: 0; display: flex; justify-content: center; place-items: center; background-color: #A9CCE3; height: 50px; width: 100%;  justify-content: space-around;}
-  .head .bloc-icon i{font-size: 20px; color: #A9CCE3;}
- .head .bloc-icon p{font-size: 10px; font-weight: bold; color: black;}
-   
-  .bloc-icon:hover{background-color: red; color: white; font-weight: bold;}
-  .bloc-icon:hover p{color: white; font-size: 11px;}
-   .bloc-icon:hover i{color: white; font-size: 30px;}
-  
-   
-   
-   
- 
    
    @media (min-width:400px){
-  
+   .tabs {
+   max-width: 700px;
    }
+   .match .p-details{
+   width: 320px;
+   }
+ 
+   }
+    
+   
 </style>
  
 </head>
 <body>
-
-
-<div class="head">
-<a href="match-précédents.html" ><div style="width: 120px; border-radius: 0px 15px 15px 0px ; border: solid 1px green; background-color: #FAD7A0;" class="bloc-icon">
-<i class="fa-solid fa-futbol"></i>
-<p>Matchs précédents</p>
-</div></a>
-
-<a href="index.html" ><div style="width: 120px; border: solid 1px green; background-color: #FAD7A0;" class="bloc-icon">
-<i class="fa-solid fa-futbol"></i>
-<p>Aujourd'hui</p>
-</div></a>
-
-<a href="match-suivants.html" ><div style="width: 120px; border-radius: 15px 0px 0px 15px ; border: solid 1px green; background-color: #FAD7A0;" class="bloc-icon">
-<i class="fa-solid fa-futbol"></i>
-<p>Matchs Suivants</p>
-</div></a>
-</div>
-
-<!-- TESTE-->
-<div class="container">
-    
-   <!-- 
-  <div class="info">
-   <div class="article">
-   <img src="https://zupimages.net/up/23/37/kaiz.png">
-   <h2>Nous avons des problèmes de représentant au niveau de la zone de pire, nous recherchons un volontaire qui peut nous aider à nous représenter à pire, Contactez-nous par Whatsapp <b><h6>&nbsp;&nbsp;En cliquant sur ce bouton</h6> <a href="whatsapp://send?text=&phone=221778402203" ><button>77 840 22 03</button></a></b></h2>
-   </div>
-  </div> -->
-
- <!-- <div style="width:100%;">
-  <img style="opacity: 0.5; width: 300px; height: 400px; padding-top: 50px; object-position: 50% 50%;" src="https://zupimages.net/up/23/39/tr41.jpg">
-  <h2 style="text-align: center;">Pas de rencontre<br>Aujourd'hui</h2>
-  </div> -->
-
-
-	
-
-<div class="date-rencontre"><h1> Dimanche 01 Octobre 2023</h1></div>
-<!--DEBUT--->
-<a href="#" >
-<button>
-<div class="zonede">
-<img src="https://zupimages.net/up/23/32/bynm.png">
-<p>ZONE DE DAROU KHOUDOSS : CHAMPIONNAT N. P</p>
-</div>
-<div class="radio">
-<div class="logo-radio">
-<img src="https://zupimages.net/up/23/35/nd6l.png">
-<p>avenir </p>
-</div>
-<div class="centre">
-<div class="detail-date">
-<h2> 01/10/2023</h2>
-</div>
-<div class="detail-radio">
-<h1>VS</h1>
-</div>
-<div class="detail-heur">
-<h1>17:00</h1>
-</div>
-</div>
-<div class="logo-radio">
-<img src="https://zupimages.net/up/23/35/a1dv.png">
-<p>  déggo de saraba</p>
-</div>
-</div>
-</button></a>
-<a href="#" >
-<button>
-<div class="zonede">
-<img src="https://zupimages.net/up/23/32/bynm.png">
-<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
-</div>
-<div class="radiom">
-<div class="logo-radiom">
-<img src="https://zupimages.net/up/22/36/l5hj.png">
-<p> hlm</p>
-</div>
-<div class="centre">
-<div class="detail-date">
-<h2> 01/10/2023</h2>
-</div>
-<div class="detail-radiom">
-<h1>VS</h1>
-</div>
-<div class="detail-heur">
-<h1> 15:00</h1>
-</div>
-</div>
-<div class="logo-radiom">
-<img src="https://zupimages.net/up/22/36/gt3e.png">
-<p>espoir c. s. m </p>
-</div>
-</div>
-<div class="partenaire-mboro"><img src="https://zupimages.net/up/23/38/3w7w.png"><div class="detail"><p class="detail-p">Supermarché Chez Aida</p> <h6>Partenaire officiel de la zone de mboro</h6></div></div>
-</button></a>
-<a href="#" >
-<button>
-<div class="zonede">
-<img src="https://zupimages.net/up/23/32/bynm.png">
-<p>ZONE DE MBORO : CHAMPIONNAT NATIONAL POPULAIRE</p>
-</div>
-<div class="radiom">
-<div class="logo-radiom">
-<img src="https://zupimages.net/up/22/38/mw6z.png">
-<p>amitié </p>
-</div>
-<div class="centre">
-<div class="detail-date">
-<h2> 01/10/2023</h2>
-</div>
-<div class="detail-radiom">
-<h1>VS</h1>
-</div>
-<div class="detail-heur">
-<h1> 17:00</h1>
-</div>
-</div>
-<div class="logo-radiom">
-<img src="https://zupimages.net/up/23/34/20r0.png">
-<p>skf </p>
-</div>
-</div>
-<div class="partenaire-mboro"><img src="https://zupimages.net/up/23/38/3w7w.png"><div class="detail"><p class="detail-p">Supermarché Chez Aida</p> <h6>Partenaire officiel de la zone de mboro</h6></div></div>
-</button></a>
-
-
-
-<a href="#">
-<button>
-<div class="zonede">
-<img src="https://zupimages.net/up/22/40/v3yi.png">
-<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
-</div>
-<div class="radio">
-<div class="logo-radio">
-<img src="https://zupimages.net/up/22/32/jb0e.png">
-<p> renaissance </p>
-</div>
-<div class="centre">
-<div class="detail-date">
-<h2> 01/10/2023</h2>
-</div>
-<div class="detail-radio">
-<h1>VS</h1>
-</div>
-<div class="detail-heur">
-<h1> 15:00</h1>
-</div>
-</div>
-<div class="logo-radio">
-<img src="https://zupimages.net/up/23/33/fc21.png">
-<p>jappo </p>
-</div>
-</div>
-</button></a>
-
-<a href="#">
-<button>
-<div class="zonede">
-<img src="https://zupimages.net/up/22/40/v3yi.png">
-<p>ZONE DE MÉCKHÉ : CHAMPIONNAT NATIONAL POPULAIRE</p>
-</div>
-<div class="radio">
-<div class="logo-radio">
-<img src="https://zupimages.net/up/22/33/yth7.png">
-<p>gouy yatt </p>
-</div>
-<div class="centre">
-<div class="detail-date">
-<h2> 01/10/2023</h2>
-</div>
-<div class="detail-radio">
-<h1>VS</h1>
-</div>
-<div class="detail-heur">
-<h1> 17:00</h1>
-</div>
-</div>
-<div class="logo-radio">
-<img src="https://zupimages.net/up/22/32/yz8x.png">
-<p> risso </p>
-</div>
-</div>
-</button></a>
-
-<a href="#" >
-<button>
-<div class="zonede">
-<img src="https://zupimages.net/up/23/32/bynm.png">
-<p>ZONE DE PIRE : CHAMPIONNAT NATIONAL POPULAIRE</p>
-</div>
-<div class="radio">
-<div class="logo-radio">
-<img src="https://zupimages.net/up/22/32/hx4u.png">
-<p>manko  </p>
-</div>
-<div class="centre">
-<div class="detail-date">
-<h2> 01/10/2023</h2>
-</div>
-<div class="detail-radio">
-<h1>VS</h1>
-</div>
-<div class="detail-heur">
-<h1> 17:00</h1>
-</div>
-</div>
-<div class="logo-radio">
-<img src="https://zupimages.net/up/23/32/q26s.png">
-<p>mérina sall </p>
-</div>
-</div>
-</button></a>
-<a href="#" >
-<button>
-<div class="zonede">
-<img src="https://zupimages.net/up/23/32/bynm.png">
-<p>ZONE DE TAIBA NDIAYE 1 : CHAMPIONNAT NATIONAL POPULAIRE</p>
-</div>
-<div class="radio">
-<div class="logo-radio">
-<img src="https://zupimages.net/up/23/38/himf.png">
-<p> taiba santhie</p>
-</div>
-<div class="centre">
-<div class="detail-date">
-<h2> 01/10/2023</h2>
-</div>
-<div class="detail-radio">
-<h1>VS</h1>
-</div>
-<div class="detail-heur">
-<h1> 17:00</h1>
-</div>
-</div>
-<div class="logo-radio">
-<img src="https://zupimages.net/up/23/38/9068.png">
-<p> yaakar </p>
-</div>
-</div>
-</button></a>
-<!--FIN--->
-
-
-	
+  <div class="asc-asc">
+  <p class="nom-asc">Asc dékal thiossane</p>
+  <img class="logo-asc" src="https://zupimages.net/up/23/39/mavx.png">
+  </div>
+<div class="tabs">
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
   
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+  <!--DEBUT DE TABS MATCH-->
+  <label for="tab1" class="tabs__label">MATCHS</label>
+  <div class="tabs__content">
+    <div class="matchs">
+     
+     
+ 
+ 
+ 
+ 
+     <!--Debut a copié-->
+     <a style="text-decoration: none;" href="#" >
+     <section class="container">
+     <div class="left">
+     <p class="date">
+     07 Oct 2023
+     </p>
+     <h2>
+     17:00  <br><span>Championnat</span>
+     </h2>
+     </div>
+     <div class="match-list" id="match-list">
+     <div class="match">
+     <img src="https://zupimages.net/up/23/35/969d.png" alt="logo">
+     <div class="p-details">
+     <h2> étoile de ndong</h2>
+     </div>
+     <h2 class="score-finale"> </h2>
+     </div>
+     <div class="match">
+     <img src="https://zupimages.net/up/23/39/mavx.png" alt="logo">
+     <div class="p-details">
+     <h2> dékal thiossane</h2>
+     </div>
+     <h2 class="score-finale"> </h2>
+     </div>
+     </div>
+     </section></a>
+     <!--Fin copie-->
+     <!--Debut a copié-->
+     <a style="text-decoration: none;" href="#" >
+     <section class="container">
+     <div class="left">
+     <p class="date">
+     13 Oct 2023
+     </p>
+     <h2>
+     17:00  <br><span>Championnat</span>
+     </h2>
+     </div>
+     <div class="match-list" id="match-list">
+     <div class="match">
+     <img src="https://zupimages.net/up/23/39/mavx.png" alt="logo">
+     <div class="p-details">
+     <h2> dékal thiossane</h2>
+     </div>
+     <h2 class="score-finale"> </h2>
+     </div>
+     <div class="match">
+     <img src="https://zupimages.net/up/23/35/t5jj.png" alt="logo">
+     <div class="p-details">
+     <h2> gouney nguaye</h2>
+     </div>
+     <h2 class="score-finale"> </h2>
+     </div>
+     </div>
+     </section></a>
+     <!--Fin copie-->
+     
+     
+     
+     
+     
+     
+     
+     
+     <!--Debut a copié-->
+     <a style="text-decoration: none;" href="30DAROUSALAMDEKALTHIOSSANE.html" >
+     <section class="container">
+     <div class="left">
+     <p class="date">
+     30 Sept 2023
+     </p>
+     <h2>
+     Terminé   <br><span>Championnat</span>
+     </h2>
+     </div>
+     <div class="match-list" id="match-list">
+     <div class="match">
+     <img src="https://zupimages.net/up/23/35/vio0.png" alt="logo">
+     <div class="p-details">
+     <h2> darou salam</h2>
+     </div>
+     <h2 class="score-finale">0 </h2>
+     </div>
+     <div class="match">
+     <img src="https://zupimages.net/up/23/39/mavx.png" alt="logo">
+     <div class="p-details">
+     <h2> dékal thiossane</h2>
+     </div>
+     <h2 class="score-finale">0 </h2>
+     </div>
+     </div>
+     </section></a>
+     <!--Fin copie-->
+     <!--Debut a copié-->
+     <a style="text-decoration: none;" href="DEKALTHIOSSANEDALLAS20.html" >
+     <section class="container">
+     <div class="left">
+     <p class="date">
+     20 Sept 2023
+     </p>
+     <h2>
+     Terminé <br><span>Championnat</span>
+     </h2>
+     </div>
+     <div class="match-list" id="match-list">
+     <div class="match">
+     <img src="https://zupimages.net/up/23/39/mavx.png" alt="logo">
+     <div class="p-details">
+     <h2> dékkal thiossane</h2>
+     </div>
+     <h2 class="score-finale">0 </h2>
+     </div>
+     <div class="match">
+     <img src="https://zupimages.net/up/23/35/cqe8.png" alt="logo">
+     <div class="p-details">
+     <h2> dallas</h2>
+     </div>
+     <h2 class="score-finale">0 </h2>
+     </div>
+     </div>
+     </section></a>
+     <!--Fin copie-->
     </div>
-
-<!--TESTE FIN-->
-
-
+  </div>
+  <!-- FIN DE TABS MATCHES-->
+   <!-- DEBUT DE EFFECTIF-->
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+  <label for="tab2" class="tabs__label">EFFECTIF</label>
+  <div class="tabs__content">
+    <!-- DEBUT EFFECTIF--->
+    <div class="effectif-list" id="effectif-list">
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom"> Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom"> Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom">Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom"> Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom">Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom"> Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom">Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom"> Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom">Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom"> Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom">Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom"> Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom">Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom"> Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom">Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    
+    <div class="effectif">
+    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
+    <h2 class="joueur-nom"> Joueur de l'asc <br>
+    <span>0 Buts</span></h2>
+    </div>
+    
+    </div>
+    <!-- FIN EFFECTIF--->
+    
+  </div>
+  <!-- FIN DE EFFECTIF-->
+  <!---DEBUT STATISTIQUES--->
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+  <label for="tab3" class="tabs__label">STATISTIQUES</label>
+  <div class="tabs__content">
+  <!-- DÉBUT STATISTIQUES --->
+  
+  <div class="statistique">
+  <h2 class="action">Matchs joués </h2>
+  
+  <h2 class="nombre"> 1 </h2>
+  
+  </div>
+  <div class="statistique">
+  <h2 class="action">Victoire </h2>
+  <h2 class="nombre"> 0 </h2>
+  </div>
+  <div class="statistique">
+  <h2 class="action">Nul </h2>
+  <h2 class="nombre"> 1 </h2>
+  </div>
+  <div class="statistique">
+  <h2 class="action">Défaite </h2>
+  <h2 class="nombre"> 0 </h2>
+  </div>
+  <div class="statistique">
+  <h2 class="action">Buts Marqués </h2>
+  
+  <h2 class="nombre"> 0 </h2>
+  
+  </div>
+  <div class="statistique">
+  <h2 class="action">Buts Encaissés  </h2>
+  
+  <h2 class="nombre"> 0  </h2>
+  
+  </div>
+  
+  <div class="statistique">
+  <h2 class="action"> Cartons Jaune </h2>
+  
+  <h2 class="nombre"> 1 </h2>
+  
+  </div>
+  
+  <div class="statistique">
+  <h2 class="action"> Cartons Rouge </h2>
+  
+  <h2 class="nombre"> 0  </h2>
+  
+  </div>
+  
+  <div class="statistique">
+  <h2 class="action">Buts sur Coup-franc </h2>
+  
+  <h2 class="nombre"> 0 </h2>
+  
+  </div>
+  <div class="statistique">
+  <h2 class="action">Buts sur Penalty  </h2>
+  
+  <h2 class="nombre"> 0  </h2>
+  
+  </div>
+  
+  <div class="statistique">
+  <h2 class="action"> Buts sur Penalty Concédés </h2>
+  
+  <h2 class="nombre"> 0  </h2>
+  
+  </div>
+<div class="statistique">
+  <h2 class="action"> Classement </h2>
+  
+  <h2 class="nombre"> 4  </h2>
+  
+  </div>
+  
+  <!-- FIN STATISTIQUES--->
   
   
-  <!-- LES MATCHS PASSÉE FIN -->
+  
+  </div>
+  
+  <!--FIN STATISTIQUES--->
+  
+</div>
+
     
-    <!--Cette div pour decaler le footer-->
-    <div style="height: 120px;"></div>
-  <script type="text/javascript">
-    const faqs = document.querySelectorAll(".faq");
-    
-    faqs.forEach(faq => {
-    faq.addEventListener("click", () => {
-    faqs.forEach(item => {
-    if (item !== faq) {
-    item.classList.remove("active");
-    }
-    })
-    faq.classList.toggle("active");
-    })
-    })
-    </script>
-    
+   
 </body>
-   <footer class="publicite">
-   <img src="https://zupimages.net/up/23/38/nwve.gif">
-   </footer>
-   <div class="navigation-mobile">
-   <a href="index.html" > <div class="bloc-icon">
-   <i class="fa-solid fa-futbol"></i>
-   <p> Matchs</p>
-   </div></a>
-   
-   <a href="infos.html" ><div class="bloc-icon">
-   <i class="fa-solid fa-circle-info"></i>
-   <p>Infos</p>
-   </div></a>
-   
-   <a href="zones.html" ><div class="bloc-icon">
-   <i class="fa-solid fa-layer-group"></i>
-   <p> Zones</p>
-   </div></a>
-   
-   <a href="plus.html" ><div class="bloc-icon">
-   <i class="fa-solid fa-square-plus"></i>
-   <p> Plus...</p>
-   </div></a>
-   
-   </div>
-   
-   
-   
 </html>
