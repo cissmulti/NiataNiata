@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>bokk jom</title>
+  <title>Zone de Mboro</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https:fonts.googleapis.com" />
   <link rel="preconnect" href="https:fonts.gstatic.com" />
@@ -19,289 +19,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  
+*{ margin: 0; padding: 0;  box-sizing: border-box;  font-family: 'Poppins', sans-serif;}
+body{ width: 100%;  height: ;  background: rgb(240, 239, 243); /* margin: auto; display: flex;  flex-direction: column;  align-items: center;  justify-content: center;*/
 }
-body{
-  width: 100%;
-  height: ;
-  background: rgb(240, 239, 243);
- /* margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;*/
-}
-a{
-   text-decoration: none;
-   }
-   .tabs {
-   display: flex;
-   flex-wrap: wrap;
-   max-width: 400px;
-   font-family: sans-serif;
-   align-items: center;
-   justify-content: center;
-   }
-   
-   .tabs__label {
-   padding: 10px 10px;
-   cursor: pointer;
-   background-color: ;
-   }
-   
-   .tabs__radio {
-   display: none;
-   }
-   
-   .tabs__content {
-   order: 1;
-   width: 100%;
-   border-bottom: 3px solid #dddddd;
-   line-height: 1.5;
-   font-size: 0.9em;
-   display: none;
-   background-color: ;
-   margin: 1%;
-   }
-   
-   .tabs__radio:checked + .tabs__label {
-   font-weight: bold;
-   color: #009578;
-   border-bottom: 2px solid #009578;
-   }
-   
-   .tabs__radio:checked + .tabs__label + .tabs__content {
-   display: initial;
-   }
+a{ text-decoration: none; }
+   .tabs {  display: flex; flex-wrap: wrap;  max-width: 400px;  font-family: sans-serif; font-size: 14px; align-items: center;  justify-content: center;  }
+   .tabs__label { padding: 10px 10px; cursor: pointer;  background-color: ;  }
+   .tabs__radio {  display: none; }
+   .tabs__content { order: 1; width: 100%; border-top: 3px solid #dddddd;
+   /*line-height: 1.5;*/  font-size: 0.9em; display: none; background-color: ; margin: 1%;  }
+   .tabs__radio:checked + .tabs__label { font-weight: bold; color: #009578; border-bottom: 2px solid #009578; }
+   .tabs__radio:checked + .tabs__label + .tabs__content {  display: initial; }
    /*DEBUT DU MATCHS*/
-   .asc-asc{
-   width: 100%;
-   display: block;
-   text-align: center;
-   line-height: 15px;
+     .zone-zone{border-bottom: solid 1px black; width: 100%;  display: flex;align-items: center;  justify-content: left; line-height: 15px;background-color: #FCF3CF; }
+     .zone-zone img{margin-left: 4px; padding-left: px; width: 40px:; height: 30px;  }
+     .zone-zone p{ margin-left: 4px; padding-left: 5px; font-weight: ; font-size: 18px; letter-spacing: 1px;   padding-top: 2px;  padding-bottom: 2px; text-transform: uppercase; text-align: left; }
+     /*DEBUT DU MATCHS*/
+   .asc-asc{  width: 100%; display: block; text-align: center;  line-height: 15px; }
+   .asc-asc .nom-asc{  padding-left: 5px; font-weight: bold;  letter-spacing: 2px; text-transform: uppercase; text-align: left;  }
+   .asc-asc .logo-asc{  width: 70px; height: 70px;  }
+   .matchs{   width: 100%; background-color: ;}
+   .container{ display: flex; width: 100%;  height: ;  background: #AED6F1;  border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 5px; overflow-y: scroll;}
+   .container{ display: flex; width: 100%; height: ;  background: #AED6F1; border-radius: 10px;  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);  padding: 5px;  overflow-y: scroll; }
+   .container::-webkit-scrollbar{ display: none; }
+   .container form {  width: 92%;  border: 1px solid rgb(82, 74, 235);  border-radius: 4px; display: flex; flex-direction: row; align-items: center;}
+   .container form { width: 92%; border: 1px solid rgb(82, 74, 235); border-radius: 4px; display: flex;  flex-direction: row; align-items: center;}
+   .match-list { width: 100%; padding: px; }
+   .match {  width: 100%; display: flex; align-items: center; padding-top: px; padding-bottom: px; box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);  margin-top: px; border-radius: px; background: #EBDEF0; height: 35px; overflow: hidden;  }
+  .match .score-finale{ color: black; width: 40px; font-weight: bold; margin: 3px; padding-right: 0px;  text-align: center; font-size: 20px; letter-spacing: 2px; word-spacing: 2px; overflow: hidden;}
+   .match img { width: 25px;  height: 25px;  padding-top: 8px;  margin-left: 5px; padding-left: 3px;  object-fit: cover; border-radius: px; }
+   .match .p-details{ width: 175px; border-right: solid 1px black;  padding-left: px;  }
+   .p-details{ }
+   .match .p-details h2 { font-size: 10px; color: #1d1d1d; text-align: left; padding-left: 5px; text-transform: uppercase; letter-spacing: 2px;  word-spacing: 1px; }
+  .left{ line-height: 15px; width: 170px; height: 70px; text-align: center; background-color: #F5B7B1;}
+  .left .date{ padding-top: 10px; color: black; font-size: 11px; font-weight: bold; word-spacing: 2px; }
+  .left span{ font-size: 8px; border-top: solid 1px black;}
+  .left h2{color: black; font-size: 16px; letter-spacing: 1px;}
+   /*FIN DU MATCHS*/
+   /*DEBUT DE CLASSEMENTS*/
+   a{ text-decoration: none;}
+   .container{ display: flex; width: 100%; height: ; background: #AED6F1; border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 3px; overflow-y: scroll; }
+   .container::-webkit-scrollbar{ display: none; }
+   .container form { width: 100%; border: 1px solid rgb(82, 74, 235);  border-radius: 4px; display: flex;  flex-direction: row; align-items: center; }
+   .product-list {width: 100%;  padding: px; }
+   .product {  width: 100%; display: flex; align-items: center;  padding-top: px; padding-bottom: px;  box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: 3px;  border-radius: px;  background: #EBDEF0; height: 35px; overflow: hidden;}
+   .product .rang-rang{ width: 25px; color: #ff5733; font-weight: ; margin: 5px; padding-right: 2px; font-size: 14px; text-align: center;  }
+   .product .asc-nom-asc-nom{ width: 145px; height: 15px; color: #ff5733; font-size: 13px; font-weight: bold; margin-left: 1px; padding-right: 3px; text-align: left; border-right: solid 1px black; }
+   .product .jouer-jouer{  width: 20px; height: 15px; color: #ff5733; font-size: 11px;  font-weight: bold; margin-left: 3px;  padding-right: 3px; text-align: center; border-right: solid 1px black;  }
+   .product .victoire-victoire{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .product .nul-nul{  width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+   .product .defaite-defaite{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;  }
+   .product .buts-buts{ width: 40px;  height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black;}
+   .product .pts-pts{ width: 18px; height: 15px;  color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;}
+   .product .rang{ width: 25px;  height: 15px; font-weight: ;  margin: 5px; padding-right: 2px;  font-size: 10px; text-align: center; border-right: solid 1px black;}
+   .product .score-logo{ width: 20px; height: 15px; font-weight: bold; margin-left: 2px;  padding-right: 3px; }
+   .product .asc-nom{ width: 145px;  height: 15px; font-size: 10px; font-weight: bold;  margin-left: 1px; padding-right: 3px; text-align: left; text-transform: uppercase; border-right: solid 1px black;}
+   .product .jouer{  width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+   .product .victoire{ width: 20px;  height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+   .product .nul{  width: 20px;  height: 15px; font-size: 11px;  font-weight: bold;  margin-left: 3px;  padding-right: 3px;  text-align: center; border-right: solid 1px black;  }
+   .product .defaite{  width: 20px;  height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px;  text-align: center; border-right: solid 1px black; }
+   .product .buts{  width: 40px;  height: 15px; font-size: 11px; font-weight: bold;  margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+   .product .pts{  width: 18px;  height: 15px;  font-size: 11px;  font-weight: bold;  margin-left: 3px;  padding-right: 3px;  text-align: center;  }
+   .product img {  width: 30px;  height: 30px;  margin-left: 5px;  padding-left: 3px;  object-fit: cover;  border-radius: px; }
+   .product .p-details{  padding-left: px; }
+      .p-details{ }
+   .product .p-details h2 { font-size: 13px; color: #1d1d1d; text-align: center; padding-left: 5px; text-transform: uppercase;  font-family: ;  }
+   /*FIN CLASSEMENT*/
+   /*DEBUT EQUIPES*/
+   .container{ display: flex;  width: 100%;  height: ; background: #AED6F1; border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 3px; overflow-y: scroll; }
+   .container::-webkit-scrollbar{ display: none; }
+   .equipes-list { width: 100%; padding: px; }
+   .equipes { width: 100%;  height: 50px;  display: flex; align-items: center; padding-top: px; padding-bottom: px; box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: 3px;  border-radius: 10px;  background: #EBDEF0; overflow: hidden; } 
+   .equipes .logo-asc{ width: 40px;  height: 40px; margin-left: 5px; text-align: left;}
+   .equipes .nom-asc{  width: 290px; height: 40px; font-size: 13px; font-weight: bold; margin-left: 15px; padding-right: 10px; text-align: left;  background-color: ; text-transform: uppercase; overflow: hidden;  color: #A569BD; }
+   .equipes .nom-asc span{ color: black; font-size: 8px; letter-spacing: 1px;  word-spacing: 3px;  }
+   .equipes .annee-asc{  width: 100px;  height: 20px;  font-size: 11px; font-weight: ;  margin-left: 6px;  padding-left: 10px;  text-align: left; color: #3498DB; overflow: hidden;  background-color: ; border-left: solid 1px black;  }
+  .poule{
+  text-align: center; font-weight: bold; margin-top: 10px; border-top: solid 2px green; border-radius: 20px;
+  }
+  b{background-color: red; color: white; padding: 0px 10px 0px 10px; font-size: 15px;}
   
-   }
-   .asc-asc .nom-asc{
-   padding-left: 5px;
-   font-weight: bold;
-   letter-spacing: 2px;
-   text-transform: uppercase;
-   text-align: left;
-   }
-   .asc-asc .logo-asc{
-   width: 70px;
-   height: 70px;
-   }
-   .matchs{
-   width: 100%;
-   background-color: ;
-   }
-   .container{
-   display: flex;
-   width: 100%;
-   height: ;
-   background: #AED6F1;
-   border-radius: 10px;
-   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-   padding: 5px;
-   overflow-y: scroll;
-   
-   }
-   .container{
-   display: flex;
-   width: 100%;
-   height: ;
-   background: #AED6F1;
-   border-radius: 10px;
-   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-   padding: 5px;
-   overflow-y: scroll;
-   
-   }
-   .container::-webkit-scrollbar{
-   display: none;
-   }
-   .container form {
-   width: 92%;
-   border: 1px solid rgb(82, 74, 235);
-   border-radius: 4px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   }
-   .container form {
-   width: 92%;
-   border: 1px solid rgb(82, 74, 235);
-   border-radius: 4px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   }
-   
-   .match-list {
-   width: 100%;
-   padding: px;
-   }
-   .match {
-   width: 100%;
-   display: flex;
-   align-items: center;
-   padding-top: px;
-   padding-bottom: px;
-   box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);
-   margin-top: px;
-   border-radius: px;
-   background: #EBDEF0;
-   height: 35px;
-   overflow: hidden;
-   }
-   .match .score-finale{
-   color: black;
-   width: 55px;
-   font-weight: bold;
-   margin: 3px;
-   padding-right: 0px;
-   text-align: center;
-   font-size: 20px;
-   letter-spacing: 2px;
-   word-spacing: 2px;
-   overflow: hidden;
-   }
-   .match img {
-   width: 25px;
-   height: 25px;
-   margin-left: 5px;
-   padding-left: 3px;
-   object-fit: cover;
-   border-radius: px;
-   }
-   .match .p-details{
-   width: 160px;
-   border-right: solid 1px black;
-   padding-left: px;
-   
-   }
-   .p-details{
-   }
-   .match .p-details h2 {
-   font-size: 10px;
-   color: #1d1d1d;
-   text-align: left;
-   padding-left: 5px;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   word-spacing: 1px;
-   
-   }
-   
-   .left{ line-height: 15px; width: 170px; height: 70px; text-align: center; background-color: #F5B7B1;}
-   .left .date{ padding-top: 10px; color: black; font-size: 11px; font-weight: bold; word-spacing: 2px; }
-   .left span{ font-size: 8px; border-top: solid 1px black;}
-   .left h2{color: black; font-size: 16px; letter-spacing: 1px;}
-   
-    /*FIN DU MATCHS*/
-    /*DEBU DU EFFECTIF*/
-    .effectif-list {
-    width: 100%;
-    padding: px;
-    }
-    .effectif {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding-top: px;
-    padding-bottom: px;
-    box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);
-    margin-top: 3px;
-    border-radius: 10px;
-    background: #EBDEF0;
-    overflow: hidden;
-    }
-    
-    .effectif .photo{
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-    text-align: left;
-    border-radius: 50%;
-    }
-    .effectif .joueur-nom{
-    width: 280px;
-    height: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 25px;
-    text-align: left;
-    background-color: ;
-    text-transform: uppercase;
-    overflow: hidden;
-    color: #A569BD;
-    line-height: 22px;
-    }
-    .effectif .joueur-nom span{
-    color: black;
-    font-size: 11px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    padding-left: 10px;
-    
-    }
-    /*FIN DU EFFECTIF*/
-   
-   /*DEBUT STATISTIQUES*/
-   .statistique-list {
-   width: 100%;
-   padding: px;
-   }
-   .statistique {
-   width: 100%;
-   height: 50px;
-   display: flex;
-   align-items: center;
-   padding-top: px;
-   padding-bottom: px;
-   box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20);
-   margin-top: 3px;
-   border-radius: 10px;
-   background: #EBDEF0;
-   overflow: hidden;
-   }
-   .statistique .action{
-   width: 80%;
-   height: px;
-   font-size: 12px;
-   font-weight: bold;
-   margin-left: 15px;
-   padding-right: px;
-   text-align: left;
-   background-color: ;
-   text-transform: uppercase;
-   overflow: hidden;
-   color: #A569BD;
-   }
-   .statistique .nombre{
-   width: 20%px;
-   height: px;
-   font-size: 18px;
-   font-weight: ;
-   margin-left: 1px;
-   padding-left: 10px;
-   text-align: center;
-   color: #3498DB;
-   overflow: hidden;
-   background-color: ;
-   border-left: solid 1px black;
-   }
-   /*FIN STATISTIQUES*/
-   b{background-color: red; color: white; padding: 0px 10px 0px 10px; font-size: 15px;}
-   
-   
+   /*FIN EQUIPES*/
    @media (min-width:400px){
    .tabs {
    max-width: 700px;
@@ -310,15 +108,7 @@ a{
    width: 320px;
    }
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
    
    }
     
@@ -330,9 +120,9 @@ a{
  
 </head>
 <body>
-  <div class="asc-asc">
-  <p class="nom-asc">Asc bokk diom</p>
-  <img class="logo-asc" src="https://zupimages.net/up/22/37/5tow.png">
+  <div class="zone-zone">
+  <img src="https://zupimages.net/up/23/33/y1ou.png">
+  <p>zone de mboro</p>
   </div>
 <div class="tabs">
   <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
@@ -340,352 +130,2636 @@ a{
   <!--DEBUT DE TABS MATCH-->
   <label for="tab1" class="tabs__label">MATCHS</label>
   <div class="tabs__content">
-    <div class="matchs">
-     
-     
-     
+  
+  
  
-     
+ 
+
+  
+
+ 
+
+
+  
+  
+  
+
+ 
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+ 
+  <a style="text-decoration: none;" href="" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  29 Oct 2023
+  </p>
+  <h2>
+  17:00 <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/2ee9.png" alt="">
+  <div class="p-details">
+  <h2>mome sa rew </h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/fo8r.png" alt="">
+  <div class="p-details">
+  <h2> renaissance</h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  </div>
+  </section></a>
+  
+  
+  
+  
+  
+  
+  <a style="text-decoration: none;" href="28-RSPOIRABOURBOKKJOM.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  28 Oct 2023
+  </p>
+  <h2>
+  <b>Reporté</b> <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/dwe9.png" alt="">
+  <div class="p-details">
+  <h2>espoir bou abour </h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
+  <div class="p-details">
+  <h2>bokk jom </h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="27-ESPOIRCSMCITE2000.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  27 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/gt3e.png" alt="">
+  <div class="p-details">
+  <h2> espoir c.s.m</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/35/jsbn.png" alt="">
+  <div class="p-details">
+  <h2> cité 2000</h2>
+  </div>
+  <h2 class="score-finale"> 2 </h2>
+  </div>
+  </div>
+  </section></a>
+  
+  <a style="text-decoration: none;" href="26-JANTBIRENAISSANCE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  26 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/37/3ff8.png" alt="">
+  <div class="p-details">
+  <h2>jant bi </h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/fo8r.png" alt="">
+  <div class="p-details">
+  <h2> renaissance</h2>
+  </div>
+  <h2 class="score-finale">4 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="25-MOULAYEFALLDAARADJI.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  25 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/emaq.png" alt="">
+  <div class="p-details">
+  <h2>moulaye fall </h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/2rdi.png" alt="">
+  <div class="p-details">
+  <h2> daara dji</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="24-DEGGOESPOIRCSM.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  24 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/3nd0.png" alt="">
+  <div class="p-details">
+  <h2>déggo </h2>
+  </div>
+  <h2 class="score-finale">1</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/gt3e.png" alt="">
+  <div class="p-details">
+  <h2> espoir c.s.m</h2>
+  </div>
+  <h2 class="score-finale">2</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  23 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/o7v7.png" alt="">
+  <div class="p-details">
+  <h2> diamono</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/l5hj.png" alt="">
+  <div class="p-details">
+  <h2> hlm</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  
+  <a style="text-decoration: none;" href="" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  23 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/fo8r.png" alt="">
+  <div class="p-details">
+  <h2>renaissance </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
+  <div class="p-details">
+  <h2> bokk jom</h2>
+  </div>
+  <h2 class="score-finale"> 2</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="22-KEURPATHEKANEMAAGDAAN.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  22 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/69mz.png" alt="">
+  <div class="p-details">
+  <h2> keur pathé kane</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/ih2p.png" alt="">
+  <div class="p-details">
+  <h2> maag daan</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="22-MANKOSKF.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  22 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/c387.png" alt="">
+  <div class="p-details">
+  <h2>manko </h2>
+  </div>
+  <h2 class="score-finale"> 1</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/20r0.png" alt="">
+  <div class="p-details">
+  <h2>samba khary fall </h2>
+  </div>
+  <h2 class="score-finale"> 1</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  21 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/92sv.png" alt="">
+  <div class="p-details">
+  <h2> ngaye ngaye</h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/2ee9.png" alt="">
+  <div class="p-details">
+  <h2>mome sa rëw </h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  21 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/2rdi.png" alt="">
+  <div class="p-details">
+  <h2>daara dji </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/6ux9.png" alt="">
+  <div class="p-details">
+  <h2>médina gounass </h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="20-DIOUBOAMITIE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  20 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/dq16.png" alt="">
+  <div class="p-details">
+  <h2> dioubo</h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/38/mw6z.png" alt="">
+  <div class="p-details">
+  <h2> amitié</h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="19-CITE2000LASSERRE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  19 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/35/jsbn.png" alt="">
+  <div class="p-details">
+  <h2>cité 2000 </h2>
+  </div>
+  <h2 class="score-finale"> 1</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/t56i.png" alt="">
+  <div class="p-details">
+  <h2> lasserre</h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="19-HLMDEGGO.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  19 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/l5hj.png" alt="">
+  <div class="p-details">
+  <h2>hlm </h2>
+  </div>
+  <h2 class="score-finale">4 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/3nd0.png" alt="">
+  <div class="p-details">
+  <h2> déggo</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="18-ETOILEJAPPO.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  18 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/ptep.png" alt="">
+  <div class="p-details">
+  <h2>étoile </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/6ehi.png" alt="">
+  <div class="p-details">
+  <h2> jappo</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+
+ 
+ 
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  16 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/o7v7.png" alt="">
+  <div class="p-details">
+  <h2> diamono</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/3nd0.png" alt="">
+  <div class="p-details">
+  <h2> déggo</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="" >
+  <!--Debut a copié-->16-MBYMBYPEULARAFAT.html
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  16 Oct 2023
+  </p>
+  <h2>
+  <b>Pénalité</b> <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/37/m8eg.png" alt="">
+  <div class="p-details">
+  <h2>mbaye mbaye peulh  </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/39/6mq2.png" alt="">
+  <div class="p-details">
+  <h2>arafat </h2>
+  </div>
+  <h2 class="score-finale"> 2</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="16-DIAMONODEGGO.html" >
+  <!--Debut a copié-->
+  <a style="text-decoration: none;" href="15-BOKKJOMNGAYENGAYE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  15 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
+  <div class="p-details">
+  <h2>bokk jom </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/92sv.png" alt="">
+  <div class="p-details">
+  <h2> ngaye ngaye</h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="15-AJMBOROAMITIE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  15 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/kv7e.png" alt="">
+  <div class="p-details">
+  <h2> aj mboro </h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/38/mw6z.png" alt="">
+  <div class="p-details">
+  <h2> amitié</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="14ESPOIRABOURMOMESAREW.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  14 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/dwe9.png" alt="">
+  <div class="p-details">
+  <h2> espoir bou abour</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/2ee9.png" alt="">
+  <div class="p-details">
+  <h2> mome sa rëw</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="14LASSERREESPOIRCSM.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  14 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/t56i.png" alt="">
+  <div class="p-details">
+  <h2>lasserre  </h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/gt3e.png" alt="">
+  <div class="p-details">
+  <h2>espoir c.s.m </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="13MEDINAGOUNASSARAFAT.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  13 Oct 2023
+  </p>
+  <h2>
+  <b>Pénalité</b> <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/6ux9.png" alt="">
+  <div class="p-details">
+  <h2>médina gounass </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/39/6mq2.png" alt="">
+  <div class="p-details">
+  <h2> arafat</h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="12GOREEMAAGDAAN.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  12 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/38/5fb4.png" alt="">
+  <div class="p-details">
+  <h2> goréé </h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/ih2p.png" alt="">
+  <div class="p-details">
+  <h2>maag daan </h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="12DIOUBOSAMBAKHARYFALL.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  12 Oct 2023
+  </p>
+  <h2>
+  <b>Pénalité</b> <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/dq16.png" alt="">
+  <div class="p-details">
+  <h2> dioubo </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/20r0.png" alt="">
+  <div class="p-details">
+  <h2> samba khary fall</h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="11MANKOAJMBORO.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  11 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/c387.png" alt="">
+  <div class="p-details">
+  <h2> mankoo </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/kv7e.png" alt="">
+  <div class="p-details">
+  <h2>aj mboro </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="11MOMESAREWJANTBI.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  11 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/2ee9.png" alt="">
+  <div class="p-details">
+  <h2> mome sa rëw </h2>
+  </div>
+  <h2 class="score-finale"> 1</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/37/3ff8.png" alt="">
+  <div class="p-details">
+  <h2>jant bi </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="10JAPPOKEURPATHEKANE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  10 Oct 2023
+  </p>
+  <h2>
+  17:00 <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/6ehi.png" alt="">
+  <div class="p-details">
+  <h2> jappo </h2>
+  </div>
+  <h2 class="score-finale"> 3</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/69mz.png" alt="">
+  <div class="p-details">
+  <h2> keur pathé kane</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="10ESPOIRCSMDIAMONO.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  10 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/gt3e.png" alt="">
+  <div class="p-details">
+  <h2> espoir c.s.m </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/o7v7.png" alt="">
+  <div class="p-details">
+  <h2>diamono </h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="09HLMCITE2000.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  09 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/l5hj.png" alt="">
+  <div class="p-details">
+  <h2> hlm </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/35/jsbn.png" alt="">
+  <div class="p-details">
+  <h2> cité 2000</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href=" 09GOREETOILE.html " >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  09 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/38/5fb4.png" alt="">
+  <div class="p-details">
+  <h2> goréé </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/ptep.png" alt="">
+  <div class="p-details">
+  <h2> étoile </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="08MOULAYFALLMBYMBYPEULH.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  08 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/emaq.png" alt="">
+  <div class="p-details">
+  <h2> moulaye fall </h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/37/m8eg.png" alt="">
+  <div class="p-details">
+  <h2>mbaye mbaye peulh </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="08ESPOIRABOURENAISSANCE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  08 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/dwe9.png" alt="">
+  <div class="p-details">
+  <h2> espoir bou abour </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/fo8r.png" alt="">
+  <div class="p-details">
+  <h2>renaissance </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="07MEDINDAGOUNASSARAFAT.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  07 Oct 2023
+  </p>
+  <h2>
+  <b>Reporté</b> <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/6ux9.png" alt="">
+  <div class="p-details">
+  <h2> Médina gounass </h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/39/6mq2.png" alt="">
+  <div class="p-details">
+  <h2> arafat</h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="07JANTBINGAYENGAYE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  07 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/37/3ff8.png" alt="">
+  <div class="p-details">
+  <h2> Jant bi </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/92sv.png" alt="">
+  <div class="p-details">
+  <h2>ngaye ngaye </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="06MOMESAREWBOKKJOM.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  06 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/2ee9.png" alt="">
+  <div class="p-details">
+  <h2> mome sa rëw </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
+  <div class="p-details">
+  <h2> bokk jom </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="05ETOILEMAAGDAAN.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  05 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/ptep.png" alt="">
+  <div class="p-details">
+  <h2> étoile </h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/ih2p.png" alt="">
+  <div class="p-details">
+  <h2>maag daan </h2>
+  </div>
+  <h2 class="score-finale"> 1</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="05DEGGOCITE2000.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  05 Oct 2023
+  </p>
+  <h2>
+  15:00 <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/3nd0.png" alt="">
+  <div class="p-details">
+  <h2> déggo </h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/35/jsbn.png" alt="">
+  <div class="p-details">
+  <h2> cité 2000</h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="04DAARADJIMBYMBYPEUL.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  04 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/2rdi.png" alt="">
+  <div class="p-details">
+  <h2> daara dji</h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/37/m8eg.png" alt="">
+  <div class="p-details">
+  <h2> mbaye mbaye peulh</h2>
+  </div>
+  <h2 class="score-finale"> 4</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="04FIAMONOLASSERRE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  04 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/o7v7.png" alt="">
+  <div class="p-details">
+  <h2> diamono </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/t56i.png" alt="">
+  <div class="p-details">
+  <h2>lasserre </h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="03KEURPATHEKANEGORE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  03 Oct 2023
+  </p>
+  <h2>
+  <b>Pénalité</b> <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/69mz.png" alt="">
+  <div class="p-details">
+  <h2>keur pathé kane </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/38/5fb4.png" alt="">
+  <div class="p-details">
+  <h2> goréé</h2>
+  </div>
+  <h2 class="score-finale"> 2</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="03MOULAYFALLMEDINAGOUNASS.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  03 Oct 2023
+  </p>
+  <h2>
+  1Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/emaq.png" alt="">
+  <div class="p-details">
+  <h2>moulay fall </h2>
+  </div>
+  <h2 class="score-finale"> 1</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/6ux9.png" alt="">
+  <div class="p-details">
+  <h2>médina gounass </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="02ESPOIRABOURJANTBI.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  02 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/dwe9.png" alt="">
+  <div class="p-details">
+  <h2> espoir bou abour</h2>
+  </div>
+  <h2 class="score-finale"> 2</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/37/3ff8.png" alt="">
+  <div class="p-details">
+  <h2>jant bi </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="02AJMBORODIOUBO.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  02 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/kv7e.png" alt="">
+  <div class="p-details">
+  <h2>aj mboro </h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/dq16.png" alt="">
+  <div class="p-details">
+  <h2>dioubo </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="01AMITIESKF.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  01 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/38/mw6z.png" alt="">
+  <div class="p-details">
+  <h2>amitié </h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/20r0.png" alt="">
+  <div class="p-details">
+  <h2> skf</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="01HLMCITESMANSOUR.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  01 Oct 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/l5hj.png" alt="">
+  <div class="p-details">
+  <h2>hlm </h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/gt3e.png" alt="">
+  <div class="p-details">
+  <h2> espoir c.s.m</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="25CITE2000DIAMONO.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  30 Sept 2023
+  </p>
+  <h2>
+  <b>Pénalité</b><br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/o7v7.png" alt="">
+  <div class="p-details">
+  <h2> diamono</h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/35/jsbn.png" alt="">
+  <div class="p-details">
+  <h2> cité 2000</h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="25MOMESAREWBOKKJOM.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  30 Sept 2023
+  </p>
+  <h2>
+  <b>REPORTÉ</b> <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
+  <div class="p-details">
+  <h2> bokk jom</h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/2ee9.png" alt="">
+  <div class="p-details">
+  <h2> mome sa rëw</h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
    
-     <a style="text-decoration: none;" href="" >
-     <!--Debut a copié-->
-     <section class="container">
-     <div class="left">
-     <p class="date">
-     28 Oct 2023
-     </p>
-     <h2>
-     17:00 <br><span>CHAMPIONNAT</span>
-     </h2>
-     </div>
-     <div class="match-list" id="match-list">
-     <div class="match">
-     <img src="https://zupimages.net/up/22/37/dwe9.png" alt="">
-     <div class="p-details">
-     <h2>espoir bou abour </h2>
-     </div>
-     <h2 class="score-finale"> </h2>
-     </div>
-     <div class="match">
-     <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
-     <div class="p-details">
-     <h2>bokk jom </h2>
-     </div>
-     <h2 class="score-finale"> </h2>
-     </div>
-     </div>
-     </section></a>
-     
-     
-     
-     <a style="text-decoration: none;" href="" >
-     <!--Debut a copié-->
-     <section class="container">
-     <div class="left">
-     <p class="date">
-     23 Oct 2023
-     </p>
-     <h2>
-     Terminé <br><span>CHAMPIONNAT</span>
-     </h2>
-     </div>
-     <div class="match-list" id="match-list">
-     <div class="match">
-     <img src="https://zupimages.net/up/23/34/fo8r.png" alt="">
-     <div class="p-details">
-     <h2>renaissance </h2>
-     </div>
-     <h2 class="score-finale">0 </h2>
-     </div>
-     <div class="match">
-     <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
-     <div class="p-details">
-     <h2> bokk jom</h2>
-     </div>
-     <h2 class="score-finale"> 1</h2>
-     </div>
-     </div>
-     </section></a>
-     <a style="text-decoration: none;" href="15-BOKKJOMNGAYENGAYE.html" >
-     <!--Debut a copié-->
-     <section class="container">
-     <div class="left">
-     <p class="date">
-     15 Oct 2023
-     </p>
-     <h2>
-     Terminé <br><span>CHAMPIONNAT</span>
-     </h2>
-     </div>
-     <div class="match-list" id="match-list">
-     <div class="match">
-     <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
-     <div class="p-details">
-     <h2>bokk jom </h2>
-     </div>
-     <h2 class="score-finale">0 </h2>
-     </div>
-     <div class="match">
-     <img src="https://zupimages.net/up/22/36/92sv.png" alt="">
-     <div class="p-details">
-     <h2> ngaye ngaye</h2>
-     </div>
-     <h2 class="score-finale"> 0</h2>
-     </div>
-     </div>
-     </section></a>
-   <a style="text-decoration: none;" href="06MOMESAREWBOKKJOM.html" >
-   <!--Debut a copié-->
-   <section class="container">
-   <div class="left">
-   <p class="date">
-   06 Oct 2023
-   </p>
-   <h2>
-   Terminé <br><span>CHAMPIONNAT</span>
-   </h2>
-   </div>
-   <div class="match-list" id="match-list">
-   <div class="match">
-   <img src="https://zupimages.net/up/22/36/2ee9.png" alt="">
-   <div class="p-details">
-   <h2> mome sa rëw </h2>
-   </div>
-   <h2 class="score-finale">0 </h2>
-   </div>
-   <div class="match">
-   <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
-   <div class="p-details">
-   <h2> bokk jom </h2>
-   </div>
-   <h2 class="score-finale"> 0</h2>
-   </div>
-   </div>
-   </section></a>
-     
-     <a style="text-decoration: none;" href="BOKKJOMJANTBI.html" >
-     <!--Debut a copié-->
-     <section class="container">
-     <div class="left">
-     <p class="date">
-     18 Sept 2023
-     </p>
-     <h2>
-     Forfait <br><span>CHAMPIONNAT</span>
-     </h2>
-     </div>
-     <div class="match-list" id="match-list">
-     <div class="match">
-     <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
-     <div class="p-details">
-     <h2>Bokk jom</h2>
-     </div>
-     <h2 class="score-finale">3 </h2>
-     </div>
-     <div class="match">
-     <img src="https://zupimages.net/up/23/37/3ff8.png" alt="">
-     <div class="p-details">
-     <h2> jant bi</h2>
-     </div>
-     <h2 class="score-finale">0 </h2>
-     </div>
-     </div>
-     </section></a>
-    <!-- Fin a copié-->
-     
-    </div>
+  </div>
+  </section></a>
+  
+  <a style="text-decoration: none;" href="24MOULAYFALLARAFAT.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  24 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/emaq.png" alt="">
+  <div class="p-details">
+  <h2>Moulaye fall</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/39/6mq2.png" alt="">
+  <div class="p-details">
+  <h2>arafat </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="24JAPPOGORÉ.html" >
+  
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  24 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/6ehi.png" alt="">
+  <div class="p-details">
+  <h2>jappo</h2>
+  </div>
+  <h2 class="score-finale"> 1</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/38/5fb4.png" alt="">
+  <div class="p-details">
+  <h2>goréé </h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="23DIOUBOMANKO.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  23 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/dq16.png" alt="">
+  <div class="p-details">
+  <h2>dioubo</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/c387.png" alt="">
+  <div class="p-details">
+  <h2>manko</h2>
+  </div>
+  <h2 class="score-finale"> 2</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="#" >
+  <!--Debut a copié-->
+  <a style="text-decoration: none;" href="23RENAISSANVENGAYENGAYE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  23 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/fo8r.png" alt="">
+  <div class="p-details">
+  <h2>renaissance</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/92sv.png" alt="">
+  <div class="p-details">
+  <h2>ngaye ngaye </h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="22HLMLASSERRE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  22 Sept 2023
+  </p>
+  <h2>
+  Terminé  <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/l5hj.png" alt="">
+  <div class="p-details">
+  <h2>hlm</h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/t56i.png" alt="">
+  <div class="p-details">
+  <h2> lasserre </h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="MEDINAGOUNASSMBYMBYPEUL21.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  21 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/6ux9.png" alt="">
+  <div class="p-details">
+  <h2>médina gounass</h2>
+  </div>
+  <h2 class="score-finale"> 0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/37/m8eg.png" alt="">
+  <div class="p-details">
+  <h2> Mbaye Mbaye Peulh</h2>
+  </div>
+  <h2 class="score-finale">2 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="ETOILEKEURPATHEKANE21.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  21 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/ptep.png" alt="">
+  <div class="p-details">
+  <h2>étoile</h2>
+  </div>
+  <h2 class="score-finale">0</h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/69mz.png" alt="">
+  <div class="p-details">
+  <h2>keur pathé kane </h2>
+  </div>
+  <h2 class="score-finale">1</h2>
+  </div>
+  </div>
+  </section></a>
+<a style="text-decoration: none;" href="MAAGDAANJAPPO20.html" >
+<!--Debut a copié-->
+<section class="container">
+<div class="left">
+<p class="date">
+20 Sept 2023
+</p>
+<h2>
+Terminé <br><span>CHAMPIONNAT</span>
+</h2>
+</div>
+<div class="match-list" id="match-list">
+<div class="match">
+<img src="https://zupimages.net/up/22/36/ih2p.png" alt="">
+<div class="p-details">
+<h2>maag daan</h2>
+</div>
+<h2 class="score-finale">0 </h2>
+</div>
+<div class="match">
+<img src="https://zupimages.net/up/22/36/6ehi.png" alt="">
+<div class="p-details">
+<h2> jappo</h2>
+</div>
+<h2 class="score-finale"> 0</h2>
+</div>
+</div>
+</section></a>
+  <a style="text-decoration: none;" href="MOMESAREWRENAISSANCE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  19 Sept 2023
+  </p>
+  <h2>
+  <b>REPORTÉ</b><br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/2ee9.png" alt="">
+  <div class="p-details">
+  <h2>mome sa rëw</h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/fo8r.png" alt="">
+  <div class="p-details">
+  <h2> renaissance</h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  </div>
+  </section></a>
+
+<a style="text-decoration: none;" href="ARAFATDAARADJI.html" >
+<!--Debut a copié-->
+<section class="container">
+<div class="left">
+<p class="date">
+19 Sept 2023
+</p>
+<h2>
+Terminé <br><span>CHAMPIONNAT</span>
+</h2>
+</div>
+<div class="match-list" id="match-list">
+<div class="match">
+<img src="https://zupimages.net/up/23/39/6mq2.png" alt="">
+<div class="p-details">
+<h2>arafat</h2>
+</div>
+<h2 class="score-finale">1 </h2>
+</div>
+<div class="match">
+<img src="https://zupimages.net/up/22/36/2rdi.png" alt="">
+<div class="p-details">
+<h2> daara dji</h2>
+</div>
+<h2 class="score-finale"> 0</h2>
+</div>
+</div>
+</section></a>
+  <a style="text-decoration: none;" href="SAMBAKHARIFALLAJMBORO.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  18 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/20r0.png" alt="">
+  <div class="p-details">
+  <h2>Samba khary fall</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/kv7e.png" alt="">
+  <div class="p-details">
+  <h2> aj mboro</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+  
+  
+  <a style="text-decoration: none;" href="BOKKJOMJANTBI.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  18 Sept 2023
+  </p>
+  <h2>
+  Forfait <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/5tow.png" alt="">
+  <div class="p-details">
+  <h2>Bokk jom</h2>
+  </div>
+  <h2 class="score-finale">3 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/37/3ff8.png" alt="">
+  <div class="p-details">
+  <h2> jant bi</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="NGAYENGAYEESPOIRABOUR.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  17 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/92sv.png" alt="">
+  <div class="p-details">
+  <h2> Ngaye ngaye</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/dwe9.png" alt="">
+  <div class="p-details">
+  <h2> espoir abour</h2>
+  </div>
+  <h2 class="score-finale">0 </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="MANKOOAMITIER.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  17 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>CHAMPIONNAT</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/c387.png" alt="">
+  <div class="p-details">
+  <h2> mankoo</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/38/mw6z.png" alt="">
+  <div class="p-details">
+  <h2>amitié </h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  </div>
+  </section></a>
+<a style="text-decoration: none;" href="#" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  16 Sept 2023
+  </p>
+  <h2>
+   Terminé <br><span>Finale 4 Grands</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/t56i.png" alt="">
+  <div class="p-details">
+  <h2> lasserre</h2>
+  </div>
+  <h2 class="score-finale">1 </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/3nd0.png" alt="">
+  <div class="p-details">
+  <h2>déggo </h2>
+  </div>
+  <h2 class="score-finale">0</h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="#" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  17 Sept 2023
+  </p>
+  <h2>
+  <b>REPORTÉ</b> <br><span>Finale 4 Grands</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/l5hj.png" alt="">
+  <div class="p-details">
+  <h2> hlm</h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/gt3e.png" alt="">
+  <div class="p-details">
+  <h2>Espoir c.s.m </h2>
+  </div>
+  <h2 class="score-finale"> </h2>
+  </div>
+  </div>
+  </section></a>
+  <a style="text-decoration: none;" href="ESPOIRABOURCITE200.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  10 Sept 2023
+  </p>
+  <h2>
+  Terminé <br><span>Finale 4 Grands</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/dwe9.png" alt="">
+  <div class="p-details">
+  <h2>espoir aboir</h2>
+  </div>
+  <h2 class="score-finale">1<span style="font-size: 11px;">(6)</span></h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/35/jsbn.png" alt="">
+  <div class="p-details">
+  <h2>Cité 2000</h2>
+  </div>
+  <h2 class="score-finale">1<span style="font-size: 11px;">(7)</span></h2>
+  </div>
+  </div>
+  </section></a>
+  <!--MATCHE PASSÉE-->
+  <a style="text-decoration: none;" href="AJMBOROCITE2000.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  09 Sept 2023
+  </p>
+  <h2>
+  Terminé  <br><span>Demi-finale 4 Grands</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/kv7e.png" alt="">
+  <div class="p-details">
+  <h2>Aj mboro</h2>
+  </div>
+  <h2 class="score-finale">0<span style="font-size: 11px;">(2)</span></h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/23/35/jsbn.png" alt="">
+  <div class="p-details">
+  <h2>Cité 2000</h2>
+  </div>
+  <h2 class="score-finale">0<span style="font-size: 11px;">(4)</span></h2>
+  </div>
+  </div>
+  </section></a>
+  <!--MATCHE PASSÉE-->
+ 
+  <a style="text-decoration: none;" href="ETOILEESPOIRABOUR.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  09 Sept 2023
+  </p>
+  <h2>
+  Terminé  <br><span>Demi-finale 4 Grands</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/23/34/ptep.png" alt="">
+  <div class="p-details">
+  <h2>Étoile </h2>
+  </div>
+  <h2 class="score-finale">0<!--<span style="font-size: 11px;">()</span>--></h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/dwe9.png" alt="">
+  <div class="p-details">
+  <h2>Espoir abour</h2>
+  </div>
+  <h2 class="score-finale">4<!--<span style="font-size: 11px;">()</span>--></h2>
+  </div>
+  
+  </div>
+  
+  </section></a>
+  <a style="text-decoration: none;" href="ESPOIRABOURKEURPATHEKANE.html" >
+  <!--Debut a copié-->
+  <section class="container">
+  <div class="left">
+  <p class="date">
+  26 Août 2023
+  </p>
+  <h2>
+  Terminé  <br><span>Finale coupe du maire</span>
+  </h2>
+  </div>
+  <div class="match-list" id="match-list">
+  <div class="match">
+  <img src="https://zupimages.net/up/22/37/dwe9.png" alt="">
+  <div class="p-details">
+  <h2>Espoir abour</h2>
+  </div>
+  <h2 class="score-finale">0<!--<span style="font-size: 11px;">()</span>--></h2>
+  </div>
+  <div class="match">
+  <img src="https://zupimages.net/up/22/36/69mz.png" alt="">
+  <div class="p-details">
+  <h2>keur pathe kane</h2>
+  </div>
+  <h2 class="score-finale">1<!--<span style="font-size: 11px;">()</span>--></h2>
+  </div>
+  
+  </div>
+  
+  </section></a>
+  
+  
   </div>
   <!-- FIN DE TABS MATCHES-->
    <!-- DEBUT DE EFFECTIF-->
   <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
-  <label for="tab2" class="tabs__label">EFFECTIF</label>
+  <label for="tab2" class="tabs__label">CLASSEMENTS</label>
   <div class="tabs__content">
-    <!-- DEBUT EFFECTIF--->
-    <div class="effectif-list" id="effectif-list">
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom"> Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
+    
+    <!-- DÉBUT ZONE DE MATCHE--->
+    
+    <section class="container">
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC A --->
+    
+    <div class="poule">Poule A</div>
+    <div class="product">
+    <h2 class="rang-rang">#</h2>
+    <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+    <h2 class="jouer-jouer">J</h2>
+    <h2 class="victoire-victoire">V</h2>
+    <h2 class="nul-nul">N</h2>
+    <h2 class="defaite-defaite">D</h2>
+    <h2 class="buts-buts">Buts</h2>
+    <h2 class="pts-pts">Pts</h2>
     </div>
     
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom"> Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
+    <div class="product">
+    <h2 class="rang"> 1 </h2>
+    <h2 class="asc-nom">CITÉ 2000</h2>
+    <h2 class="jouer"> 5 </h2>
+    <h2 class="victoire"> 4 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 7:1 </h2>
+    <h2 class="pts"> 13 </h2>
+    </div>
+    <div class="product">
+    <h2 class="rang"> 2 </h2>
+    <h2 class="asc-nom">LASSERRE</h2>
+    <h2 class="jouer"> 5 </h2>
+    <h2 class="victoire"> 3 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 5:1 </h2>
+    <h2 class="pts"> 10 </h2>
     </div>
     
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom">Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
+    
+    <div class="product">
+    <h2 class="rang"> 3 </h2>
+    <h2 class="asc-nom">H L M</h2>
+    <h2 class="jouer"> 5 </h2>
+    <h2 class="victoire"> 2 </h2>
+    <h2 class="nul"> 3 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 4:1 </h2>
+    <h2 class="pts"> 9 </h2>
     </div>
     
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom"> Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
-    </div>
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom">Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
-    </div>
-    
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom"> Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
-    </div>
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom">Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
+   
+    <div class="product">
+    <h2 class="rang"> 4 </h2>
+    <h2 class="asc-nom">DIAMONO</h2>
+    <h2 class="jouer"> 5 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 2 </h2>
+    <h2 class="defaite"> 2 </h2>
+    <h2 class="buts"> 1:4 </h2>
+    <h2 class="pts"> 5 </h2>
     </div>
     
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom"> Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
-    </div>
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom">Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
-    </div>
-    
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom"> Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
-    </div>
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom">Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
+    <div class="product">
+    <h2 class="rang"> 6 </h2>
+    <h2 class="asc-nom">ESPOIR C S M</h2>
+    <h2 class="jouer"> 5 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 4 </h2>
+    <h2 class="buts"> 2:7 </h2>
+    <h2 class="pts"> 3 </h2>
     </div>
     
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom"> Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
+    <div class="product">
+    <h2 class="rang"> 5 </h2>
+    <h2 class="asc-nom"> DÉGGO</h2>
+    <h2 class="jouer"> 5 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 4 </h2>
+    <h2 class="buts"> 3:8 </h2>
+    <h2 class="pts"> 1 </h2>
     </div>
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom">Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
+   
+  
+ 
+   
+    <!-- FIN ASC A --->
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC A --->
+    
+    <div class="poule">Poule B</div>
+    <div class="product">
+    <h2 class="rang-rang">#</h2>
+    <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+    <h2 class="jouer-jouer">J</h2>
+    <h2 class="victoire-victoire">V</h2>
+    <h2 class="nul-nul">N</h2>
+    <h2 class="defaite-defaite">D</h2>
+    <h2 class="buts-buts">Buts</h2>
+    <h2 class="pts-pts">Pts</h2>
     </div>
     
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom"> Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
-    </div>
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom">Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
+    
+    
+    <div class="product">
+    <h2 class="rang"> 1 </h2>
+    <h2 class="asc-nom"> AJ MBORO</h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 2 </h2>
+    <h2 class="nul"> 2 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 4:1 </h2>
+    <h2 class="pts"> 8 </h2>
     </div>
     
-    <div class="effectif">
-    <h2 class="photo"> <img class="photo" src="https://zupimages.net/up/23/30/x4h7.png"> </h2>
-    <h2 class="joueur-nom"> Joueur de l'asc <br>
-    <span>0 Buts</span></h2>
+    <div class="product">
+    <h2 class="rang"> 2 </h2>
+    <h2 class="asc-nom"> AMITIÉ </h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 3 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 6:5 </h2>
+    <h2 class="pts"> 6 </h2>
     </div>
     
+    <div class="product">
+    <h2 class="rang"> 3 </h2>
+    <h2 class="asc-nom"> MANKOO </h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 3 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 4:3 </h2>
+    <h2 class="pts"> 6 </h2>
     </div>
-    <!-- FIN EFFECTIF--->
+  
+  
+  <div class="product">
+  <h2 class="rang"> 5 </h2>
+  <h2 class="asc-nom"> S K F</h2>
+  <h2 class="jouer"> 4 </h2>
+  <h2 class="victoire"> 1 </h2>
+  <h2 class="nul"> 1 </h2>
+  <h2 class="defaite"> 3 </h2>
+  <h2 class="buts"> 4:4 </h2>
+  <h2 class="pts"> 4 </h2>
+  </div>
+  <div class="product">
+  <h2 class="rang"> 4 </h2>
+  <h2 class="asc-nom"> DIOUBO </h2>
+  <h2 class="jouer"> 4 </h2>
+  <h2 class="victoire"> 0 </h2>
+  <h2 class="nul"> 1 </h2>
+  <h2 class="defaite"> 3 </h2>
+  <h2 class="buts"> 3:8</h2>
+  <h2 class="pts"> 1 </h2>
+  </div>
+   
     
+   
+   
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC A --->
+    
+    <div class="poule">Poule C</div>
+    <div class="product">
+    <h2 class="rang-rang">#</h2>
+    <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+    <h2 class="jouer-jouer">J</h2>
+    <h2 class="victoire-victoire">V</h2>
+    <h2 class="nul-nul">N</h2>
+    <h2 class="defaite-defaite">D</h2>
+    <h2 class="buts-buts">Buts</h2>
+    <h2 class="pts-pts">Pts</h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 1 </h2>
+    <h2 class="asc-nom"> NGAYE NGAYE</h2>
+    <h2 class="jouer"> 5 </h2>
+    <h2 class="victoire"> 3 </h2>
+    <h2 class="nul"> 2 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 5:1 </h2>
+    <h2 class="pts"> 11 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 2 </h2>
+    <h2 class="asc-nom"> BOKK JOM</h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 2 </h2>
+    <h2 class="nul"> 2 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 4:0 </h2>
+    <h2 class="pts"> 8 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 3 </h2>
+    <h2 class="asc-nom"> MOME SA RËW</h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 2 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 3:2 </h2>
+    <h2 class="pts"> 7 </h2>
+    </div>
+    
+   <div class="product">
+    <h2 class="rang"> 4 </h2>
+    <h2 class="asc-nom"> RENAISSANCE</h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 2 </h2>
+    <h2 class="buts"> 4:4 </h2>
+    <h2 class="pts"> 4 </h2>
+    </div>
+ 
+   <div class="product">
+   <h2 class="rang"> 5 </h2>
+   <h2 class="asc-nom"> ESPOIR ABOUR</h2>
+   <h2 class="jouer"> 4 </h2>
+   <h2 class="victoire"> 1 </h2>
+   <h2 class="nul"> 1 </h2>
+   <h2 class="defaite"> 2 </h2>
+   <h2 class="buts"> 2:2 </h2>
+   <h2 class="pts"> 4 </h2>
+   </div>
+  
+    
+ 
+    
+   <div class="product">
+   <h2 class="rang"> 6 </h2>
+   <h2 class="asc-nom"> JANT BI </h2>
+   <h2 class="jouer"> 5 </h2>
+   <h2 class="victoire"> 0 </h2>
+   <h2 class="nul"> 1 </h2>
+   <h2 class="defaite"> 4 </h2>
+   <h2 class="buts"> 1:6 </h2>
+   <h2 class="pts"> 1 </h2>
+   </div>
+   
+ 
+    
+    
+    
+    
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC A --->
+    
+    <div class="poule">Poule D</div>
+    <div class="product">
+    <h2 class="rang-rang">#</h2>
+    <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+    <h2 class="jouer-jouer">J</h2>
+    <h2 class="victoire-victoire">V</h2>
+    <h2 class="nul-nul">N</h2>
+    <h2 class="defaite-defaite">D</h2>
+    <h2 class="buts-buts">Buts</h2>
+    <h2 class="pts-pts">Pts</h2>
+    </div>
+    
+    
+    <div class="product">
+    <h2 class="rang"> 2 </h2>
+    <h2 class="asc-nom"> JAPPO </h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 3 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 5:0 </h2>
+    <h2 class="pts"> 10 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 2 </h2>
+    <h2 class="asc-nom"> GORÉÉ</h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 2 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 6:2 </h2>
+    <h2 class="pts"> 7 </h2>
+    </div>
+    
+    
+    
+    <div class="product">
+    <h2 class="rang"> 3  </h2>
+    <h2 class="asc-nom"> KEUR PATHÉ KANE </h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 2 </h2>
+    <h2 class="buts"> 5:5 </h2>
+    <h2 class="pts"> 4 </h2>
+    </div>
+  
+    
+    <div class="product">
+    <h2 class="rang"> 4 </h2>
+    <h2 class="asc-nom">MAGG DAAN </h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 3 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 3:3 </h2>
+    <h2 class="pts"> 3 </h2>
+    </div>
+    
+    
+    <div class="product">
+    <h2 class="rang"> 5 </h2>
+    <h2 class="asc-nom"> ETOILE </h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 2 </h2>
+    <h2 class="buts"> 1:3 </h2>
+    <h2 class="pts"> 2 </h2>
+    </div>
+    
+ 
+    
+   
+    
+
+    
+  
+    
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC A --->
+    
+    <div class="poule">Poule E</div>
+    <div class="product">
+    <h2 class="rang-rang">#</h2>
+    <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+    <h2 class="jouer-jouer">J</h2>
+    <h2 class="victoire-victoire">V</h2>
+    <h2 class="nul-nul">N</h2>
+    <h2 class="defaite-defaite">D</h2>
+    <h2 class="buts-buts">Buts</h2>
+    <h2 class="pts-pts">Pts</h2>
+    </div>
+    
+    
+    
+ 
+    
+    <div class="product">
+    <h2 class="rang"> 1 </h2>
+    <h2 class="asc-nom"> MOULAYE FALL </h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 4 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 6:1 </h2>
+    <h2 class="pts"> 12 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 2 </h2>
+    <h2 class="asc-nom"> ARAFAT </h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 3 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 5:1 </h2>
+    <h2 class="pts"> 9 </h2>
+    </div>
+  
+    <div class="product">
+    <h2 class="rang"> 3 </h2>
+    <h2 class="asc-nom"> MBAYE MBAYE PEUL </h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 2 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 2 </h2>
+    <h2 class="buts"> 6:4 </h2>
+    <h2 class="pts"> 6 </h2>
+    </div>
+    
+   
+    
+    <div class="product">
+    <h2 class="rang"> 4 </h2>
+    <h2 class="asc-nom"> MÉDINA GOUNASS </h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 3 </h2>
+    <h2 class="buts"> 3:5 </h2>
+    <h2 class="pts"> 3 </h2>
+    </div>
+    
+    <div class="product">
+    <h2 class="rang"> 5 </h2>
+    <h2 class="asc-nom"> DAARA DJI</h2>
+    <h2 class="jouer"> 4 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 4 </h2>
+    <h2 class="buts"> 1:9 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+
+    
+    
+    </div>
+    
+    </section>
   </div>
   <!-- FIN DE EFFECTIF-->
   <!---DEBUT STATISTIQUES--->
   <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
-  <label for="tab3" class="tabs__label">STATISTIQUES</label>
+  <label for="tab3" class="tabs__label">EQUIPES</label>
   <div class="tabs__content">
-  <!-- DÉBUT STATISTIQUES --->
   
-  <div class="statistique">
-  <h2 class="action">Matchs joués </h2>
   
-  <h2 class="nombre"> 4 </h2>
-  
-  </div>
-  <div class="statistique">
-  <h2 class="action">Victoire </h2>
-  <h2 class="nombre"> 2 </h2>
-  </div>
-  <div class="statistique">
-  <h2 class="action">Nul </h2>
-  <h2 class="nombre"> 2 </h2>
-  </div>
-  <div class="statistique">
-  <h2 class="action">Défaite </h2>
-  <h2 class="nombre"> 0 </h2>
-  </div>
-  <div class="statistique">
-  <h2 class="action">Buts Marqués </h2>
-  
-  <h2 class="nombre"> 3 </h2>
-  
-  </div>
-  <div class="statistique">
-  <h2 class="action">Buts Marqués </h2>
-  
-  <h2 class="nombre"> 0 </h2>
-  
-  </div>
-  <div class="statistique">
-  <h2 class="action">Buts Encaissés  </h2>
-  
-  <h2 class="nombre"> 0  </h2>
-  
-  </div>
-  
-  <div class="statistique">
-  <h2 class="action"> Cartons Jaune </h2>
-  
-  <h2 class="nombre"> 2 </h2>
-  
-  </div>
-  
-  <div class="statistique">
-  <h2 class="action"> Cartons Rouge </h2>
-  
-  <h2 class="nombre"> 0  </h2>
-  
-  </div>
-  
-  <div class="statistique">
-  <h2 class="action">Buts sur Coup-franc </h2>
-  
-  <h2 class="nombre"> 0 </h2>
-  
-  </div>
-  <div class="statistique">
-  <h2 class="action">Buts sur Penalty  </h2>
-  
-  <h2 class="nombre"> 0  </h2>
-  
-  </div>
-  
-  <div class="statistique">
-  <h2 class="action"> Buts sur Penalty Concédés </h2>
-  
-  <h2 class="nombre"> 0  </h2>
-  
-  </div>
+ <section class="container">
+ 
+ <div class="equipes-list" id="product-list">
+ <!-- DÉBUT ASC A --->
+ 
+ 
+ 
+ 
+ <a href="ajmboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/kv7e.png"> </h2>
+ <h2 class="nom-asc">aj de mboro<br><span>Créréé en</span></h2>
+ <h2 class="annee-asc"> 0000  </h2>
+ </div></a>
+ <a href="amitiemboro.html" >
+ <div class="equipes">
+ 
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/38/mw6z.png"> </h2>
+ <h2 class="nom-asc"> amitié  <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="arafatmboro.html" >
+ <div class="equipes">
+ 
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/39/6mq2.png"> </h2>
+ <h2 class="nom-asc"> arafat <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="bokkdiommboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/37/5tow.png"> </h2>
+ <h2 class="nom-asc"> bokk diom <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000 </h2>
+ 
+ </div></a>
+ <a href="cite2000mboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/35/jsbn.png"> </h2>
+ <h2 class="nom-asc"> cité 2000 <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="daaradjimboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/2rdi.png"> </h2>
+ <h2 class="nom-asc"> daara dji <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ </div></a>
+ <a href="diamonomboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/34/o7v7.png"> </h2>
+ <h2 class="nom-asc"> diamono <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ </div></a>
+ <a href="deggomboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/37/3nd0.png"> </h2>
+ <h2 class="nom-asc"> deggo <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="dioubomboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/dq16.png"> </h2>
+ <h2 class="nom-asc"> dioubo <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="espoirabourmboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/37/dwe9.png"> </h2>
+ <h2 class="nom-asc"> espoir abour <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="espoircsmmboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/gt3e.png"> </h2>
+ <h2 class="nom-asc"> espoir cité s mansour<br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
 
-  
-  <!-- FIN STATISTIQUES--->
-  
-  
-  
+ <a href="etoilemboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/34/ptep.png"> </h2>
+ <h2 class="nom-asc"> étoile<br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="goreemboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/38/5fb4.png"> </h2>
+ <h2 class="nom-asc"> goréé <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="hlmmboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/l5hj.png"> </h2>
+ <h2 class="nom-asc"> hlm <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="jantbimboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/37/3ff8.png"> </h2>
+ <h2 class="nom-asc"> jant bi <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="jappomboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/6ehi.png"> </h2>
+ <h2 class="nom-asc"> jappo <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+
+ <a href="keurpathekanemboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/69mz.png"> </h2>
+ <h2 class="nom-asc"> keur pathé kane <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="lasserremboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/34/t56i.png"> </h2>
+ <h2 class="nom-asc"> lasserre <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="maagdaanmboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/ih2p.png"> </h2>
+ <h2 class="nom-asc"> maag daan <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="mankoomboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/34/c387.png"> </h2>
+ <h2 class="nom-asc"> maanko <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="mbayembayepeulmboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/37/m8eg.png"> </h2>
+ <h2 class="nom-asc"> mbaye-mbaye peul <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="medinagounassmboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/6ux9.png"> </h2>
+ <h2 class="nom-asc"> medina gounass <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="moulayefallmboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/emaq.png"> </h2>
+ <h2 class="nom-asc"> moulaye fall <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="momesarewmboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/2ee9.png"> </h2>
+ <h2 class="nom-asc"> mome sa reew <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <a href="ngayengayemboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/22/36/92sv.png"> </h2>
+ <h2 class="nom-asc"> ngaye-ngaye <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+
+ <a href="renaissancemboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/34/fo8r.png"> </h2>
+ <h2 class="nom-asc"> renaissance <br><span>Créréé en</span></h2>
+ <h2 class="annee-asc"> 0000  </h2>
+ </div></a>
+ 
+ <a href="skfmboro.html" >
+ <div class="equipes">
+ <h2 class="logo-asc"> <img class="logo-asc" src="https://zupimages.net/up/23/34/20r0.png"> </h2>
+ <h2 class="nom-asc"> samba khary fall <br><span>Créréé en</span></h2>
+ 
+ <h2 class="annee-asc"> 0000  </h2>
+ 
+ </div></a>
+ <!-- FIN ASC A --->
+ 
+ 
+ </div>
+ </section>
   </div>
-  
   <!--FIN STATISTIQUES--->
-  
 </div>
-
-    
-   
 </body>
 </html>
