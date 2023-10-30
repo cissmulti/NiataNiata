@@ -1,12 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Infos</title>
+  <title>Page d'accueil</title>
+  <meta http-equiv="refresh" content="">
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https:fonts.googleapis.com" />
   <link rel="preconnect" href="https:fonts.gstatic.com" />
   <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap" rel="stylesheet">
+   
    <link
    rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -14,491 +20,229 @@
    crossorigin="anonymous"
    referrerpolicy="no-referrer"
    />
-   <meta http-equiv="refresh" content="">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*
-{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
-}
-body
-{
-/* display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-backgrund: #23242a;*/
-}
+  <link rel="stylesheet" href="style.css" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
 
-a{
-text-decoration: none;
-}
-.article{
-width: 100%;
-flex-direction: column;
-padding-top: 2px;
-margin-bottom: 25px;
-}
-.article a{
-text-decoration: none;
-}
-
-.form
-{
-position: relative;
-border-radius: 8px;
-background: #28292d;
-/*z-index: 10;*/
-margin-left: 3px;
-margin-right: 3px;
-margin-top: 15px;
-display: flex;
-width: 98%;
-height: 85px;
-overflow: hidden;
-/*flex-direction: column;*/
-}
-.photo
-{
-position: relative;
-border-radius: 6px;
-min-width: 25%;
-min-height: 35%;
-/*padding-top: 10px;
-padding-bottom: 10px;*/
-margin: 5px 5px 5px 5px;
-}
-.titre {
-line-height: 18px;
-}
-
-.titre-2{border-bottom: solid 1px white;}
-.titre h2{
-
-justify-content: space-between;
-width: ;
-color: white;
-font-weight: 400;
-text-align: left;
-margin-left: 5px;
-margin-right: 5px;
-padding-top: 5px;
-padding-bottom: px;
-/*letter-spacing: 0.1em;*/
-font-size: 16px;
-line-height: 20px;
-/*white-space:nowrap;*/
-}
-
-
-.dateP1{
-z-index:;
-position: absolute;
-background: green;
-text-align: center;
-height: 16px;
-width: 25%;
-bottom:0;
-left:5px;
-border-radius: 35%;
-}
-.dateP1{
-color: white;
-font-size: 10px;
-padding-right: 10px;
-margin-bottom: tpx;
-text-align: center;
-}
-.form2
-{
-position: relative;
-border-radius: 8px;
-background: #28292d;
-/*z-index: 10;*/
-margin-left: 3px;
-margin-right: 3px;
-margin-top: 15px;
-display: flex;
-width: 98%;
-height: 370px;
-overflow: hidden;
-flex-direction: column;
-}
-.photo2
-{
-position: relative;
-border-radius: 6px;
-width: 90%;
-height: 220px;
-/*padding-top: 10px;
-padding-bottom: 10px;*/
-margin: 15px 5px 5px 18px;
-}
-.titre-2{
-margin: 14px; 8px;
-color: white;
-text-align: ;
-font-size: 19px;
-line-height: 17px;
-}
-.detail-titre-2{
-margin: 15px 15px;
-color: white;
-font-weight: 300;
-text-align: ;
-font-size: 14px;
-}
-.date2 {
-color: white;
-font-size: 9px;
-text-align: right;
-margin-right: 14px;
-}
-.dateP{
-z-index:;
-position: absolute;
-background: green;
-text-align: right;
-height: 16px;
-width: 100%;
-bottom:0;
-right:0;
-}
-.dateP p{
-color: white;
-font-size: 10px;
-padding-right: 10px;
-margin-bottom: tpx;
-}
-
-@media (min-width:400px){
-.form
-{
-/*z-index: 10;*/
-margin-left: 3px;
-margin-right: 3px;
-width: 99%;
-height: 200px;
-/*flex-direction: column;*/
-}
-.photo
-{
-width: 30%;
-height: 190px;
-/*padding-top: 10px;
-padding-bottom: 10px;*/
-margin: 5px 5px 5px 5px;
-}
-
-.titre h2
-{
-width: 100%;
-font-weight: 800;
-margin-left: 15px;
-padding-top: 8px;
-/*letter-spacing: 0.1em;*/
-font-size: 30px;
-line-height: 30px;
-/*white-space:nowrap;*/
-}
-.titre h4{
-width: ;
-font-weight: 300;
-text-align: left;
-margin: 5px 5px 5px 15px;
-/*letter-spacing: 0.1em;*/
-font-size: 30px;
-padding-bottom: 2px;
-line-height: 35px;
-}
-.form2
-{
-/*z-index: 10;*/
-margin-left: 3px;
-margin-right: 3px;
-margin-top: 15px;
-width: 99%;
-height: 500px;
-}
-.photo2
-{
-position: relative;
-border-radius: 6px;
-width: 100%;
-height: 400px;
-margin: 0px 5px 5px 0px;
-}
-.titre-2{
-margin: 14px; 8px;
-color: white;
-text-align: ;
-font-size: 25px;
-line-height: 17px;
-font-weight: bold;
-}
-.detail-titre-2{
-margin: 15px 15px;
-color: white;
-font-weight: 300;
-text-align: ;
-font-size: 25px;
-}
-.dateP{
-z-index:1000;
-position: relative;
-background: green;
-text-align: right;
-height: 35px;
-}
-.dateP p{
-color: white;
-font-size: 17px;
-padding-right: 10px;
-margin-bottom: px;
-}
-
-}
-.publicite{ position:fixed; z-index:1;  width: 100%;  height: 60px; bottom: 50px; text-align: center; border-top: solid 1px black;  background-color: #212F3C; }
-   .publicite h1{ font-size: 14px;  background-color: cyan;  border-radius: 10px;  letter-spacing: 2px; }
-   .publicite h2{  font-size: 12px; background-color: ;  border-radius: 10px; letter-spacing: 2px;  line-height: 13px; }
-   .publicite img{
-   width: 90%;
-   height: 55px
-   }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body{ width: 90%; height: ; background: rgb(240, 239, 243); margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+a{ text-decoration: none; }
+   .en-tete{ display: flex; align-items: center; justify-content: left; border-bottom: solid 1px green; }
+   .en-tete img{ width: 35px;  padding: 5px; }
+   .en-tete h2{ font-size: 8px; color: blue; padding-left: 5px; letter-spacing: 1px; padding: 5px; border-radius: 10px; background-color: #F5EEF8; }
+   
+   /*DEBUT MAIN*/
+   .match{  display: flex;  width: 100%;   height: 100px;  align-items: center;   justify-content: center;  background-color: yellow;  }
+   .match .port-logo{  width: 150px;;  height: 100px;  display: ;  text-align: center;  background-color: cyan;  justify-content: center;  }
+   .port-logo .logo-asc{  width: 100px;  height: 100px; border-radius: 50%;  background-color: blue;   } 
+   .logo-asc img{  width: 50px;  height: 50px;  margin: auto;   display: block;  }
+   
+   .port-logo h2{   font-size: 12px;   }
+   /*FIN MAIN*/
+   blink {-webkit-animation: 1s linear infinite condemed_blink_effect; // pour Safari 4.0-8.0 animation: 1s linear infinite condemed_blink_effect; }
+   @-webkit-keyframes condemed_blink_effect { // pour Safari 4.0-8.0 0% { visibility: hidden;} 50% { visibility: hidden; } 100% { visibility: visible; }} @keyframes condemed_blink_effect { 0% { visibility: hidden; } 50% { visibility: hidden; } 100% { visibility: visible; } }
+   .zonede{display: flex; align-items: center; justify-content: left; border-top: solid 1px green; margin-top: 5px; border-radius: 10px; }
+   .zonede img{width: 30px; margin-left: 5px;}
+   .zonede p{font-size: 10px; font-weight: bold; text-transform: uppercase; margin-left: 3px; }
+   .radio{ display: flex; width: 98%; margin-left: 3px;  align-items: center;   justify-content: center;  height: 135px;  background-color: #A9DFBF; border-radius: 10px; border-bottom: solid 1px green; }
+   .logo-radio{display: block; width: 130px; padding: px; line-height: 12px; : 4px;}
+ 
+   .logo-radio img{ width: 85px;  padding:0px; }
+   .logo-radio p{ text-transform: capitalize; font-size: 12px; font-weight: bold;}
+   .detail-radio h1{font-size: 40px; padding-top: px; color: #196F3D;}
+   .detail-radio{ width: 85px; background-color: #A9CCE3; margin:4px; text-decoration: none;  border-radius: 10px; line-height: px; text-align: center; height: 60px; }
+    .detail-heur h1{width: 100%; font-size: 18px; background-color: #D0ECE7;}
+    
+    .detail-date h2{width: 100%; font-size: 11px; background-color: #D0ECE7;}
+    .centre{display: block; align-items: center; justfy-content: center;}
+  .comentateur{ display: block;  }
+   .comentateur p{ font-size: 10px; border-radius: 20px; text-align: center;  padding-left: px; font-weight: bold;  margin-top: 5px; }
+    button{border: none;}
+   .date-rencontre{width: 100%; margin-top: 15px; border-top: solid 1px black; letter-spacing: 2px; background-color: #FCF3CF; color: ; font-size: 6px; border-radius: 10px; padding: 2px 15px; }
+   
+   
+   .publicite{ position:fixed; z-index:1;  width: 100%; left:0; height: 60px; bottom: 50px; text-align: center; border-top: solid 1px black;  background-color: #212F3C; }
+   .publicite img{  width: 100%;  height: 55px; left: 0px; padding-top: 3px; }
    /*DEBUT NAVIGATION MOBIL */
-   .navigation-mobile{ z-index: 1; background: #FAD7A0; position: fixed; bottom: 0;  left: 0; right: 0; display: flex; height: 50px; width: 100%;  justify-content: space-around; }
-   .navigation-mobile p{ color: black; font-size: 11px; font-weight: bold; }
+   .navigation-mobile{z-index: 1; background: #FAD7A0; position: fixed; bottom: 0;  left: 0; right: 0; display: flex; height: 50px; width: 100%;  justify-content: space-around; }
+   .navigation-mobile p{padding-bottom: 5px; color: black; font-size: 11px; font-weight: bold;}
    .bloc-icon{ display: flex; width: 100px; flex-direction: column; justify-content: center; align-items: center; padding-top: 5px; }
-   .bloc-icon img{ width: 20px;}
-   /*.navigation-mobile:hover{ background: orange;  height: px; border: 1px solid black; }
-   .bloc-icon:hover{ color: white;  background-color: #9B59B6;  }
+   .bloc-icon img{ width: 20px; }
+  /*.navigation-mobile:hover{ background: orange;  height: px; border: 1px solid black; }
+   .bloc-icon:hover{ color: white;  background-color: #9B59B6;  }*
    .bloc-icon img:hover{  color: white; }
    .navigation-mobile p:hover{  font-size: 12px; color: white; }*/
-   .bloc-icon i{font-size: 25px; color: black;}
+   .bloc-icon i{font-size: 25px; color: black; }
    
    /* FIN NAVIGATION MOBIL*/
+   blink{color: white; font-weight: bold; letter-spacing: 2px; background-color: red; padding: 0px 20px;}
+   b{color: black;}
+   
+   /*Style de Accordion*/
+   
+   .container{  margin-top: 40px; display: flex;  flex-direction: column;  justify-content: center;   align-items: center;  height: ;  background-color: #eaeaea;  }
+   
+
+   /*Style de Accordion FIN */
+  .info{margin-top: 40px; background-color: white; display: flex; width: 100%; border: solid 1px black;}
+   .info .article{display: flex; padding: 4px; line-height: 18px;}
+   .info .article img{width: 100px; height: 100px; padding-top: 20px;}
+   .info .article h2{padding-left: 4px; text-align: justify; font-size: 15px;}
+   .info .article h6{padding-left: 50px; border-top: solid 1px black;}
+   .info .article button{margin-left: 70px; border: solid 1px green; border-radius: 15px; paddong: 5px; width: 100px; background-color: red; color: white; font-weight: bold;}
+   
+   .radiom{ display: flex; width: 98%; margin-left: 3px;  align-items: center;   justify-content: center;  height: 135px;  background-color: #A9DFBF; border-radius: 10px 10px 0px 0px; }
+   .logo-radiom{display: block; width: 130px; padding: px; line-height: 12px; : 4px;}
+   
+   .logo-radiom img{ width: 85px;  padding:0px; }
+   .logo-radiom p{ text-transform: capitalize; font-size: 12px; font-weight: bold;}
+   .detail-radiom h1{font-size: 40px; padding-top: px; color: #196F3D;}
+   .detail-radiom{ width: 85px; background-color: #A9CCE3; margin:4px; text-decoration: none;  border-radius: 10px; line-height: px; text-align: center; height: 60px; }
+   .detail-heur h1{width: 100%; font-size: 18px; background-color: #D0ECE7;}
+   
+   .detail-date h2{width: 100%; font-size: 11px; background-color: #D0ECE7;}
+   .centre{display: block; align-items: center; justfy-content: center;}
+   
+  .partenaire-mboro{ line-height: 13px;
+  display: flex; width: 98%; margin-left: 3px;
+  justify-content: left; align-items: center; padding-left: 5px;
+  border-radius: 0px 0px 10px 10px; border-bottom: solid 1px green; border-top: solid 1px green; background-color: #FCF3CF;
+  } 
+  .partenaire-mboro img{
+  widht: 30px; height: 30px; padding-right: 3px;
+  } 
+  .detail{ display: block; border-left: solid 1px green;}
+  .detail p{ text-transform: uppercase; letter-spacing: 4px;
+   text-aling: lfet; padding-left: 4px; 
+   } 
+   .detail h6{
+   text-align: lfet; padding-left: 4px; letter-spacing: 2px;
+   } 
    
    
-
-@media (min-width:700px){
-
-
-}
-
-
-  </style>
-  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+ .head{ z-index: 1; position: fixed; border-bottom: solid 1px green; top: 0; left: 0; right: 0; display: flex; justify-content: center; place-items: center; background-color: #A9CCE3; height: 50px; width: 100%;  justify-content: space-around;}
+  .head .bloc-icon i{font-size: 20px; color: black;}
+ .head .bloc-icon p{font-size: 10px; font-weight: bold; color: black;}
+   
+  .bloc-icon:hover{background-color: red; color: white; font-weight: bold;}
+  .bloc-icon:hover p{color: white; font-size: 11px;}
+   .bloc-icon:hover i{color: white; font-size: 30px;}
   
+   
+   #pdg{margin-top: 15px; align-items: center; justify-content: center; border: solid 1px black;}
+   video{width: 300px; height: 140px; border-radius: 20px;}
+   h5{text-align: center;}
+   
+   
+   
+ 
+   
+   @media (min-width:400px){
   
+   }
+</style>
+ 
 </head>
+<body>
 
 
-
-<img style="width: 90%; height: 300px; margin-left: 20px; margin-top: 10px;  border: solid 1px black; border-radius: 20px;" src="https://zupimages.net/up/23/43/psnr.png">
-
-
-<a href="pvmankoyakarpire.html" ><div class="form">
-<img src="https://zupimages.net/up/23/33/y1ou.png" class="photo">
-<div class="titre">
-<h2>
- <b>ZONE DE PIRE</b> Résumé PV match Manko vs Yakaar.
- Annulation de la victoire de yakaar, donc match perdu par pénalité pour les deux équipes ( 0 point pour chaque équipe)
-  Amende de  100 000 franc à l'ASC Manko.
-  Suspension de Maboury fall pour trois matchs.
-</h2>
-
-</div>
-<div class="dateP1">
-<p>
-30/09/2023
-</p>
-</div>
+<div class="head">
+<a href="match-précédents.html" ><div style="width: 120px; border-radius: 0px 15px 15px 0px ; border: solid 1px green; background-color: #FAD7A0;" class="bloc-icon">
+<i class="fa-solid fa-futbol"></i>
+<p>Matchs précédents</p>
 </div></a>
 
-<img style="width: 90%; height: 300px; margin-left: 20px; margin-top: 10px;  border: solid 1px black; border-radius: 20px;" src="https://zupimages.net/up/23/38/px5z.jpg">
-
-
-<a href="prlmlsnc.html" ><div class="form">
-<img src="https://zupimages.net/up/23/33/y1ou.png" class="photo">
-<div class="titre">
-<h2>
-<b>zone de pire</b> La commission sportive vous informe que pour des problèmes liés à
-l’inaccessibilité ....
-</h2>
-
-</div>
-<div class="dateP1">
-<p>
-13/09/2023
-</p>
-</div>
+<a href="index.html" ><div style="width: 120px; border: solid 1px green; background-color: #FAD7A0;" class="bloc-icon">
+<i class="fa-solid fa-futbol"></i>
+<p>Aujourd'hui</p>
 </div></a>
 
+<a href="match-suivants.html" ><div style="width: 120px; border-radius: 15px 0px 0px 15px ; border: solid 1px green; background-color: #FAD7A0;" class="bloc-icon">
+<i class="fa-solid fa-futbol"></i>
+<p>Matchs Suivants</p>
+</div></a>
+</div>
 
-  <a href="finalpire.html" ><div class="form">
-  <img src="https://zupimages.net/up/23/33/y1ou.png" class="photo">
-  <div class="titre">
-  <h2>
-  CNP 2023: <br> La zone de pire demare la saison <b>2023</b> avec la final du <b>CNP</b> de la saison 2022....
-  </h2>
-  
-  </div>
-  <div class="dateP1">
-  <p>
-  15/08/2023
-  </p>
-  </div>
-  </div></a>
-  </div>
-  <a href="#" ><div class="form2">
-  <img src="
-  https://zupimages.net/up/23/32/enxf.png
-  " class="photo2">
-  <div class="titre">
-  <p class="titre-2">
-  NAWÉTAANS 2023
-  </p>
-  <p class="detail-titre-2">
-  <b>MATCH AMICAL</b><br>  <b>MONACO</b> (Ngaye) vs <b>MANKO</b> (Pire)<br><b> Vendredi 11 Août 2023</b>
-  </p>
-  </div>
-  <div class="dateP">
-  <p>
-  Publié : 10 Août 2023
-  </p>
-  </div>
-  </div></a>
-  <a href="#" ><div class="form2">
-  <img src="
-  https://zupimages.net/up/23/32/saw2.png
-  " class="photo2">
-  <div class="titre">
-  <p class="titre-2">
-  NAWÉTAANS 2023
-  </p>
-  <p class="detail-titre-2">
-  <b>LA ZONE DE PIRE</b> organise une journée de partage et d'échange.<br><b>Le samedi 12 Août 2023</b>
-  </p>
-  </div>
-  <div class="dateP">
-  <p>
-  Publié : 10 Août 2023
-  </p>
-  </div>
-  </div></a>
-  
-  <a href="#" ><div class="form2">
-  <img src="
-  https://zupimages.net/up/23/32/oh0p.png
-  " class="photo2">
-  <div class="titre">
-  <p class="titre-2">
-  NAWÉTAANS 2023
-  </p>
-  <p class="detail-titre-2">
-  <b>ZONE DE PIRE</b> mercato.
-  
-  
-  </p>
-  </div>
-  <div class="dateP">
-  <p>
-  Publié : 09 Août 2023
-  </p>
-  </div>
-  </div></a>
-  <div class="article">
-  <a href="madiawdiop.html" ><div class="form">
-  <img src="
-  https://zupimages.net/up/22/32/tx0v.png
-  " class="photo">
-  <div class="titre">
-  <h2>
-  CNP 2023: <b>MADIAW DIOP</b>, l'ancien joueur de l'asc de <b>MAANKO</b> de MÉCKHÉ, est devenu le président...
-  </h2>
-  
-  </div>
-  <div class="dateP1">
-  <p>
-  25/07/2023
-  </p>
-  </div>
-  </div></a>
-  </div>
-  
-  <a href="icsics.html" ><div class="form2">
-  <img src="
-  https://zupimages.net/up/23/29/6nv6.jpg
-  " class="photo2">
-  <div class="titre">
-  <p class="titre-2">
-  (2 500 000)
-  </p>
-  <p class="detail-titre-2">
-  <b>ICS</b> : a subventionné les 25 ASC de la zone de mboro.
-  
-  
-  </p>
-  </div>
-  <div class="dateP">
-  <p>
-  Publié : 22 Juillet 2023
-  </p>
-  </div>
-  </div></a>
-  <a href="oncaveag.html" ><div class="form2">
-  <img src="
-  https://zupimages.net/up/23/29/dn8h.png
-  " class="photo2">
-  <div class="titre">
-  <p class="titre-2">
-  ONCAV (Navetanes 2023)
-  </p>
-  <p class="detail-titre-2">
-  Assemblée générale constitutive de la mutuelle sociale du Navetanne
-  Jeudi 13 juillet 2023
-  Au grand théâtre
-  ONCAV-CMU.
-  
-  </p>
-  </div>
-  <div class="dateP">
-  <p>
-  Publié : 17 Juillet 2023
-  </p>
-  </div>
-  </div></a>
-  
-  
-  <div class="article">
-  <a href="mairedembour.html" ><div class="form">
-  <img src="
-  https://zupimages.net/up/23/29/jwvs.png
-  " class="photo">
-  <div class="titre">
-  <h2>
-  CNP 2023: Le Maire <b>Cheikh Issa Sall</b> prend en charge les frais de réaffilliationsa et d’assurance de l’ensemble des <b>84</b> ASC
-  </h2>
-  
-  </div>
-  <div class="dateP1">
-  <p>
-  17/07/2023
-  </p>
-  </div>
-  </div></a>
-  </div>
-    <div style="height: 120px;"></div>
-      </div>
+<!-- TESTE-->
+<div class="container">
     
-        
-      </div>
-    <footer class="publicite">
-    <img src="https://zupimages.net/up/23/32/a3gp.gif">
-    </footer>
+   <!-- 
+  <div class="info">
+   <div class="article">
+   <img src="https://zupimages.net/up/23/37/kaiz.png">
+   <h2>Nous avons des problèmes de représentant au niveau de la zone de pire, nous recherchons un volontaire qui peut nous aider à nous représenter à pire, Contactez-nous par Whatsapp <b><h6>&nbsp;&nbsp;En cliquant sur ce bouton</h6> <a href="whatsapp://send?text=&phone=221778402203" ><button>77 840 22 03</button></a></b></h2>
+   </div>
+  </div> -->
+
+  <div style="width:100%;">
+  <img style="opacity: 0.5; width: 300px; height: 400px; padding-top: 50px; object-position: 50% 50%;" src="https://zupimages.net/up/23/39/tr41.jpg">
+  <h2 style="text-align: center;">Pas de rencontre<br>Aujourd'hui</h2>
+  </div> 
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="pdg">
+    <video controls src="pdgniataniata.mp4" nodownload preload="auto" poster="https://zupimages.net/up/23/41/59pp.png"></video>
+    <h5>PDG Niata Niata: Demande de partenariat </h5>
+</div>
+
+      
+      
+      
+      
+      
+      
+      
+    </div>
+
+<!--TESTE FIN-->
+
+
+  
+  
+  <!-- LES MATCHS PASSÉE FIN -->
+    
+    <!--Cette div pour decaler le footer-->
+    <div style="height: 120px;"></div>
+  <script type="text/javascript">
+    const faqs = document.querySelectorAll(".faq");
+    
+    faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+    faqs.forEach(item => {
+    if (item !== faq) {
+    item.classList.remove("active");
+    }
+    })
+    faq.classList.toggle("active");
+    })
+    })
+    </script>
+    
+</body>
+   <footer class="publicite">
+   <img src="https://zupimages.net/up/23/32/a3gp.gif">
+   <!--<img src="https://zupimages.net/up/23/38/nwve.gif">-->
+   
+   </footer>
    <div class="navigation-mobile">
    <a href="index.html" > <div class="bloc-icon">
    <i class="fa-solid fa-futbol"></i>
@@ -523,6 +267,5 @@ l’inaccessibilité ....
    </div>
    
    
-    </body>
-    </html>
-    
+   
+</html>
