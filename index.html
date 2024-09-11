@@ -18,13 +18,13 @@
    --ctr: ##29fd53;
    }
    body{
-   display: flex;
+/*   display: flex;
    justify-content: center;
    align-items: center;
    min-height: 100vh;
    /* background-color: var(--clr);*/
    }
-   
+   a{text-decoration: none;}
    
    
    .btn-kopar{
@@ -35,7 +35,7 @@
    padding: 3px;
    border: none;
    border-radius: 8px;
-   position: fixed;
+   position: relative;
    top: 3px;
    left: 0.4em;
    right: 0;
@@ -43,23 +43,26 @@
    }
    
    /*Debut 4 Grands*/
-   .Grands{
+  /* .Grands{
    display: block;
    justify-content: center;
    align-items: center;
    background-color: #fdedec;;
    padding: 8px;
    position: fixed;
-   top: 220px;
-   }
-   .Grands2{
+   top: 300px;
+   } */
+   .Grands{
    display: block;
    justify-content: center;
    align-items: c667enter;
    background-color: #fdedec;
    padding: 8px;
-   position: fixed;
-   top: 55px;
+   /*position: relative;*/
+   border: solid 1px red;
+   padding: 3px; 5px;
+   border-radius: 8px;
+   margin-left: 5px;
    }
    .date{
    text-align: center;
@@ -68,10 +71,18 @@
    color: black;
    font-weight: bold;
    }
-   .titre h5{
+   .titre{
+   text-align: left;
+   margin-bottom: 10px;
+   border: solid 1px red;
+   padding: 3px; 5px;
+   border-radius: 8px;
+   }
+   .titre .span2{
    color: tomato;
    text-align: center;
-   
+   text-align: right;
+   float: right;
    }
    .poule{color: blue;
    font-weight: bold;
@@ -82,50 +93,67 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 340px;
+  /* border: solid 1px black;*/
    }
    .vs{
-   width: 50px;
-   height: 30px;
-   padding: 4px;
+   width: 90px;
+   height: 50px;
+  /* padding: 4px;*/
    background-color: green;
    color: white;
    text-align: center;
-   margin: 5px;
-   font-size: 20px;
+   margin-bottom: 12px;
+   font-size: 30px;
    font-wheight: bold;
+  /* border: solid 1px black;*/
+   border-radius: 8px;
+   font-weight: 800;
+   padding: 2px 1px;
    }
    
-   .match{
-   display: flex;
+  /* .match{
+   display: block;
    justify-content: center;
    align-items: center;
    padding-left: 3px;
    padding-right: 3px;
+   text-align: center;
+   width: 130px;
+   border: solid 1px black;*/
    }
-   .match .logo{
-   width: 40px;
-   height: 40px;
+   .match.logo{
+   width: 70px;
+   height: 70px;
    background-color: white;
    border: solid 2px gray;
+   border-radius: 50%;
+   padding: 4px;
+   
    }
    .match .ascA{
-   width: 100px;
+   width: 140px;
    background-color: white;
    padding: 3px;
-   text-align: right;
+   text-align: center;
    font-size: 11px;
    text-transform: uppercase;
    }
    .match .ascB{
-   width: 100px;
+   width: 140px;
    background-color: white;
    padding: 3px;
-   text-align: left;
+   text-align: center;
    font-size: 11px;
    text-transform: uppercase;
    }
    /*Fin Style 4 grands*/
-   
+   button{
+   border: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 8px;
+   }
    
    blink {-webkit-animation: 1s linear infinite condemed_blink_effect; // pour Safari 4.0-8.0 animation: 1s linear infinite condemed_blink_effect; }
    @-webkit-keyframes condemed_blink_effect { // pour Safari 4.0-8.0 0% { visibility: hidden;} 50% { visibility: hidden; } 100% { visibility: visible; }} @keyframes condemed_blink_effect { 0% { visibility: hidden; } 50% { visibility: hidden; } 100% { visibility: visible; } }
@@ -149,23 +177,64 @@
 
 
 
-
-<div class="Grands2">
-<div class="titre">Zone de mboro<h5>C.N.P 1er journée <b class="poule">POULE D </b> </h5></div>
+<a href=" # " ><button>
+<div class="Grands">
+<div class="titre">Zone de <span style="font-size: 16px; text-transform: uppercase; letter-spacing: 2px;">mboro</span> <span class="span2">C.N.P 1er journée <b class="poule">POULE D </b> </span></div>
  
-<!-- <blink>Direct</blink> -->
-<div class="date"><span> Demain </span> <span> 15:00 </span></div>
+ <!-- <blink>Direct</blink> -->
+<div class="date"><span> Aujourd'hui </span> <span> 15:00 </span></div>
 <div class="matchs">
 <div class="match">
-<img class="logo" src="   https://zupimages.net/up/23/35/jsbn.png ">
+<img class="logo" style="width: 70px;" src="   https://zupimages.net/up/23/35/jsbn.png ">
 <h4 class="ascA"> cité 2000 </h4>
 </div>
-<a href=" # " ><div class="vs"> 
+  <div class="vs"> 
      vs
- </div></a>
+ </div>
 <div class="match">
+<img class="logo" style="width: 70px;" src="  https://zupimages.net/up/22/38/5fb4.png   ">
 <h4 class="ascB"> Goré  </h4>
-<img class="logo" src="  https://zupimages.net/up/22/38/5fb4.png   ">
+</div>
+</div>
+<!--Buteur debut -->
+<div style="margin-top: 10px; text-align: center; display: flex; justify-content: center; align-items: center; ">
+   <div style="width: 120px; margin-right: 15px; font-size: 10px; font-weight: bold; text-align: right;">
+   <!--Buteur A -->
+ 
+   <!--Buteur A -->
+   </div>
+   <div>  
+    <!--  <ion-icon name="football-outline"></ion-icon>  
+   </div>
+   <div style="width: 120px; margin-left: 15px; font-size: 10px; font-weight: bold; text-align: left;">
+    <!--Buteur B -->
+    
+    <!--Buteur B -->
+   </div>
+</div>
+<!--Buteur Fin -->
+</div> </button></a>
+
+
+<a href=" # " ><button>
+<div class="Grands">
+<div class="titre">Zone de <span style="font-size: 16px; text-transform: uppercase; letter-spacing: 2px;">mboro</span> <span class="span2">C.N.P 1er journée <b class="poule">POULE D </b> </span></div>
+ 
+ <!-- <blink>Direct</blink> -->
+<div class="date"><span> Aujourd'hui </span> <span> 17:00 </span></div>
+<div class="matchs">
+<div class="match">
+<img class="logo" style="width: 70px;" 
+src="   https://zupimages.net/up/22/36/ih2p.png  ">
+<h4 class="ascA"> maag daan </h4>
+</div>
+  <div class="vs"> 
+     vs
+ </div>
+<div class="match">
+<img class="logo" style="width: 70px;" 
+src="   https://zupimages.net/up/23/34/ptep.png   ">
+<h4 class="ascB"> étoile </h4>
 </div>
 </div>
 <!--Buteur debut -->
@@ -180,50 +249,13 @@
    </div>
    <div style="width: 120px; margin-left: 15px; font-size: 10px; font-weight: bold; text-align: left;">
     <!--Buteur B -->
-    
-    <!--Buteur B -->
-   </div>
-</div>
-<!--Buteur Fin -->
-</div>
-
-
-<div class="Grands">
-<div class="titre">Zone de mboro<h5>C.N.P 1er journée <b class="poule">POULE C</b></h5></div>
- 
- <!-- <blink>Direct</blink> -->
-<div class="date"><span> Demain </span> <span> 17:00 </span></div>
-<div class="matchs">
-<div class="match">
-<img class="logo" src="    https://zupimages.net/up/22/36/ih2p.png   ">
-<h4 class="ascA"> maag daan </h4>
-</div>
-<a href=" # " ><div class="vs">
-      vs
- </div></a>
-<div class="match">
-<h4 class="ascB"> étoile </h4>
-<img class="logo" src="   https://zupimages.net/up/23/34/ptep.png ">
-</div>
-</div>
-<!--Buteur debut -->
-<div style="margin-top: 10px; text-align: center; display: flex; justify-content: center; align-items: center; ">
-   <div style="width: 120px; margin-right: 15px; font-size: 10px; font-weight: bold; text-align: right;">
-   <!--Buteur A -->
    
-   <!--Buteur A -->
-   </div>
-   <div>  
- <!-- <ion-icon name="football-outline"></ion-icon>  
-   </div>
-   <div style="width: 120px; margin-left: 15px; font-size: 10px; font-weight: bold; text-align: left;">
-    <!--Buteur B -->
-    
     <!--Buteur B -->
    </div>
 </div>
 <!--Buteur Fin -->
-</div>
+</div> </button></a>
+
 
 
 
