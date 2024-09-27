@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classement Zone de Mboro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https:fonts.googleapis.com" />
+  <link rel="preconnect" href="https:fonts.gstatic.com" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap" rel="stylesheet">
+   <meta http-equiv="refresh" content="">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{ margin: 0; padding: 0;  box-sizing: border-box;  font-family: 'Poppins', sans-serif;}
+body{ width: 100%;  height: ;  background: rgb(240, 239, 243); /* margin: auto; display: flex;  flex-direction: column;  align-items: center;  justify-content: center;*/
+}
+a{ text-decoration: none; color: #4d5656;}
+.main{display: block;}
+.titre{text-align: center;font-weight: 700;letter-spacing: 2px;}
+.container{width: 98%;; display: flex; jusyify-content: left; align-items: center; border: solid 1px #ec7063; border-radius: 8px; margin: 4px 3px;padding: 4px 6px;}
+.number{ font-size: 14px;/* border: solid 1px red; */ padding: 2px 2px; width: 30px; text-align: center; margin-right: 4px;}
+.logo{width: 50px; height: 50px; text-align: center;background-color: #F0FFFF; border-radius: 50%;}
+.logo img{ width: 42px; height: 42px; margin-left: 2px; padding-top: 2px; /* border: solid 1px red;.*/ margin-top: 3px;
+}
+.nom_equipe{ width: 228px; /*border: solid 1px red;*/ margin-left: 3px; text-transform: capitalize; font-weight: 300;}
+.nbr_buts{margin-left: 3px;float: right;
+}
+.nbr_buts h4{  font-size: 16px;  font-weight: 600; /* border: solid 1px red;*/  padding: 4px 4px;
+  
+}
+span{font-size: 11px; font-weight: 800;}
+</style>
+</head>
+<body>
+ <div class="titre"> Meilleures Buteurs </div>
+<div class="main">
+    <!-- Debut buts --> 
+    
+    
+    
+    <a href="go:gouygb" ><div class="container">
+    <div class="number">
+    1
+    </div>
+    <div class="logo">
+    <img src="  https://zupimages.net/up/24/38/tx7y.png   ">
+    </div>
+    <div class="nom_equipe">
+     Fallou FALL
+    <br><span> gouy gui (Byayakh) </span>
+    </div>
+    <div class="nbr_buts">
+    <h4>
+    <!-- buts --> 
+   1
+    <!-- buts --> 
+    </h4>
+    </div>
+    </div>
+    </a>
+    
+    
+    <a href="go:gouygb" ><div class="container">
+    <div class="number">
+    2
+    </div>
+    <div class="logo">
+    <img src="  https://zupimages.net/up/24/38/tx7y.png   ">
+    </div>
+    <div class="nom_equipe">
+    Ndiaga SARR
+    <br><span> gouy gui (Byayakh) </span>
+    </div>
+    <div class="nbr_buts">
+    <h4>
+    <!-- buts --> 
+    1
+    <!-- buts --> 
+    </h4>
+    </div>
+    </div>
+    </a>
+    
+    <a href="go:goram" ><div class="container">
+    <div class="number">
+    3
+    </div>
+    <div class="logo">
+    <img src="   https://zupimages.net/up/24/38/d2di.png ">
+    </div>
+    <div class="nom_equipe">
+    Osmane CISS
+    <br><span> Njinguilan </span>
+    </div>
+    <div class="nbr_buts">
+    <h4>
+    <!-- buts --> 
+    1
+    <!-- buts --> 
+    </h4>
+    </div>
+    </div>
+    </a>
+    
+    <a href="go:goram" ><div class="container">
+    <div class="number">
+    4
+    </div>
+    <div class="logo">
+    <img src="   https://zupimages.net/up/24/38/d2di.png ">
+    </div>
+    <div class="nom_equipe">
+    Gorgui NDOYE
+    <br><span> Njinguilan </span>
+    </div>
+    <div class="nbr_buts">
+    <h4>
+    <!-- buts --> 
+    1
+    <!-- buts --> 
+    </h4>
+    </div>
+    </div>
+    </a>
+    
+    <a href="go:dakhar" ><div class="container">
+    <div class="number">
+    5
+    </div>
+    <div class="logo">
+    <img src="  https://zupimages.net/up/24/38/itye.png  ">
+    </div>
+    <div class="nom_equipe">
+    Papa BADIANE
+    <br><span> Dakhar GUI </span>
+    </div>
+    <div class="nbr_buts">
+    <h4>
+    <!-- buts --> 
+    1
+    <!-- buts --> 
+    </h4>
+    </div>
+    </div>
+    </a>
+    
+    <a href="go:dakhar" ><div class="container">
+    <div class="number">
+    6
+    </div>
+    <div class="logo">
+    <img src="  https://zupimages.net/up/24/38/itye.png  ">
+    </div>
+    <div class="nom_equipe">
+    Mor MBENGUE
+    <br><span> DAKHAR GUI </span>
+    </div>
+    <div class="nbr_buts">
+    <h4>
+    <!-- buts --> 
+    1
+    <!-- buts --> 
+    </h4>
+    </div>
+    </div>
+    </a>
+    
+    <a href="go:gouygs" ><div class="container">
+    <div class="number">
+    7
+    </div>
+    <div class="logo">
+    <img src="   https://zupimages.net/up/24/38/0dt2.png ">
+    </div>
+    <div class="nom_equipe">
+    Cheikh BÉYE
+    <br><span> Gouy gui (Santhie) </span>
+    </div>
+    <div class="nbr_buts">
+    <h4>
+    <!-- buts --> 
+    1
+    <!-- buts --> 
+    </h4>
+    </div>
+    </div>
+    </a>
+    
+    <a href="go:pencmi" ><div class="container">
+    <div class="number">
+    8
+    </div>
+    <div class="logo">
+    <img src=" https://zupimages.net/up/24/38/eule.png   ">
+    </div>
+    <div class="nom_equipe">
+    Moustapha SAMB
+    <br><span> Pencum Diender </span>
+    </div>
+    <div class="nbr_buts">
+    <h4>
+    <!-- buts --> 
+    1
+    <!-- buts --> 
+    </h4>
+    </div>
+    </div>
+    </a>
+    
+    <a href="go:pencmi" ><div class="container">
+    <div class="number">
+    9
+    </div>
+    <div class="logo">
+    <img src=" https://zupimages.net/up/24/38/eule.png   ">
+    </div>
+    <div class="nom_equipe">
+    Balla FALL
+    <br><span> Pencum Diender </span>
+    </div>
+    <div class="nbr_buts">
+    <h4>
+    <!-- buts --> 
+    1
+    <!-- buts --> 
+    </h4>
+    </div>
+    </div>
+    </a>
+    
+    <a href="go:gtey" ><div class="container">
+    <div class="number">
+    10
+    </div>
+    <div class="logo">
+    <img src=" https://zupimages.net/up/24/38/dwd2.png   ">
+    </div>
+    <div class="nom_equipe">
+    Moistapha SAMB
+    <br><span> Goney Téy (Keur Matar)</span>
+    </div>
+    <div class="nbr_buts">
+    <h4>
+    <!-- buts --> 
+    1
+    <!-- buts --> 
+    </h4>
+    </div>
+    </div>
+    </a>
+   
+   <a href="go:refer" ><div class="container">
+   <div class="number">
+   11
+   </div>
+   <div class="logo">
+   <img src="https://zupimages.net/up/24/38/qyij.png   ">
+   </div>
+   <div class="nom_equipe">
+   Siny SÉNE
+   <br><span> Référence Académie</span>
+   </div>
+   <div class="nbr_buts">
+   <h4>
+   <!-- buts --> 
+   1
+   <!-- buts --> 
+   </h4>
+   </div>
+   </div>
+   </a>
+   
+   
+   <a href="go:refer" ><div class="container">
+   <div class="number">
+   12
+   </div>
+   <div class="logo">
+   <img src="https://zupimages.net/up/24/38/qyij.png   ">
+   </div>
+   <div class="nom_equipe">
+   Modou CISS
+   <br><span> Référence Académie</span>
+   </div>
+   <div class="nbr_buts">
+   <h4>
+   <!-- buts --> 
+   1
+   <!-- buts --> 
+   </h4>
+   </div>
+   </div>
+   </a>
+
+
+
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+  <!-- Fin Butes --> 
+</div>
+
+
+
+
+</body>
+</html>
