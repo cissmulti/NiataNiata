@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classement Zone de Mboro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https:fonts.googleapis.com" />
+  <link rel="preconnect" href="https:fonts.gstatic.com" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap" rel="stylesheet">
+   <meta http-equiv="refresh" content="">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{ margin: 0; padding: 0;  box-sizing: border-box;  font-family: 'Poppins', sans-serif;}
+body{ width: 100%;  height: ;  background: rgb(240, 239, 243); /* margin: auto; display: flex;  flex-direction: column;  align-items: center;  justify-content: center;*/
+}
+a{ text-decoration: none; color: #4d5656;}
+/*DEBUT DE CLASSEMENTS*/
+.poule{
+  text-align: center; font-weight: bold; margin-top: 10px; border-top: solid 2px green; border-radius: 20px;
+  }
+  span{width: 25px; height: 15px; background-color: green; color: white; padding: 0px 5px; margin-bottom: 15px; font-size: 15px; border-radius: 50%;}
+  
+ a{ text-decoration: none;}
+ .container{ display: flex; width: 100%; height: ; background: #AED6F1; border-radius: 10px; box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); padding: 3px; overflow-y: scroll; }
+ .container::-webkit-scrollbar{ display: none; }
+ .container form { width: 100%; border: 1px solid rgb(82, 74, 235);  border-radius: 4px; display: flex;  flex-direction: row; align-items: center; }
+ .product-list {width: 100%;  padding: px; }
+ .product {  width: 100%; display: flex; align-items: center;  padding-top: px; padding-bottom: px;  box-shadow: 4px 4px 30px rgba(5, 5, 5, 0.20); margin-top: 3px;  border-radius: px;  background: #EBDEF0; height: 35px; overflow: hidden;}
+ .product .rang-rang{ width: 25px; color: #ff5733; font-weight: ; margin: 5px; padding-right: 2px; font-size: 14px; text-align: center;  }
+ .product .asc-nom-asc-nom{ width: 150px; height: 15px; color: #ff5733; font-size: 13px; font-weight: bold; margin-left: 1px; padding-right: 3px; text-align: left; border-right: solid 1px black; }
+ .product .jouer-jouer{  width: 20px; height: 15px; color: #ff5733; font-size: 11px;  font-weight: bold; margin-left: 3px;  padding-right: 3px; text-align: center; border-right: solid 1px black;  }
+ .product .victoire-victoire{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+ .product .nul-nul{  width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+ .product .defaite-defaite{ width: 20px; height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black;  }
+ .product .buts-buts{ width: 40px;  height: 15px; color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black;}
+ .product .pts-pts{ width: 18px; height: 15px;  color: #ff5733; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;}
+ .product .rang{ width: 25px;  height: 15px; font-weight: ;  margin: 5px; padding-right: 2px;  font-size: 10px; text-align: center; border-right: solid 1px black;}
+ .product .score-logo{ width: 20px; height: 15px; font-weight: bold; margin-left: 2px;  padding-right: 3px; }
+  .product .asc-nom{ display: flex; justify-content: left; align-items: center; width: 150px;  height: 15px; font-size: 10px; font-weight: bold;  margin-left: 1px; padding-right: 3px; text-align: left; text-transform: uppercase; border-right: solid 1px black;}
+  .product .asc-nom img{margin-right: 5px;width: 25px; height: 25px;}
+  .product .jouer{  width: 20px; height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+ .product .victoire{ width: 20px;  height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px; text-align: center; border-right: solid 1px black; }
+ .product .nul{  width: 20px;  height: 15px; font-size: 11px;  font-weight: bold;  margin-left: 3px;  padding-right: 3px;  text-align: center; border-right: solid 1px black;  }
+ .product .defaite{  width: 20px;  height: 15px; font-size: 11px; font-weight: bold; margin-left: 3px; padding-right: 3px;  text-align: center; border-right: solid 1px black; }
+ .product .buts{  width: 40px;  height: 15px; font-size: 11px; font-weight: bold;  margin-left: 3px; padding-right: 3px; text-align: center;  border-right: solid 1px black; }
+ .product .pts{  width: 18px;  height: 15px;  font-size: 11px;  font-weight: bold;  margin-left: 3px;  padding-right: 3px;  text-align: center;  }
+ .product img {  width: 30px;  height: 30px;  margin-left: 5px;  padding-left: 3px;  object-fit: cover;  border-radius: px; }
+ .product .p-details{  padding-left: px; }
+    .p-details{ }
+ .product .p-details h2 { font-size: 13px; color: #1d1d1d; text-align: center; padding-left: 5px; text-transform: uppercase;  font-family: ;  }
+ /*FIN CLASSEMENT*/
+ img{width: 10px; height: 10px;}
+ </style>
+ </head>
+
+
+
+
+<!-- DEBUT DE EFFECTIF-->
+  
+    
+    <!-- DÉBUT ZONE DE MATCHE--->
+    
+    <section class="container">
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC A --->
+    
+    <div class="poule">Poule A</div>
+    <div class="product">
+    <h2 class="rang-rang">#</h2>
+    <h2 class="asc-nom-asc-nom"> Nom de l'asc</h2>
+    <h2 class="jouer-jouer">J</h2>
+    <h2 class="victoire-victoire">V</h2>
+    <h2 class="nul-nul">N</h2>
+    <h2 class="defaite-defaite">D</h2>
+    <h2 class="buts-buts">Buts</h2>
+    <h2 class="pts-pts">Pts</h2>
+    </div>
+    
+    
+    
+    <a href="go:gouygb" >
+    <div class="product">
+    <h2 class="rang"> <span> 1 </span>  </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/tx7y.png ">
+    gouy gui (bayakh) </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 2:0 </h2>
+    <h2 class="pts"> 3 </h2>
+    </div>
+    </a>
+    
+    <a href="go:espoirtd" >
+    <div class="product">
+    <h2 class="rang"> <span> 2 </span> </h2>
+    <h2 class="asc-nom"> <img src=" https://zupimages.net/up/24/38/9jzt.png">
+    espoir (Thieudeum) </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 0:0 </h2>
+    <h2 class="pts"> 1 </h2>
+    </div>
+    </a>
+  
+    
+    <a href="go:mankokm" >
+    <div class="product">
+    <h2 class="rang"> 3 </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/herj.png ">
+    manko (k. matar) </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 0:0 </h2>
+    <h2 class="pts"> 1 </h2>
+    </div>
+    
+    <a href="go:bookjom" > 
+    <div class="product">
+    <h2 class="rang"> 4  </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/o47l.png ">
+     book jom </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 0:2 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    </a>
+   
+    
+ 
+   
+    <!-- FIN ASC A --->
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC A --->
+    
+    <div class="poule">Poule B</div>
+    <div class="product">
+    <h2 class="rang-rang">#</h2>
+    <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+    <h2 class="jouer-jouer">J</h2>
+    <h2 class="victoire-victoire">V</h2>
+    <h2 class="nul-nul">N</h2>
+    <h2 class="defaite-defaite">D</h2>
+    <h2 class="buts-buts">Buts</h2>
+    <h2 class="pts-pts">Pts</h2>
+    </div>
+    
+    
+    <a href="go:golam" >
+    <div class="product">
+    <h2 class="rang"> <span> 1 </span> </h2>
+    <h2 class="asc-nom"> <img src=" https://zupimages.net/up/24/38/d2di.png">
+    njungulan (golam) </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 2:0 </h2>
+    <h2 class="pts"> 3 </h2>
+    </div>
+    </a>
+    
+    <a href="go:dakhar" >
+    <div class="product">
+    <h2 class="rang"> <span> 2 </span>  </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/itye.png ">
+    dakhar gui </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 2:1 </h2>
+    <h2 class="pts"> 3 </h2>
+    </div>
+    </a>
+    
+    
+    <a href="go:gouygs" >
+    <div class="product">
+    <h2 class="rang"> 3 </h2>
+    <h2 class="asc-nom"> <img src=" https://zupimages.net/up/24/38/0dt2.png">
+    gouy gui (santhie) </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 1:2 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    </a>
+    
+    <a href="go:farice" >
+    <div class="product">
+    <h2 class="rang"> 4 </h2>
+    <h2 class="asc-nom"> <img src=" https://zupimages.net/up/24/38/oay5.png">
+     farice </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 0:2 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    </a>
+ 
+    
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC B --->
+    
+    <div class="poule">Poule C</div>
+    <div class="product">
+    <h2 class="rang-rang">#</h2>
+    <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+    <h2 class="jouer-jouer">J</h2>
+    <h2 class="victoire-victoire">V</h2>
+    <h2 class="nul-nul">N</h2>
+    <h2 class="defaite-defaite">D</h2>
+    <h2 class="buts-buts">Buts</h2>
+    <h2 class="pts-pts">Pts</h2>
+    </div>
+    
+    <a href="go:pencmi" >
+    <div class="product">
+    <h2 class="rang"> <span> 1 </span>  </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/eule.png ">
+    pencum diender </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 2:1 </h2>
+    <h2 class="pts"> 3 </h2>
+    </div>
+    </a>
+    
+    <a href="go:refer" >
+    <div class="product">
+    <h2 class="rang"> <span> 2 </span> </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/qyij.png ">
+    référence académie </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 2:1 </h2>
+    <h2 class="pts"> 3 </h2>
+    </div>
+    </a>
+    
+    <a href="go:mankoby" >
+    <div class="product">
+    <h2 class="rang"> 3 </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/0vvk.png ">
+    manko (bayakh) </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 1:2 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    </a>
+    
+    
+    <a href="go:gtey" >
+    <div class="product">
+    <h2 class="rang"> 4 </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/dwd2.png ">
+    goney téy </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 1:2 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    </a>
+    
+   
+    
+    
+    
+    <div class="product-list" id="product-list">
+    <!-- DÉBUT ASC D --->
+    
+    <div class="poule">Poule D</div>
+    <div class="product">
+    <h2 class="rang-rang">#</h2>
+    <h2 class="asc-nom-asc-nom">Nom de l'asc</h2>
+    <h2 class="jouer-jouer">J</h2>
+    <h2 class="victoire-victoire">V</h2>
+    <h2 class="nul-nul">N</h2>
+    <h2 class="defaite-defaite">D</h2>
+    <h2 class="buts-buts">Buts</h2>
+    <h2 class="pts-pts">Pts</h2>
+    </div>
+    
+    
+    <a href="go:yakar" >
+    <div class="product">
+    <h2 class="rang"> <span> 1 </span>  </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/c8k5.png "> 
+    yakar  </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 1 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 1:0 </h2>
+    <h2 class="pts"> 3 </h2>
+    </div>
+    </a>
+    
+    <a href="go:mamend" >
+    <div class="product">
+    <h2 class="rang"> <span> 2 </span>   </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/2vxp.png ">
+     mame ndack </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 0:0 </h2>
+    <h2 class="pts"> 1 </h2>
+    </div>
+    </a>
+    <a href="go:garage" >
+    <div class="product">
+    <h2 class="rang"> 3  </h2>
+    <h2 class="asc-nom"> <img src=" https://zupimages.net/up/24/38/ikr2.png">
+    garage (bayakh) </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 1 </h2>
+    <h2 class="defaite"> 0 </h2>
+    <h2 class="buts"> 0:0 </h2>
+    <h2 class="pts"> 1 </h2>
+    </div>
+    </a>
+    
+    <a href="go:deukbm" >
+    <div class="product">
+    <h2 class="rang"> 3  </h2>
+    <h2 class="asc-nom"> <img src="https://zupimages.net/up/24/38/wpr7.png ">
+    deuk bou mak </h2>
+    <h2 class="jouer"> 1 </h2>
+    <h2 class="victoire"> 0 </h2>
+    <h2 class="nul"> 0 </h2>
+    <h2 class="defaite"> 1 </h2>
+    <h2 class="buts"> 0:1 </h2>
+    <h2 class="pts"> 0 </h2>
+    </div>
+    </a>
+  
+    
+   
+    
+    </section>
+  </div>
+  <!-- FIN DE EFFECTIF-->
+  
+  </body>
+  </html>
