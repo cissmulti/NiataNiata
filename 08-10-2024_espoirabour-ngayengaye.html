@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Détails </title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https:fonts.googleapis.com" />
+  <link rel="preconnect" href="https:fonts.gstatic.com" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap" rel="stylesheet">
+   <meta http-equiv="refresh" content="5">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https:fonts.googleapis.com/css2?family=Lato:wgh@100;300;400;700;900&family=Roboto:wgh@100;300;500;700;900&display=swap" rel="stylesheet" />
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,400;1,900&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+  
+   *{  margin: 0;  padding: 0;  /*box-sizing: border-box;*/  font-family: 'Poppins', sans-serif;   }  :root{   --clr: red; --ctr: ##29fd53;   }
+   body{  /* display: flex;*/   /*justify-content: center;   align-items: center;   /*min-height: 100vh;  /* background-color: var(--clr);*/   }
+   /*Style Kopar express*/
+   .btn-kopar{   width:345px;   height: 25px;   background-color: red;   color: white;  padding: 3px;   border: none;   border-radius: 8px;   position: fixed;   top: 3px;   left: 0.4em;  right: 0;   font-size: 15px;  }
+   /*Fin Style Kopar express*/
+   main{   width: 95%;   display: block;   justify-content: center;   align-items: center;   background-color: #581845;   padding: 8px;  /* position: relative;  top: 50px;*/  }
+   /*Debut 4 Grands*/
+   .Grands{   display: block;   justify-content: center;  align-items: center;  /*background-color: #fdedec;;*/  padding: 8px;  /*position: fixed; top: 250px;*/   }
+   .Grands2{   display: block;   justify-content: center;  align-items: center;
+  /* background-color: #fdedec;*/  padding: 8px; margin-top: 15px;  margin-bottom: 15px;  /* border: solid 1px red;*/   /*position: fixed; top: 10px;*/   }
+   .date{ text-align: center; }
+   .matchs{ display: flex; justify-content: center; align-items: center; }
+   .score_action{ display: block;  z-index: 1;  justify-content: center;   align-items: center;  /*border: solid 1px red;*/ padding: 1px 3px; }
+   .vs{ display: flex; position: relative; justify-content: center; align-items: center; width: 60px; height: 30px; padding: 3px 2px; margin-left: 12px;
+   /*padding-left: 4px; padding-reight: 4px;*/ /* background-color: green;*/ color: white;  text-align: center; /* margin: 5px;*/ font-size: 30px; font-wheight: bold; z-index: 1; }
+   .score_a{ padding: 0px 3px; color: white; }
+   .score_b{ padding: 0px 3px; color: white; }
+   .action_mtc{ width: 90px; font-size: 12px; color: white; text-align: center;  margin-top: 5px; /* background-color: gray;*/ justify-content: center;  align-items: center;  }
+   .match{ display: block;  justify-content: center;  align-items: center; padding-left: 0px;  padding-right: 0px; text-align: center;   width: 170px;/*  border: solid 1px blue;*/  }
+   .match .logo{  width: 65px;  height: 65px;
+ /*  background-color: #fef9e7; border: solid 1px gray; border-radius: 50%;*/ padding: 4px;  }
+   .match .ascA{  width: 120px;
+ /*  background-color: white;*/ padding: 3px; text-align: center; font-size: 9px; text-transform: uppercase; color: #fef9e7; }
+   .match .ascB{ width: 120px;
+ /* background-color: white;*/padding: 3px; text-align: center; font-size: 9px; text-transform: uppercase; color: #fef9e7; }
+   .buteur_a{ width: 120px;  margin-right: 15px; font-size: 10px; font-weight: bold; text-align: right;  color: #aeb6bf; }
+  .buteur_b{ width: 120px;  margin-left: 15px;  font-size: 10px;  font-weight: bold;  text-align: left;  color:#aeb6bf; }
+   .icon_ballon{
+   color: white;  }
+   /*Fin Style 4 grands*/   
+   /*Style Blink*/
+   blink {-webkit-animation: 1s linear infinite condemed_blink_effect; // pour Safari 4.0-8.0 animation: 1s linear infinite condemed_blink_effect; }
+   @-webkit-keyframes condemed_blink_effect { // pour Safari 4.0-8.0 0% { visibility: hidden;} 50% { visibility: hidden; } 100% { visibility: visible; }} @keyframes condemed_blink_effect { 0% { visibility: hidden; } 50% { visibility: hidden; } 100% { visibility: visible; } }
+   blink{color: white; font-weight: bold; letter-spacing: 2px; background-color: red; padding: 0px 15px; border: solid 1px white; border-radius: 8px;}
+   b{color: black;}
+   /*Fin Style blink*/
+   a{text-decoration: none;} 
+   /*Style accordion*/
+   .tabs {  display: flex; flex-wrap: wrap;  max-width: ;  font-family: sans-serif; font-size: 13px; align-items: center;  justify-content: center; position: ; left:0; right:0; }
+   .tabs__label { padding: 5px 5px; cursor: pointer; width: 100px; text-align: center; margin-left:2px; margin-right: 2px; margin-top: 4px; background-color: #DAF7A6;}
+   .tabs__radio {  display: none; }
+   .tabs__content { order: 1; width: 100%; border-top: 3px solid #dddddd;
+   /*line-height: 1.5;*/  font-size: 0.9em; display: none; background-color: ; margin: 1%;  }
+   .tabs__radio:checked + .tabs__label { font-weight: bold; color: #009578; border-bottom: 2px solid #009578; }
+   .tabs__radio:checked + .tabs__label + .tabs__content {  display: initial; }
+   /*DEBUT DU MATCHS*/
+   .zone-zone{border-bottom: solid 1px black; width: 100%;  display: flex;align-items: center;  justify-content: left; line-height: 15px;background-color: #FCF3CF; }
+   .zone-zone img{margin-left: 4px; padding-left: px; width: 100px:; height: 30px;  }
+   .zone-zone p{ margin-left: 4px; padding-left: 5px; font-weight: ; font-size: 18px; letter-spacing: 1px;   padding-top: 2px;  padding-bottom: 2px; text-transform: uppercase; text-align: left; }
+   .asc-asc .logo-asc{  width: 70px; height: 70px;  }
+   
+   @media (min-width:400px){
+   .tabs {
+   max-width: 700px;
+   }
+   .match .p-details{
+   width: 320px;
+   }
+   }   
+   /*Fin style accordion*/
+   
+   /* STYLE COMMENTATEUR */
+   .radio{ display: flex; width: 100%; margin-top: 4px;  align-items: center;   justify-content: center;  height: 80px;  background-color: ; border-radius: 20px;  border: solid 1px black; }
+   .logo-radio{ padding: 0px; line-height: 10px; margin-left: 4px;}
+   .logo-radio img{ width: 70px; height: 70px;  padding:0px; border-radius: 50%; border: solid 1px black;}
+   .logo-radio p{ font-size: 12px; font-weight: bold;}
+   .detail-radio{ width: 270px; background-color: ; margin:4px; text-decoration: none;  border-radius: 20px; line-height: 19px; text-align: center; height: 75px; }
+   .detail-radio span{ font-size: 20px; background-color: ; padding: px; color: ; }
+   .comentateur{ display: flex; margin-top: 10px;}
+   .comentateur img{ width: 20px; height: 20px; border-right: solid 1px black; margin-left: 10px;  margin-top: 5px; }
+   .detail-radio h2{margin-top: 5px; text-align: left; margin-left: 16px;}
+   .comentateur p{ font-size: 10px; border-radius: 20px; text-align: left;  padding-left: 5px; font-weight: bold;  margin-top: 5px; }
+   button{border: none; border-radius: 20px;}
+   .date-rencontre{width: 100%; margin-top: 5px; border-top: solid 1px black; letter-spacing: 2px; background-color: ; color: ; font-size: 6px; border-radius: 10px; padding: 2px 15px;}
+   /* FIN STYLE COMMENTATEUR */
+   
+   /*Debut Detail match*/
+   /*DEBUT MAIN*/
+   main_1{ width: 98%; height: px; margin-top: 4px; margin-bottom: 5px; border-radius: 10px;  }
+   /*BUT ASC 1*/
+   .asc-1{ display: flex; width: 100%; height: 70px; line-height: 8px; float: left; align-items: center; justify-content: left; background-color: white; margin-top: 4px;}
+   .asc-1 .logo-but{ display: block; text-align: center;}
+   .asc-1 .logo-but img { width: 30px; height: 30px; padding: 10px; }
+   .asc-1 .logo-but p{ padding-right: 5px; padding-left: 3px; }
+   .asc-1 .detail-but h1{ font-size: px; padding-top: 10px; padding-left: 10px; border-left: solid 1px green; }
+   .asc-1 .detail-but span{ font-size: 14px; color: black; padding-left: 10px; }
+   /*FIN BUT ASC 1*/
+   main_2{ width: 98%; height: px; margin-top: 4px; margin-bottom: 5px; border-radius: 10px; /*#00e8ff*/ }
+   
+   /*BUT ASC 2*/
+   .asc-2{ display: flex; width: 100%; height: 70px;line-height: 8px; float: right; align-items: center; justify-content: right; background-color: white; margin-top: 4px;}
+   .asc-2 .logo-but{ display: block; }
+   .asc-2 .logo-but img { width: 30px; height: 30px; padding: 10px; }
+   .asc-2 .logo-but p{ padding-right: 5px; padding-left: 23px; }
+   .asc-2 .detail-but h1{ font-size: px; padding-top: 10px; padding-right: 10px; text-align: right; border-right: solid 1px green; }
+   .asc-2 .detail-but span{ font-size: 14px; color: black; padding-right: 10px; }
+   /*FIN BUT ASC 1*/
+   /*FIN MAIN*/
+   /*Fin detail match*/
+   
+   
+   .tiraubut{ display: block; background-color: #BCC6CC;  border: solid 1px white; border-radius: 10px;  }
+   .asc_a{  display: flex;  justify-content: left;  align-items: center;  font-size: 10px;  font-weight: 500;  text-transform: capitalize;  margin: 6px 3px;   }
+   .asc_b{ display: flex;  justify-content: left;  align-items: center; font-size: 10px; font-weight: 500; text-transform: capitalize; margin: 6px 3px; }
+   .tir_au_but{ font-size: 14px; letter-spacing: 2px;   border-bottom: solid 2px white;   }
+   .tiraubut h5{   margin-left: 4px;  width: 90px;  }
+  .tiraubut .score{   font-size: 20px;  margin-left: 8px;  color: #6667AB;}
+   .tiraubut img{ width: 30px; height: 30px; }
+   .icon_ballon_2{  color: blue;  width: 15px;  height: 15px;  margin: 0px 3px; background-color: white;  border-radius: 50%;  }
+   .icon_ballon_3{  color: red;  width: 15px; height: 15px;  margin: 0px 3px; background-color: white; border-radius: 50%;}
+   /**/
+   /**/
+   
+   /**/
+   /**/
+</style>
+</head>
+<body>
+<!-- Debut Menu -->
+ <!-- 
+<div>
+<a href="https://koparexpress.com/apps/collectes/j819369a8" >
+<button class="btn-kopar">Cliquez ici pour soutenir Niata Niata</button></a>
+</div>  -->
+
+<main>
+
+
+<div class="Grands2">
+<!-- <blink>• Direct</blink>  -->
+<div class="matchs">
+<div class="match">
+<a href="#" ><img class="logo" src=" https://zupimages.net/up/22/37/dwe9.png "></a>
+<h4 class="ascA"> espoir bou abour </h4>
+</div>
+<div class="score_action">
+   <div class="vs">
+     <div class="score_a"> v </div>
+                  
+     <div class="score_b"> s </div>
+   </div>
+ <div class="action_mtc"> 
+              17:00
+ </div>
+</div>
+
+<div class="match">
+<a href="#" ><img class="logo" src=" https://zupimages.net/up/22/36/92sv.png "></a>
+<h4 class="ascB"> ngaye ngaye </h4>
+</div>
+</div>
+<!--Buteur debut -->
+<div style="margin-top: 10px; text-align: center; display: flex; justify-content: center; align-items: center; ">
+   <div class="buteur_a">
+   <!--Buteur A -->
+   
+   <!--Buteur A -->
+   </div>
+   <div>  
+  <!--  <ion-icon name="football-outline" class="icon_ballon"></ion-icon>  
+   </div>
+   <div class="buteur_b">
+    <!--Buteur B -->
+   
+    <!--Buteur B -->
+   </div>
+</div>
+<!--Buteur Fin -->
+</div>
+
+
+ 
+   
+   
+
+</main>
+<!-- COMMENTATEUR -->
+<a href="#" >
+<button>
+<div class="radio">
+<div class="logo-radio">
+<img src=" https://zupimages.net/up/23/34/z7h1.png ">
+
+</div>
+<div class="detail-radio">
+ <h2>Commentateur</h2>
+<div class="comentateur">
+<img src="https://zupimages.net/up/23/42/vprl.png">
+<p> Modou KANE </p>
+</div>
+</div>
+</div>
+</button></a> 
+<!--FIN COMMENTATEUR-->
+
+<!-- Debut Accordion -->
+<div class="tabs">
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+  
+  <!--DEBUT DE TABS MATCH-->
+  <label for="tab1" class="tabs__label"> DÉTAILS </label>
+  <div class="tabs__content">
+  <!-- DEBUT DE DÉTAILS-->
+  
+  <div style="width: 100%; background-color: #fdedec; pargin-top: 6px; margin-bottom: 3px; font-size: 14px; font-weight: bold; padding: 4px; 0px; text-align: center;"> 
+       -
+  </div>
+ 
+  
+
+   
+   
+  
+  <!-- FIN DÉTAILS-->
+  </div>
+  <!-- FIN DE DÉTAILS-->
+  
+   <!-- DEBUT DE COMPOSITIONS-->
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+  <label for="tab2" class="tabs__label"> COMPOSITIONS </label>
+  <div class="tabs__content">
+    <!-- Content Composition -->
+    
+    
+    
+    
+    
+    
+<!-- FIN DE COMPOSITIONS-->
+  </div>
+  <!-- FIN DE COMPOSITIONS-->
+  
+  <!---DEBUT COMMENTAIRES--->
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+  <label for="tab3" class="tabs__label"> COMMENTAIRES </label>
+  <div class="tabs__content">
+       <!-- Content Commentaire-->
+  <div style="display: flex; margin: 8px 1px; border-radius: 8px; ">
+     <div style="width: 10%; text-align: center; "> 
+     <!-- Minute de commentaire -->
+     <h2> - </h2> 
+     <!-- Minute de Commentaire -->
+     </div>
+     <div style="width: 90%;"> 
+     <p style="padding: 3px 8px; border-radius: 8px; background-color: #f4ecf7;"> 
+       <!-- Texte de commentaire --> 
+            
+            -
+            
+       <!-- Texte de commentaire -->
+     </p> 
+     </div>
+  
+      <!-- Content Commentaire -->
+  </div>
+      <!-- Content Commentaire -->
+  
+  
+  
+  
+ 
+  </div>
+  <!--COMMENTAIRES--->
+ 
+  
+</div>
+<!-- Fin Accordion -->
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+<!--Fin Menu-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="tttps://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
